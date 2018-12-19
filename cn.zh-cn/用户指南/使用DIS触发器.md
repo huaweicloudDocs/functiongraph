@@ -73,7 +73,7 @@
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >-   本例触发器的功能是：每隔10s，触发器会从dis-function数据通道中获取最新的100条数据，如果数据总数不足100，则全部获取。  
-    >-   拉取周期可以选单位，秒和毫秒，范围是10ms~60s。接口上"polling\_unit"的取值为"s"或"ms"，如果不填则默认为"s"，当"polling\_unit"取值为"ms"时，"polling\_interval"取值范围为10~60000，当"polling\_unit"取值为"s"时，"polling\_interval"取值范围1~60。  
+    >-   拉取周期可以选单位，秒和毫秒，范围是10ms\~60s。接口上"polling\_unit"的取值为"s"或"ms"，如果不填则默认为"s"，当"polling\_unit"取值为"ms"时，"polling\_interval"取值范围为10\~60000，当"polling\_unit"取值为"s"时，"polling\_interval"取值范围1\~60。  
 
 6.  单击“确定”，完成触发器创建，如[图2](#fig1340237162420)所示。
 

@@ -66,7 +66,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
 本例的完整AOS模板可[点此下载](https://functionstage-examples.obs.cn-north-1.myhwclouds.com/blueprint-function-watermark.yaml)，在AOS设计器中点击页面顶部的“打开”按钮，将下载的AOS模板导入AOS设计器，然后单击设计器页面顶部的“保存”按钮，输入以下参数，单击“保存”。
 
 >![](public_sys-resources/icon-note.gif) **说明：**   
->-   保存模板前，您可单击![](figures/zh-cn_image_0133502790.png)进行模板校验。若模板正确，在“操作日志”中会提示校验模板成功。  
+>-   保存模板前，您可单击![](figures/icon-check.png)进行模板校验。若模板正确，在“操作日志”中会提示校验模板成功。  
 >-   模板名称：自定义模板名称，需确保全局唯一，例如设置为blueprint-function-watermark。  
 >-   版本：1.0，保持默认。  
 
@@ -75,7 +75,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
 
 ## 部署云资源<a name="section1065818226204"></a>
 
-1.  单击设计器页面右上侧的![](figures/zh-cn_image_0133499879.png)，进入AOS控制台首页。
+1.  单击设计器页面右上侧的![](figures/icon-delete.png)，进入AOS控制台首页。
 2.  在左侧导航栏中，选择“我的模板”。在模板列表中可查看到保存成功的模板blueprint-function-watermark。
 3.  单击blueprint-function-watermark模板后的“部署堆栈”。
 4.  设置堆栈信息。

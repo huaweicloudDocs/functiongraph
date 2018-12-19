@@ -90,7 +90,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p663191135910"><a name="p663191135910"></a><a name="p663191135910"></a>必选</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1063101195917"><a name="p1063101195917"></a><a name="p1063101195917"></a>1-12或者Jan-Dec（英文不区分大小写）如<a href="#functiongraph_01_0908__table19718122644217">表3</a>所示。</p>
+    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1063101195917"><a name="p1063101195917"></a><a name="p1063101195917"></a>1-12或者Jan-Dec（英文不区分大小写）如<a href="#table19718122644217">表3</a>所示。</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p126331125920"><a name="p126331125920"></a><a name="p126331125920"></a>, - * /</p>
     </td>
@@ -99,7 +99,7 @@
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p176381112595"><a name="p176381112595"></a><a name="p176381112595"></a>可选</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p13638119593"><a name="p13638119593"></a><a name="p13638119593"></a>0-6或者Sun-Sat（0表示星期天，英文不区分大小写），如<a href="#functiongraph_01_0908__table1559918575415">表4</a>所示。</p>
+    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p13638119593"><a name="p13638119593"></a><a name="p13638119593"></a>0-6或者Sun-Sat（0表示星期天，英文不区分大小写），如<a href="#table1559918575415">表4</a>所示。</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p16315115595"><a name="p16315115595"></a><a name="p16315115595"></a>, - * ? /</p>
     </td>
