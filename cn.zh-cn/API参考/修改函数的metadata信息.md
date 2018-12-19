@@ -137,7 +137,7 @@ Method：PUT
 </td>
 <td class="cellrowborder" valign="top" width="12.121212121212121%" headers="mcps1.2.5.1.3 "><p id="p39195715112"><a name="p39195715112"></a><a name="p39195715112"></a>可选</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.5.1.4 "><p id="p191757161119"><a name="p191757161119"></a><a name="p191757161119"></a>函数策略配置，请参考<a href="#functiongraph_06_0111__table4775818446">表3</a>。</p>
+<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.5.1.4 "><p id="p191757161119"><a name="p191757161119"></a><a name="p191757161119"></a>函数策略配置，请参考<a href="#table4775818446">表3</a>。</p>
 </td>
 </tr>
 <tr id="row0742155584410"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.5.1.1 "><p id="p4742115518447"><a name="p4742115518447"></a><a name="p4742115518447"></a>Xrole</p>

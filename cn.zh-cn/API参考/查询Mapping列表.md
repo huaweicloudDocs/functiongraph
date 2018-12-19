@@ -72,7 +72,7 @@ GET/v1.0/\{project\_id\}/trigger\_graph\_mappings?graph\_urn=xxx&trigger\_urn=xx
     </td>
     <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p94888012645"><a name="p94888012645"></a><a name="p94888012645"></a>列表数据结构</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p2064551912645"><a name="p2064551912645"></a><a name="p2064551912645"></a>满足查询条件的Mapping列表，具体请参见<a href="#functiongraph_06_0750__table32073546172118">表3</a></p>
+    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p2064551912645"><a name="p2064551912645"></a><a name="p2064551912645"></a>满足查询条件的Mapping列表，具体请参见<a href="#table32073546172118">表3</a></p>
     </td>
     </tr>
     </tbody>
