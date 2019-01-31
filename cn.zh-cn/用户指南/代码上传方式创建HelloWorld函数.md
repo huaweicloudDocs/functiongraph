@@ -54,6 +54,13 @@
         </tbody>
         </table>
 
+        >![](public_sys-resources/icon-note.gif) **说明：**   
+        >-   在创建函数过程中选择委托时，勾选“为函数执行单独设置委拖”时，弹出“函数配置委托”，函数执行委托与函数配置委托可独立设置，这将减小不必要的性能损耗；不勾选时，函数执行委托和函数配置委托将使用同一委托，即使用同一个选择的委托或不使用任何委托。如[图1](#fig11875175135113)所示。  
+        >    **图 1**  设置委托<a name="fig11875175135113"></a>    
+        >    ![](figures/设置委托.png "设置委托")  
+        >    1.  函数配置委托，如果函数需要创建DMS或DIS触发器，则需要配置具有DMS或DIS访问权限的委托。当没有使用任何函数配置委托或者函数配置委托不存在时，不能创建DMS、DIS触发器。  
+        >    2.  函数执行委托配置后用户可以通过函数执行入口方法中的context参数获取具有委托中权限的token、ak、sk，用于访问其他云服务。  
+
     2.  填写代码配置信息，如[表2](#table13867334105936)所示，带\*参数为必填项。
 
         **表 2**  函数代码配置信息表
@@ -102,9 +109,9 @@
         >```  
 
 
-5.  在页面右侧查看函数配置及计费信息，确认无误后，单击“创建函数”，完成函数创建。如[图1](#fig5778171761119)所示。
+5.  在页面右侧查看函数配置及计费信息，确认无误后，单击“创建函数”，完成函数创建。如[图2](#fig5778171761119)所示。
 
-    **图 1**  创建函数<a name="fig5778171761119"></a>  
+    **图 2**  创建函数<a name="fig5778171761119"></a>  
     ![](figures/创建函数.png "创建函数")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
@@ -113,55 +120,5 @@
 
 ## 测试函数<a name="section72232178461"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
-2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入函数详情页。
-3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图2](#fig112033514369)所示，弹出“配置测试事件”页。
-
-    **图 2**  配置函数测试事件<a name="fig112033514369"></a>  
-    ![](figures/配置函数测试事件.png "配置函数测试事件")
-
-4.  在“配置测试事件”界面填写如[表3](#table187784018405)所示测试信息后单击“保存”，带\*参数为必填项。
-
-    **表 3**  测试信息
-
-    <a name="table187784018405"></a>
-    <table><thead align="left"><tr id="row3778200154019"><th class="cellrowborder" valign="top" width="28.000000000000004%" id="mcps1.2.3.1.1"><p id="p87782008402"><a name="p87782008402"></a><a name="p87782008402"></a>参数</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="72%" id="mcps1.2.3.1.2"><p id="p15786100114015"><a name="p15786100114015"></a><a name="p15786100114015"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row578616044017"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1078618012405"><a name="p1078618012405"></a><a name="p1078618012405"></a>配置测试事件</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p147869004017"><a name="p147869004017"></a><a name="p147869004017"></a>可创建新的测试事件也可编辑已有的测试事件。</p>
-    <p id="p1447113114443"><a name="p1447113114443"></a><a name="p1447113114443"></a>选择默认值：“创建新的测试事件”。</p>
-    </td>
-    </tr>
-    <tr id="row2786110174012"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p9786190134013"><a name="p9786190134013"></a><a name="p9786190134013"></a>事件模板</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p9706184319468"><a name="p9706184319468"></a><a name="p9706184319468"></a>使用空白模板需要编辑测试事件。</p>
-    <p id="p97862011404"><a name="p97862011404"></a><a name="p97862011404"></a>使用已有模板会自动加载相对应的测试事件。</p>
-    <p id="p7417185903720"><a name="p7417185903720"></a><a name="p7417185903720"></a>本例使用空白模板</p>
-    </td>
-    </tr>
-    <tr id="row37861105408"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p13786405402"><a name="p13786405402"></a><a name="p13786405402"></a>*事件名称</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p18786140204010"><a name="p18786140204010"></a><a name="p18786140204010"></a>事件名称必须仅包含字母和数字，且最大长度为 25 个字符。</p>
-    <p id="p15503151114381"><a name="p15503151114381"></a><a name="p15503151114381"></a>输入“test”。</p>
-    </td>
-    </tr>
-    <tr id="row1773914911554"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p157391497558"><a name="p157391497558"></a><a name="p157391497558"></a>测试事件</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p1354154185610"><a name="p1354154185610"></a><a name="p1354154185610"></a>输入测试事件。</p>
-    <pre class="codeblock" id="codeblock46584649185551"><a name="codeblock46584649185551"></a><a name="codeblock46584649185551"></a>{"message": "hello"}</pre>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-5.  单击“测试”，可以得到函数运行结果，如[图3](#fig17467116568)所示。
-
-    **图 3**  HelloWorld函数测试结果<a name="fig17467116568"></a>  
-    ![](figures/HelloWorld函数测试结果.png "HelloWorld函数测试结果")
-
+配置测试事件和测试函数请参考[测试管理](测试管理.md)。
 
