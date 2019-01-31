@@ -86,7 +86,7 @@ FunctionGraph函数字段说明如[表1](#table4539774994724)所示。
 </tr>
 <tr id="row36107286"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p39009036"><a name="p39009036"></a><a name="p39009036"></a>Timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p5615384"><a name="p5615384"></a><a name="p5615384"></a>函数的超时时间，超时函数将被强行停止，范围3～300秒。</p>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p5615384"><a name="p5615384"></a><a name="p5615384"></a>函数的超时时间，超时函数将被强行停止，范围3～900秒。</p>
 </td>
 </tr>
 <tr id="row50538456"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p67083165"><a name="p67083165"></a><a name="p67083165"></a>Handler</p>
@@ -96,7 +96,7 @@ FunctionGraph函数字段说明如[表1](#table4539774994724)所示。
 </tr>
 <tr id="row48374852"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p26048945"><a name="p26048945"></a><a name="p26048945"></a>MemorySize</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p29589819"><a name="p29589819"></a><a name="p29589819"></a>函数消耗的内存，单位M，取值为128的整数倍，最小值为128，最大值为1536。</p>
+<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p29589819"><a name="p29589819"></a><a name="p29589819"></a>函数消耗的内存，单位M，取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。最小值为128，最大值为4096。</p>
 </td>
 </tr>
 <tr id="row64981782"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p29032981"><a name="p29032981"></a><a name="p29032981"></a>Cpu</p>

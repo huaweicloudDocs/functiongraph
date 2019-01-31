@@ -101,7 +101,7 @@ Method：PUT
 </td>
 <td class="cellrowborder" valign="top" width="12.121212121212121%" headers="mcps1.2.5.1.3 "><p id="p10742555124414"><a name="p10742555124414"></a><a name="p10742555124414"></a>可选</p>
 </td>
-<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.5.1.4 "><p id="p1074245514442"><a name="p1074245514442"></a><a name="p1074245514442"></a>函数消耗的内存，单位M，取值为128的整数倍，最小值为128，最大值为1536。</p>
+<td class="cellrowborder" valign="top" width="54.545454545454554%" headers="mcps1.2.5.1.4 "><p id="p1074245514442"><a name="p1074245514442"></a><a name="p1074245514442"></a>函数消耗的内存，单位M，取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。最小值为128，最大值为4096。</p>
 </td>
 </tr>
 <tr id="row18742155519442"><td class="cellrowborder" valign="top" width="17.171717171717173%" headers="mcps1.2.5.1.1 "><p id="p1474285554419"><a name="p1474285554419"></a><a name="p1474285554419"></a>Timeout</p>
