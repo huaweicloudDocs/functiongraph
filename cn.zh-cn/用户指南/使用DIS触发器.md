@@ -17,7 +17,7 @@
 
 由于创建HelloWorld函数的时候没有设置委托，所以需要先修改函数委托。
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，单击“配置”，进入“配置”页签。
 4.  在“配置”页签，修改函数委托，将委托修改为[创建委托](创建委托.md)创建的serverless-trust委托。
@@ -25,7 +25,7 @@
 
 ## 创建DIS触发器<a name="section680116461234"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，单击“触发器”页签。
 4.  在“触发器”页签，单击“创建触发器”，如[图1](#fig19657829242)所示，弹出“创建触发器”界面。
@@ -50,15 +50,10 @@
     <p id="p1753551895938"><a name="p1753551895938"></a><a name="p1753551895938"></a>本例选择创建的dis-function通道。</p>
     </td>
     </tr>
-    <tr id="row1040996411123"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p45327539111212"><a name="p45327539111212"></a><a name="p45327539111212"></a>批处理大小</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p5413392105944"><a name="p5413392105944"></a><a name="p5413392105944"></a>设置调用函数时，从流检索记录的最大数目，可输入范围：1-10000。</p>
-    <p id="p3270906795938"><a name="p3270906795938"></a><a name="p3270906795938"></a>使用默认值100。</p>
-    </td>
-    </tr>
     <tr id="row177242162307"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15724121610301"><a name="p15724121610301"></a><a name="p15724121610301"></a>*起始位置</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1072418163303"><a name="p1072418163303"></a><a name="p1072418163303"></a>选择流中开始读取数据的位置。</p>
+    <a name="ul194661937141713"></a><a name="ul194661937141713"></a><ul id="ul194661937141713"><li>TRIM_HORIZON：从最早被存储至分区的有效记录开始读取。</li><li>LATEST：从分区中的最新记录开始读取，此设置可以保证你总是读到分区中最新记录。</li></ul>
     <p id="p37552917929"><a name="p37552917929"></a><a name="p37552917929"></a>选择“LATEST”，从DIS数据通道中获取最新数据。</p>
     </td>
     </tr>
@@ -66,6 +61,12 @@
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p37374123144952"><a name="p37374123144952"></a><a name="p37374123144952"></a>设置拉取流数据的周期，拉取周期设置10ms~60s秒的范围内。</p>
     <p id="p1549144518318"><a name="p1549144518318"></a><a name="p1549144518318"></a>输入10。</p>
+    </td>
+    </tr>
+    <tr id="row191206133274"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p15121113112715"><a name="p15121113112715"></a><a name="p15121113112715"></a>串行处理数据</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p111211913122720"><a name="p111211913122720"></a><a name="p111211913122720"></a>如果开启该选项，取一次数据处理完之后才会取下一次数据；否则只要拉取周期到了就会取数据进行处理。</p>
+    <p id="p3634185415312"><a name="p3634185415312"></a><a name="p3634185415312"></a>选择关闭。</p>
     </td>
     </tr>
     </tbody>
@@ -83,7 +84,7 @@
 
 ## 配置dis事件触发函数<a name="section15396107171918"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入函数详情页。
 3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图3](#fig112033514369)所示，弹出“配置测试事件”页。
 
