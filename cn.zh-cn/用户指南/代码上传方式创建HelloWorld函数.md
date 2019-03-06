@@ -2,9 +2,9 @@
 
 本节以HelloWorld函数为例，介绍函数的创建及测试过程。
 
-## 创建函数<a name="section88018534613"></a>
+## 创建运行函数<a name="section88018534613"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击“创建函数”，进入“创建函数”界面。
 3.  在“创建函数”界面填写函数信息。
     1.  填写基础配置信息，如[表1](#table46600572105838)所示，带\*参数为必填项。
@@ -92,7 +92,7 @@
         </table>
 
         >![](public_sys-resources/icon-notice.gif) **注意：**   
-        >用python语言写代码时，自己创建的包名不能与python标准库同名，否组会提示module加载失败。例如”json“、“lib”，“os”等。  
+        >用python语言写代码时，自己创建的包名不能与python标准库同名，否则会提示module加载失败。例如”json“、“lib”，“os”等。  
 
         >![](public_sys-resources/icon-warning.gif) **警告：**   
         >使用在线编辑代码时，系统会明文展示所有输入信息，请不要输入敏感信息（如账户密码等），以防止信息泄露。  
@@ -116,6 +116,32 @@
     >![](public_sys-resources/icon-note.gif) **说明：**   
     >函数创建成功后，函数内存配置为128MB，超时时间设置为3秒，如果需要修改配置，请参考[修改函数配置](函数管理.md#section1560314348363)。  
 
+
+## 创建初始化函数<a name="section5481134641018"></a>
+
+在函数创建完成后，开启初始化功能创建初始化函数。在函数初始化场景中，设置了 Initializer 后，函数计算首先调用 Initializer 完成函数的初始化，成功后再调用 handler 处理请求；没有函数初始化的需求则可以跳过 Initializer，直接调用 handler 处理请求。创建函数过程请参考[创建运行函数](#section88018534613)。
+
+1.  登录FunctionGraph，进入“函数”界面。
+2.  在函数界面选择“函数列表”，选择已创建的函数，点击进入函数详情页面。
+3.  在函数代码详情页面中，打开“是否配置函数初始化入口”功能按钮，填写代码配置信息，如[图3](#fig75883142819)所示。
+
+    **图 3**  函数初始化入口<a name="fig75883142819"></a>  
+    ![](figures/函数初始化入口.png "函数初始化入口")
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   开启函数初始化功能后，各runtime 的函数初始化入口命名规范与原有函数执行入口保持一致。如Node.js和Python函数，命名规则：\[文件名\].\[初始化函数名\]。  
+    >-   函数代码配置信息请参考[表2](创建函数.md#table13867334105936)。  
+
+4.  在函数配置详情页面中，设置函数初始化超时时间，如[图4](#fig15990112813380)所示。
+
+    **图 4**  设置函数初始化超时时间<a name="fig15990112813380"></a>  
+    ![](figures/设置函数初始化超时时间.png "设置函数初始化超时时间")
+
+    >![](public_sys-resources/icon-note.gif) **说明：**   
+    >-   函数初始化超时时间设置范围为1-300秒。  
+    >-   函数环境配置信息请参考[表4](创建函数.md#table4028632011654)。  
+
+5.  点击右上角“保存”，完成初始化函数创建。
 
 ## 测试函数<a name="section72232178461"></a>
 
