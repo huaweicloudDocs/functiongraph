@@ -5,178 +5,349 @@
 FunctionGraph函数模型如下。
 
 ```
-{
-	"FuncUrn": "string",
-	"FuncName": "string",
-	"UserDomain": "string",
-	"Namespace": "string",
-	"ProjectName": "string"
-	"Package": "string",
-	"Runtime": "string",
-	"Timeout": number,
-	"Handler": "string",
-	"MemorySize": number,
-	"Cpu": number,
-	"CodeType": "string",
-	"CodeUrl": "string",
-	"CodeFileName": "string",
-	"CodeSize": number,
-	"UserData": "string",
-	"Digest": "string",
-	"Version": "string",
-	"ImageName": "string",
-	"DependencyPkg": "string",
-	"Xrole": "string",
-	"Description": "string",
-	"VersionDescription": "string",
-	"LastModified": "string",
-	"FuncCode": {
-		"File": "string"
-	}
-}
+{ 
+  "functions": [ 
+   { 
+    "func_urn": "urn:fss:cn-north-1:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test", 
+    "func_name": "test", 
+    "user_domain": "cff01_hk", 
+    "namespace": "7aad83af3e8d42e99ac194e8419e2c9b", 
+    "project_name": "cn-north-1", 
+    "package": "default", 
+    "runtime": "Node.js6.10", 
+    "timeout": 3, 
+    "handler": "test.handler", 
+    "memory_size": 128, 
+    "cpu": 300, 
+    "code_type": "inline", 
+    "code_url": "", 
+    "code_filename": "index.js", 
+    "code_size": 272, 
+    "user_data": "", 
+    "digest": "decbce6939297b0b5ec6d1a23bf9c725870f5e69fc338a89a6a4029264688dc26338f56d08b6535de47f15ad538e22ca66613b9a46f807d50b687bb53fded1c6", 
+    "version": "latest", 
+    "image_name": "latest-5qe8e", 
+    "xrole": "cff",
+"app_xrole": null 
+    "dependency_pkg": "", 
+    "description": "111", 
+    "version_description": "", 
+    "last_modified": "2018-03-28T11:30:32+08:00",
+"func_code": {
+  "file": "",
+  "link": ""
+ },
+ "func_vpc":null,
+ "depend_list": null,
+ "strategy_config": {
+     "concurrency": -1
+ },
+ "extend_config": "",
+ "dependencies": null 
+"initializer_handler": "index.initializer",
+"initializer_timeout": 3  
+   } 
+  ], 
+  "next_marker": 45 
+ }
 ```
 
 ## 字段说明<a name="section40851470"></a>
 
-FunctionGraph函数字段说明如[表1](#table4539774994724)所示。
+FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 
 **表 1**  FunctionGraph函数字段说明表
 
-<a name="table4539774994724"></a>
-<table><thead align="left"><tr id="row35845618"><th class="cellrowborder" valign="top" width="24.240000000000002%" id="mcps1.2.3.1.1"><p id="p17813907"><a name="p17813907"></a><a name="p17813907"></a>字段名称</p>
+<a name="table357132064218"></a>
+<table><thead align="left"><tr id="row558102011425"><th class="cellrowborder" valign="top" width="29.9%" id="mcps1.2.3.1.1"><p id="p1273950184418"><a name="p1273950184418"></a><a name="p1273950184418"></a>名称</p>
 </th>
-<th class="cellrowborder" valign="top" width="75.76%" id="mcps1.2.3.1.2"><p id="p33640357"><a name="p33640357"></a><a name="p33640357"></a>字段说明</p>
+<th class="cellrowborder" valign="top" width="70.1%" id="mcps1.2.3.1.2"><p id="p273940124410"><a name="p273940124410"></a><a name="p273940124410"></a>说明</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row40514383"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p60439610"><a name="p60439610"></a><a name="p60439610"></a>FuncUrn</p>
+<tbody><tr id="row2058142011422"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1774017018446"><a name="p1774017018446"></a><a name="p1774017018446"></a>func_urn</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p63770254"><a name="p63770254"></a><a name="p63770254"></a>函数的URN（Uniform Resource Name），唯一标识函数。</p>
-</td>
-</tr>
-<tr id="row37061374"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p49181313"><a name="p49181313"></a><a name="p49181313"></a>FuncName</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p24263425"><a name="p24263425"></a><a name="p24263425"></a>函数名称，只能以大小写字母开头，且只能包含字母、数字、下划线和中划线，以字母或者数字结尾。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p874014034412"><a name="p874014034412"></a><a name="p874014034412"></a>函数的URN（Uniform Resource Name），唯一标识函数。</p>
 </td>
 </tr>
-<tr id="row17044235"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p38405776"><a name="p38405776"></a><a name="p38405776"></a>UserDomain</p>
+<tr id="row132313449427"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p474050194419"><a name="p474050194419"></a><a name="p474050194419"></a>func_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p23860166"><a name="p23860166"></a><a name="p23860166"></a>租户名称。</p>
-</td>
-</tr>
-<tr id="row13414907"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p12865660"><a name="p12865660"></a><a name="p12865660"></a>Namespace</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p35485571"><a name="p35485571"></a><a name="p35485571"></a>租户的project id。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p974012024419"><a name="p974012024419"></a><a name="p974012024419"></a>函数名称。</p>
 </td>
 </tr>
-<tr id="row50934683"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p32068643"><a name="p32068643"></a><a name="p32068643"></a>ProjectName</p>
+<tr id="row19450204274311"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p107401703448"><a name="p107401703448"></a><a name="p107401703448"></a>user_domain</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p47423267"><a name="p47423267"></a><a name="p47423267"></a>租户的project name。</p>
-</td>
-</tr>
-<tr id="row24156224"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p10497128"><a name="p10497128"></a><a name="p10497128"></a>Package</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p44961053"><a name="p44961053"></a><a name="p44961053"></a>函数所属的分组Package，用于用户针对函数的自定义分组。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p974015010440"><a name="p974015010440"></a><a name="p974015010440"></a>租户名称。</p>
 </td>
 </tr>
-<tr id="row1996295"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p27482234"><a name="p27482234"></a><a name="p27482234"></a>Runtime</p>
+<tr id="row7467440154318"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1074014024411"><a name="p1074014024411"></a><a name="p1074014024411"></a>namespace</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p652094462816"><a name="p652094462816"></a><a name="p652094462816"></a>FunctionGraph函数的执行环境，支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1。</p>
-</td>
-</tr>
-<tr id="row36107286"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p39009036"><a name="p39009036"></a><a name="p39009036"></a>Timeout</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p5615384"><a name="p5615384"></a><a name="p5615384"></a>函数的超时时间，超时函数将被强行停止，范围3～900秒。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p19740603447"><a name="p19740603447"></a><a name="p19740603447"></a>租户的project id。</p>
 </td>
 </tr>
-<tr id="row50538456"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p67083165"><a name="p67083165"></a><a name="p67083165"></a>Handler</p>
+<tr id="row840763884314"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1374018015443"><a name="p1374018015443"></a><a name="p1374018015443"></a>project_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p65027307"><a name="p65027307"></a><a name="p65027307"></a>函数执行入口，规则：xx.xx，必须包含“. ”，举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。</p>
-</td>
-</tr>
-<tr id="row48374852"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p26048945"><a name="p26048945"></a><a name="p26048945"></a>MemorySize</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p29589819"><a name="p29589819"></a><a name="p29589819"></a>函数消耗的内存，单位M，取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。最小值为128，最大值为4096。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1374050114412"><a name="p1374050114412"></a><a name="p1374050114412"></a>租户的project name。</p>
 </td>
 </tr>
-<tr id="row64981782"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p29032981"><a name="p29032981"></a><a name="p29032981"></a>Cpu</p>
+<tr id="row1621603614433"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1874018019449"><a name="p1874018019449"></a><a name="p1874018019449"></a>package</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p2861285"><a name="p2861285"></a><a name="p2861285"></a>函数占用的cpu资源，单位为millicore（1 core=1000 millicores），取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores），函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。</p>
-</td>
-</tr>
-<tr id="row25751571"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p5502495"><a name="p5502495"></a><a name="p5502495"></a>CodeType</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p43048911"><a name="p43048911"></a><a name="p43048911"></a>函数代码类型，取值有4种：</p>
-<p id="p51895880"><a name="p51895880"></a><a name="p51895880"></a>inline：UI在线编辑代码</p>
-<p id="p64409739"><a name="p64409739"></a><a name="p64409739"></a>zip：函数代码为zip包</p>
-<p id="p42816746"><a name="p42816746"></a><a name="p42816746"></a>jar：函数代码为jar包，主要针对Java函数</p>
-<p id="p49806396"><a name="p49806396"></a><a name="p49806396"></a>obs：函数代码来源于obs存储</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p77411044415"><a name="p77411044415"></a><a name="p77411044415"></a>函数所属的分组Package，用于用户针对函数的自定义分组。</p>
 </td>
 </tr>
-<tr id="row45604388"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p2967967"><a name="p2967967"></a><a name="p2967967"></a>CodeUrl</p>
+<tr id="row821715346434"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1741501443"><a name="p1741501443"></a><a name="p1741501443"></a>runtime</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p39078787"><a name="p39078787"></a><a name="p39078787"></a>当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空；CodeUrl中文件名（url的由"/"分割的最后一段）也要符合CodeFileName字段的规范。</p>
-</td>
-</tr>
-<tr id="row16164763"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p34277422"><a name="p34277422"></a><a name="p34277422"></a>CodeFileName</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p25007806"><a name="p25007806"></a><a name="p25007806"></a>函数的文件名，当CodeType为jar/zip时如果不提供该字段，会以函数名作为文件名，以CodeType作为文件类型，inline和obs不需要提供；文件名只能包含大小写字母、数字、中划线（-）、下划线（_）和点（.），另外文件名结尾要和CodeType对应。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274120064410"><a name="p1274120064410"></a><a name="p1274120064410"></a>FunctionGraph函数的执行环境，支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1。</p>
 </td>
 </tr>
-<tr id="row23743664"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p44188613"><a name="p44188613"></a><a name="p44188613"></a>CodeSize</p>
+<tr id="row145081418204316"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p47413017444"><a name="p47413017444"></a><a name="p47413017444"></a>timeout</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p22507915"><a name="p22507915"></a><a name="p22507915"></a>函数大小，单位：字节。</p>
-</td>
-</tr>
-<tr id="row1244648"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p33707641"><a name="p33707641"></a><a name="p33707641"></a>UserData</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p45964432"><a name="p45964432"></a><a name="p45964432"></a>用户自定义的name/value信息，在函数中使用的参数，举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1674130144417"><a name="p1674130144417"></a><a name="p1674130144417"></a>函数执行超时时间，超时函数将被强行停止，范围3～900秒。</p>
 </td>
 </tr>
-<tr id="row11026704"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p20747816"><a name="p20747816"></a><a name="p20747816"></a>Digest</p>
+<tr id="row13357432164311"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p174119084415"><a name="p174119084415"></a><a name="p174119084415"></a>handler</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p2851512"><a name="p2851512"></a><a name="p2851512"></a>函数代码SHA512 hash值，用于判断函数是否变化。</p>
-</td>
-</tr>
-<tr id="row25663613"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p65486773"><a name="p65486773"></a><a name="p65486773"></a>Version</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p2828410"><a name="p2828410"></a><a name="p2828410"></a>函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p67418010444"><a name="p67418010444"></a><a name="p67418010444"></a>函数执行入口，规则：xx.xx，必须包含“. ”，举例：对于node.js函数：myfunction.handler，则表示函数的文件名为myfunction.js，执行的入口函数名为handler。</p>
 </td>
 </tr>
-<tr id="row25455692"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p48645199"><a name="p48645199"></a><a name="p48645199"></a>ImageName</p>
+<tr id="row162211430104319"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p197415018448"><a name="p197415018448"></a><a name="p197415018448"></a>memory_size</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p47947026"><a name="p47947026"></a><a name="p47947026"></a>函数版本的内部标识。</p>
-</td>
-</tr>
-<tr id="row28870051"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p56772777"><a name="p56772777"></a><a name="p56772777"></a>Xrole</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p35192261"><a name="p35192261"></a><a name="p35192261"></a>函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p27416019446"><a name="p27416019446"></a><a name="p27416019446"></a>函数消耗的内存，单位M，取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。最小值为128，最大值为4096。</p>
 </td>
 </tr>
-<tr id="row48294893"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p19572290"><a name="p19572290"></a><a name="p19572290"></a>Description</p>
+<tr id="row130522794317"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p207413016447"><a name="p207413016447"></a><a name="p207413016447"></a>cpu</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p41851680"><a name="p41851680"></a><a name="p41851680"></a>函数描述。</p>
-</td>
-</tr>
-<tr id="row41120801"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p42450590"><a name="p42450590"></a><a name="p42450590"></a>VersionDescription</p>
-</td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p15945784"><a name="p15945784"></a><a name="p15945784"></a>函数版本描述。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p9741160124417"><a name="p9741160124417"></a><a name="p9741160124417"></a>函数占用的cpu资源，单位为millicore（1 core=1000 millicores），取值与MemorySize成比例，默认是128M内存占0.1个核（100 millicores），函数占用的CPU为基础CPU：200 millicores，再加上内存按比例占用的CPU，计算方法：内存/128 *100 + 200。</p>
 </td>
 </tr>
-<tr id="row9294331"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p14643338"><a name="p14643338"></a><a name="p14643338"></a>LastModified</p>
+<tr id="row18433112518437"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p77411002443"><a name="p77411002443"></a><a name="p77411002443"></a>code_type</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p45259754"><a name="p45259754"></a><a name="p45259754"></a>函数最后一次更新时间。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1474110012449"><a name="p1474110012449"></a><a name="p1474110012449"></a>函数代码类型，取值有4种：</p>
+<p id="p87411907446"><a name="p87411907446"></a><a name="p87411907446"></a>inline：UI在线编辑代码。</p>
+<p id="p1374212017443"><a name="p1374212017443"></a><a name="p1374212017443"></a>zip：函数代码为zip包。</p>
+<p id="p3742003445"><a name="p3742003445"></a><a name="p3742003445"></a>jar：函数代码为jar包，主要针对Java函数。</p>
+<p id="p117427014440"><a name="p117427014440"></a><a name="p117427014440"></a>obs：函数代码来源于obs存储。</p>
 </td>
 </tr>
-<tr id="row4684608"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p43908956"><a name="p43908956"></a><a name="p43908956"></a>FuncCode.File</p>
+<tr id="row15521923124316"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p167429044411"><a name="p167429044411"></a><a name="p167429044411"></a>code_url</p>
 </td>
-<td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p66964508"><a name="p66964508"></a><a name="p66964508"></a>函数代码，当CodeTye为inline/zip/jar时必选，且代码必须要进行base64编码。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274219019446"><a name="p1274219019446"></a><a name="p1274219019446"></a>当CodeType为obs时，该值为函数代码包在OBS上的地址，CodeType为其他值时，该字段为空。</p>
+</td>
+</tr>
+<tr id="row1076032104314"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p15742180144415"><a name="p15742180144415"></a><a name="p15742180144415"></a>code_filename</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1074215024420"><a name="p1074215024420"></a><a name="p1074215024420"></a>函数的文件名，当CodeType为jar/zip时必须提供该字段，inline和obs不需要提供。</p>
+</td>
+</tr>
+<tr id="row1786611604313"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p13742109448"><a name="p13742109448"></a><a name="p13742109448"></a>code_size</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p117421024416"><a name="p117421024416"></a><a name="p117421024416"></a>函数大小，单位：字节。</p>
+</td>
+</tr>
+<tr id="row1313816154439"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p474211074410"><a name="p474211074410"></a><a name="p474211074410"></a>user_data</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p4742406449"><a name="p4742406449"></a><a name="p4742406449"></a>用户自定义的name/value信息，在函数中使用的参数，举例：如函数要访问某个主机，可以设置自定义参数：Host={host_ip}，最多定义20个，总长度不超过4KB。</p>
+</td>
+</tr>
+<tr id="row15321141316432"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p14742110114416"><a name="p14742110114416"></a><a name="p14742110114416"></a>digest</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p15742002443"><a name="p15742002443"></a><a name="p15742002443"></a>函数代码SHA512 hash值，用于判断函数是否变化。</p>
+</td>
+</tr>
+<tr id="row17618151119439"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p974216013446"><a name="p974216013446"></a><a name="p974216013446"></a>version</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p107422034415"><a name="p107422034415"></a><a name="p107422034415"></a>函数版本号，由系统自动生成，规则：vYYYYMMDD-HHMMSS（v+年月日-时分秒）。</p>
+</td>
+</tr>
+<tr id="row118764984320"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1374213015448"><a name="p1374213015448"></a><a name="p1374213015448"></a>image_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1774390144413"><a name="p1774390144413"></a><a name="p1774390144413"></a>函数版本的内部标识。</p>
+</td>
+</tr>
+<tr id="row10631585435"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p574315014411"><a name="p574315014411"></a><a name="p574315014411"></a>xrole</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p17743130164413"><a name="p17743130164413"></a><a name="p17743130164413"></a>函数使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。</p>
+</td>
+</tr>
+<tr id="row19915616434"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1574319024410"><a name="p1574319024410"></a><a name="p1574319024410"></a>app_xrole</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p147431508447"><a name="p147431508447"></a><a name="p147431508447"></a>函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。</p>
+</td>
+</tr>
+<tr id="row15303143431"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p27432024417"><a name="p27432024417"></a><a name="p27432024417"></a>dependency_pkg</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p97431003446"><a name="p97431003446"></a><a name="p97431003446"></a>函数依赖的第三方软件zip包在obs上的地址，多个第三方软件要打包到一个zip文件中，如果未使用第三方软件。</p>
+</td>
+</tr>
+<tr id="row02151805439"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p157431703447"><a name="p157431703447"></a><a name="p157431703447"></a>description</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274319064417"><a name="p1274319064417"></a><a name="p1274319064417"></a>函数描述。</p>
+</td>
+</tr>
+<tr id="row235572114311"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1174319014445"><a name="p1174319014445"></a><a name="p1174319014445"></a>version_description</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p12743301441"><a name="p12743301441"></a><a name="p12743301441"></a>函数版本描述。</p>
+</td>
+</tr>
+<tr id="row88955816423"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p17743160114417"><a name="p17743160114417"></a><a name="p17743160114417"></a>last_modified</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1174340134418"><a name="p1174340134418"></a><a name="p1174340134418"></a>函数最后一次更新时间。</p>
+</td>
+</tr>
+<tr id="row1596515594218"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p197432094419"><a name="p197432094419"></a><a name="p197432094419"></a>func_code</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p6743607447"><a name="p6743607447"></a><a name="p6743607447"></a>函数代码，请参考<a href="#table18312152434512">表2</a>。</p>
+</td>
+</tr>
+<tr id="row121771142174218"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p37437016444"><a name="p37437016444"></a><a name="p37437016444"></a>depend_list</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p167439014447"><a name="p167439014447"></a><a name="p167439014447"></a>依赖包列表。</p>
+</td>
+</tr>
+<tr id="row9126135413426"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p474415016449"><a name="p474415016449"></a><a name="p474415016449"></a>strategy_config</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p157447014443"><a name="p157447014443"></a><a name="p157447014443"></a>函数策略配置，请参考<a href="#table4775818446">表3</a>。</p>
+</td>
+</tr>
+<tr id="row18851839194211"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p12744100104410"><a name="p12744100104410"></a><a name="p12744100104410"></a>extend_config</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1874440134418"><a name="p1874440134418"></a><a name="p1874440134418"></a>函数扩展配置。</p>
+</td>
+</tr>
+<tr id="row4581320174210"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p07441602444"><a name="p07441602444"></a><a name="p07441602444"></a>dependencies</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p177449017441"><a name="p177449017441"></a><a name="p177449017441"></a>依赖代码包。</p>
+</td>
+</tr>
+<tr id="row1581820104216"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1274416019446"><a name="p1274416019446"></a><a name="p1274416019446"></a>initializer_handler</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p11744209445"><a name="p11744209445"></a><a name="p11744209445"></a>函数初始化入口，规则：xx.xx，必须包含“. ”，举例：对于node.js函数：myfunction.initializer，则表示函数的文件名为myfunction.js，初始化的入口函数名为initializer。</p>
+</td>
+</tr>
+<tr id="row105819201425"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p374413017443"><a name="p374413017443"></a><a name="p374413017443"></a>initializer_timeout</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p674419016442"><a name="p674419016442"></a><a name="p674419016442"></a>初始化超时时间，超时函数将被强行停止，范围1～300秒。</p>
+</td>
+</tr>
+<tr id="row658520154217"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p167441016444"><a name="p167441016444"></a><a name="p167441016444"></a>func_vpc</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p874490104410"><a name="p874490104410"></a><a name="p874490104410"></a>vpc配置，请参考<a href="#table11522131317013">表4</a>。</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-FuncUrn格式如下。
+**表 2**  func\_code参数说明
+
+<a name="table18312152434512"></a>
+<table><thead align="left"><tr id="row73120247459"><th class="cellrowborder" valign="top" width="30.080000000000002%" id="mcps1.2.3.1.1"><p id="p772853624514"><a name="p772853624514"></a><a name="p772853624514"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="69.92%" id="mcps1.2.3.1.2"><p id="p1563154174512"><a name="p1563154174512"></a><a name="p1563154174512"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row11312102412456"><td class="cellrowborder" valign="top" width="30.080000000000002%" headers="mcps1.2.3.1.1 "><p id="p187281036104520"><a name="p187281036104520"></a><a name="p187281036104520"></a>file</p>
+</td>
+<td class="cellrowborder" valign="top" width="69.92%" headers="mcps1.2.3.1.2 "><p id="p126354116451"><a name="p126354116451"></a><a name="p126354116451"></a>函数代码内容，接口返回空</p>
+</td>
+</tr>
+<tr id="row19312424104514"><td class="cellrowborder" valign="top" width="30.080000000000002%" headers="mcps1.2.3.1.1 "><p id="p16728123614517"><a name="p16728123614517"></a><a name="p16728123614517"></a>link</p>
+</td>
+<td class="cellrowborder" valign="top" width="69.92%" headers="mcps1.2.3.1.2 "><p id="p12631141174510"><a name="p12631141174510"></a><a name="p12631141174510"></a>函数代码链接，接口返回空</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 3**  strategy\_config参数说明
+
+<a name="table4775818446"></a>
+<table><thead align="left"><tr id="row17785844414"><th class="cellrowborder" valign="top" width="29.470000000000002%" id="mcps1.2.3.1.1"><p id="p771581446"><a name="p771581446"></a><a name="p771581446"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="70.53%" id="mcps1.2.3.1.2"><p id="p974580442"><a name="p974580442"></a><a name="p974580442"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row47195819446"><td class="cellrowborder" valign="top" width="29.470000000000002%" headers="mcps1.2.3.1.1 "><p id="p17775834410"><a name="p17775834410"></a><a name="p17775834410"></a>concurrency</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.53%" headers="mcps1.2.3.1.2 "><p id="p13755817443"><a name="p13755817443"></a><a name="p13755817443"></a>0：函数被禁用。</p>
+<p id="p1411826144918"><a name="p1411826144918"></a><a name="p1411826144918"></a>-1：函数被启用。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 4**  func\_vpc参数说明
+
+<a name="table11522131317013"></a>
+<table><thead align="left"><tr id="row5523191315016"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p9548942414"><a name="p9548942414"></a><a name="p9548942414"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p1354814421111"><a name="p1354814421111"></a><a name="p1354814421111"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p35481142416"><a name="p35481142416"></a><a name="p35481142416"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p145488421311"><a name="p145488421311"></a><a name="p145488421311"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row115231137012"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1754818422012"><a name="p1754818422012"></a><a name="p1754818422012"></a>vpc_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p155481421118"><a name="p155481421118"></a><a name="p155481421118"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1254814218116"><a name="p1254814218116"></a><a name="p1254814218116"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p9548542519"><a name="p9548542519"></a><a name="p9548542519"></a>虚拟私有云名称</p>
+</td>
+</tr>
+<tr id="row10523181319015"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1054814213111"><a name="p1054814213111"></a><a name="p1054814213111"></a>vpc_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p13548194214113"><a name="p13548194214113"></a><a name="p13548194214113"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p11548104211113"><a name="p11548104211113"></a><a name="p11548104211113"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p65482422118"><a name="p65482422118"></a><a name="p65482422118"></a>虚拟私有云唯一标识</p>
+</td>
+</tr>
+<tr id="row1852311320018"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p135483421012"><a name="p135483421012"></a><a name="p135483421012"></a>subnet_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p454811421615"><a name="p454811421615"></a><a name="p454811421615"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p7548142516"><a name="p7548142516"></a><a name="p7548142516"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1054820424111"><a name="p1054820424111"></a><a name="p1054820424111"></a>子网名称</p>
+</td>
+</tr>
+<tr id="row18523613406"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p35484421318"><a name="p35484421318"></a><a name="p35484421318"></a>subnet_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p17548242813"><a name="p17548242813"></a><a name="p17548242813"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p18548194211112"><a name="p18548194211112"></a><a name="p18548194211112"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1654817421817"><a name="p1654817421817"></a><a name="p1654817421817"></a>子网编号</p>
+</td>
+</tr>
+<tr id="row452391317018"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p16548194217113"><a name="p16548194217113"></a><a name="p16548194217113"></a>cidr</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1854824210114"><a name="p1854824210114"></a><a name="p1854824210114"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p125491424111"><a name="p125491424111"></a><a name="p125491424111"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p754917421019"><a name="p754917421019"></a><a name="p754917421019"></a>子网掩码</p>
+</td>
+</tr>
+<tr id="row175236131507"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p115492042813"><a name="p115492042813"></a><a name="p115492042813"></a>gateway</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p6549134214110"><a name="p6549134214110"></a><a name="p6549134214110"></a>string</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p9549184215114"><a name="p9549184215114"></a><a name="p9549184215114"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p3549194218111"><a name="p3549194218111"></a><a name="p3549194218111"></a>网关</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+funcurn格式如下。
 
 ```
 urn:fss:<region_id>:<project_id>:function:<package>:<function_name>[:<version>|:!<alias>]
