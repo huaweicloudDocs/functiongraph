@@ -176,7 +176,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row15303143431"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p27432024417"><a name="p27432024417"></a><a name="p27432024417"></a>dependency_pkg</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p97431003446"><a name="p97431003446"></a><a name="p97431003446"></a>函数依赖的第三方软件zip包在obs上的地址，多个第三方软件要打包到一个zip文件中，如果未使用第三方软件。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p97431003446"><a name="p97431003446"></a><a name="p97431003446"></a>函数依赖的第三方软件zip包在obs上的地址，多个第三方软件要打包到一个zip文件中，如果未使用第三方软件，此处不填。</p>
 </td>
 </tr>
 <tr id="row02151805439"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p157431703447"><a name="p157431703447"></a><a name="p157431703447"></a>description</p>
