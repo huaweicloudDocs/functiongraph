@@ -1,4 +1,4 @@
-# 使用CTS触发器<a name="functiongraph_01_0209"></a>
+# 使用CTS触发器<a name="ZH-CN_TOPIC_0149027283"></a>
 
 本节介绍创建CTS触发器，通过增加自定义操作，触发函数运行，通过CTS云审计服务获取操作记录，供用户了解CTS触发器的使用方法。
 
@@ -12,7 +12,7 @@
 
 ## 创建CTS触发器<a name="section1079628104617"></a>
 
-1.  登录FunctionGraph，进入“函数”界面，选择“函数列表”。
+1.  登录FunctionGraph控制台，进入“函数”界面，选择“函数列表”。
 2.  单击界面中“创建函数“，进入“创建函数“界面。
 3.  在“创建函数“界面填写函数信息。
     1.  模板选择“已有模板”。
@@ -77,7 +77,7 @@
 
 ## 配置CTS事件触发函数<a name="section1581734219447"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图3](#fig127617362010)所示，弹出“配置测试事件”页。
 
@@ -140,7 +140,7 @@
     >        "service_type": "FunctionGraph",  
     >        "resource_type": "graph",  
     >        "resource_name": "workflow-2be1",  
-    >        "resource_id": "urn:fgs:cn-north-1:2d1d891d93054bbaa69b9e866c0971ac:graph:workflow-2be1",  
+    >        "resource_id": "urn:fgs:xxxxxx:2d1d891d93054bbaa69b9e866c0971ac:graph:workflow-2be1",  
     >        "trace_name": "deleteGraph",  
     >        "trace_type": "ConsoleAction",  
     >        "record_time": "2018/06/26 08:54:07 GMT+08:00",  

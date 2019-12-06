@@ -1,4 +1,4 @@
-# 使用DIS触发器<a name="functiongraph_01_0206"></a>
+# 使用DIS触发器<a name="ZH-CN_TOPIC_0149027303"></a>
 
 本节介绍创建DIS触发器，使用系统内置的事件模板配置dis事件，触发函数运行。供用户了解DIS触发器的使用方法。
 
@@ -8,7 +8,7 @@
 
 进行操作之前，需要做好以下准备。
 
--   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建HelloWorld函数](代码上传方式创建HelloWorld函数.md)。
+-   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
 -   已经创建接入通道，此处以dis-function为例，创建过程请参考[创建DIS通道](https://support.huaweicloud.com/usermanual-dis/zh-cn_topic_0034903799.html)。
 
 ## 设置函数委托<a name="section04468211232"></a>
@@ -17,7 +17,7 @@
 
 由于创建HelloWorld函数的时候没有设置委托，所以需要先修改函数委托。
 
-1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，单击“配置”，进入“配置”页签。
 4.  在“配置”页签，修改函数委托，将委托修改为[创建委托](创建委托.md)创建的serverless-trust委托。
@@ -25,7 +25,7 @@
 
 ## 创建DIS触发器<a name="section680116461234"></a>
 
-1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，单击“触发器”页签。
 4.  在“触发器”页签，单击“创建触发器”，如[图1](#fig19657829242)所示，弹出“创建触发器”界面。
@@ -84,7 +84,7 @@
 
 ## 配置dis事件触发函数<a name="section15396107171918"></a>
 
-1.  登录[FunctionGraph](https://auth.huaweicloud.com/authui/login?service=https%3A%2F%2Fconsole.huaweicloud.com%2Ffunctiongraph%2F%3Fregion%3Dcn-north-1%26locale%3Dzh-cn%26activityId%3D3%26cloud_route_state%3D%2Fserverless%2Fdashboard#/login)，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入函数详情页。
 3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图3](#fig112033514369)所示，弹出“配置测试事件”页。
 

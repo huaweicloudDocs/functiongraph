@@ -1,4 +1,4 @@
-# 使用APIG触发器<a name="functiongraph_01_0204"></a>
+# 使用APIG触发器<a name="ZH-CN_TOPIC_0149027363"></a>
 
 本节介绍创建APIG触发器，使用API调用函数运行。供用户了解APIG触发器的使用方法。
 
@@ -12,7 +12,7 @@
 
 ## 创建APIG触发器<a name="section0341823105810"></a>
 
-1.  用户登录FunctionGraph，进入“函数”界面。
+1.  用户登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击“创建函数”，进入“创建函数”界面。
 3.  在“创建函数”界面填写函数信息。
     1.  模板选择“已有模板”。
@@ -55,8 +55,8 @@
         </td>
         <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p11141193616518"><a name="p11141193616518"></a><a name="p11141193616518"></a>API认证方式：</p>
         <p id="p43523042143943"><a name="p43523042143943"></a><a name="p43523042143943"></a>APP： 采用Appkey&amp;Appsecret认证，安全级别高，推荐使用，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307002.html" target="_blank" rel="noopener noreferrer">APP认证</a>。</p>
-        <p id="p6365254143945"><a name="p6365254143945"></a><a name="p6365254143945"></a>IAM： 华为IAM认证，只允许华为云用户能访问，安全级别中等，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307020.html" target="_blank" rel="noopener noreferrer">IAM认证</a>。</p>
-        <p id="p12438132211915"><a name="p12438132211915"></a><a name="p12438132211915"></a>None： 无认证模式，所有用户均可访问。</p>
+        <p id="p16921958104219"><a name="p16921958104219"></a><a name="p16921958104219"></a>IAM： IAM认证，只允许公有云用户能访问，安全级别中等，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307020.html" target="_blank" rel="noopener noreferrer">IAM认证</a>。</p>
+        <p id="p6365254143945"><a name="p6365254143945"></a><a name="p6365254143945"></a>None： 无认证模式，所有用户均可访问。</p>
         <p id="p55389227143952"><a name="p55389227143952"></a><a name="p55389227143952"></a>选择None。</p>
         </td>
         </tr>
@@ -85,7 +85,7 @@
     ![](figures/APIG触发器.png "APIG触发器")
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >1.  APIG触发器调用地址：https://4e5cb396-e812-42b3-85bf-a7aac3cd6cba.apigw.cn-north-1.huaweicloud.com/read\_apig\_message  
+    >1.  APIG触发器调用地址：https://4e5cb396-e812-42b3-85bf-a7aac3cd6cba.apigw.xx-xxxx-1.xxxxxxxxx.com/read\_apig\_message。  
     >2.  API触发器创建完成后，会在API网关生成名为read\_apig\_message的API，单击API名称，跳转至API网关服务。  
 
 
@@ -98,7 +98,7 @@
 
 2.  根据提示，补充responseType为html，将以下地址输入浏览器地址栏。
 
-    https://4e5cb396-e812-42b3-85bf-a7aac3cd6cba.apigw.cn-north-1.huaweicloud.com/read\_apig\_message?responseType=html
+    https://4e5cb396-e812-42b3-85bf-a7aac3cd6cba.apigw.xxxx-xxxxx-1.xxxxxxcloud.com/read\_apig\_message?responseType=html。
 
 3.  函数执行完毕，得到返回结果，如[图4 返回结果](#fig640414181488)所示。
 
@@ -108,7 +108,7 @@
 
 ## 查看函数运行结果<a name="section4315195519585"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击read\_apig\_message函数名称，进入read\_apig\_message函数详情界面。
 3.  在read\_apig\_message函数详情界面，单击“日志”页签，查询函数运行日志。
 4.  单击操作栏的“查看上下文”，查看日志详细信息。

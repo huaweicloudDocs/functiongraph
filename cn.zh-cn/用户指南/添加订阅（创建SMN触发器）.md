@@ -1,10 +1,10 @@
-# 添加订阅（创建SMN触发器）<a name="functiongraph_01_0560"></a>
+# 添加订阅（创建SMN触发器）<a name="ZH-CN_TOPIC_0149027312"></a>
 
 用户可以在函数详情页触发器页签创建触发器，也可以在消息主题添加FunctionGraph（函数）协议的订阅，生成SMN触发器。
 
 添加订阅（创建SMN触发器）步骤如下。
 
-1.  用户登录“消息通知服务”，单击“主题管理\>主题”，进入“主题”界面。
+1.  用户登录“消息通知服务”控制台，单击“主题管理\>主题”，进入“主题”界面。
 2.  在“主题”界面，单击“SMN-Test”消息主题名称，进入“主题详情页”。
 3.  在“主题详情页”，单击“添加订阅”，弹出“添加订阅”界面。
 4.  在“添加订阅”界面，填写订阅信息，如[表1](#table4277812911123)所示，带\*参数为必填项。
@@ -26,7 +26,7 @@
     <tr id="row1040996411123"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p4604418102450"><a name="p4604418102450"></a><a name="p4604418102450"></a>*订阅终端</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p23438155104255"><a name="p23438155104255"></a><a name="p23438155104255"></a>操作步骤如下。</p>
-    <a name="ol63784051104119"></a><a name="ol63784051104119"></a><ol id="ol63784051104119"><li>单击“<a name="image12851510163510"></a><a name="image12851510163510"></a><span><img id="image12851510163510" src="figures/icon-add.png"></span>”，弹出“选择订阅终端”界面。</li><li>在“选择订阅终端”界面，选择<a href="代码上传方式创建HelloWorld函数.md">代码上传方式创建HelloWorld函数</a>中创建的HelloWorld函数。</li><li>单击“确定”。</li></ol>
+    <a name="ol63784051104119"></a><a name="ol63784051104119"></a><ol id="ol63784051104119"><li>单击“<a name="image12851510163510"></a><a name="image12851510163510"></a><span><img id="image12851510163510" src="figures/icon-add.png"></span>”，弹出“选择订阅终端”界面。</li><li>在“选择订阅终端”界面，选择<a href="代码上传方式创建运行和初始化函数.md">代码上传方式创建运行和初始化函数</a>中创建的HelloWorld函数。</li><li>单击“确定”。</li></ol>
     </td>
     </tr>
     <tr id="row38401286103746"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p10067254103746"><a name="p10067254103746"></a><a name="p10067254103746"></a>*版本</p>

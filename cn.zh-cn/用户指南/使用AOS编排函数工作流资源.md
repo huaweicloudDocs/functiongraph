@@ -1,14 +1,14 @@
-# 使用AOS编排函数工作流资源<a name="functiongraph_01_0405"></a>
+# 使用AOS编排函数工作流资源<a name="ZH-CN_TOPIC_0149027408"></a>
 
-应用编排服务（Application Orchestration Service，简称AOS）可以帮助您将应用一键式部署到华为云上，简化相关云服务管理操作。AOS通过模板来描述和编排应用及相关云服务，实现自动化部署应用、创建云服务，提供E2E应用全生命周期运维管控能力。
+应用编排服务（Application Orchestration Service，简称AOS）可以帮助您将应用一键式部署到公有云上，简化相关云服务管理操作。AOS通过模板来描述和编排应用及相关云服务，实现自动化部署应用、创建云服务，提供E2E应用全生命周期运维管控能力。
 
-FunctionGraph工作流实现了华为应用编排服务AOS的对接，可以通过AOS编排服务将云资源一键式部署到华为云上，实现业务流程自动化。
+FunctionGraph工作流实现了应用编排服务AOS的对接，可以通过AOS编排服务将云资源一键式部署到公有云上，实现业务流程自动化。
 
 使用AOS编排服务编排FunctionGraph资源，可以实现以下功能：
 
 -   通过AOS模板创建堆栈来管理函数资源。
 -   通过AOS模板创建堆栈来管理触发器资源。
--   结合其他华为云服务，编排复杂云资源集合。
+-   结合其他云服务，编排复杂云资源集合。
 
 ## 场景介绍<a name="section83889103414"></a>
 
@@ -28,7 +28,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
 
 1、创建OBS桶
 
-用户登录华为云控制台，进入“[对象存储服务](https://storage.huaweicloud.com/obs/)”，单击“创建桶”，进入“创建桶”界面。
+用户登录公有云控制台，进入“对象存储服务”，单击“创建桶”，进入“创建桶”界面。
 
 在“创建桶”界面，填写存储桶信息，如[图1](#fig1774412644714)所示。
 
@@ -57,11 +57,11 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
 
 3、配置函数委托
 
-因为函数需要访问OBS服务，所以需要给予函数访问OBS的权限，为函数设置OBS的委托。同样，在函数中需要获取IAM提供的用户AK、SK，所以也需要设置IAM的委托，配置的委托名称需填入后续配置模板参数中。具体操作请参考[创建委托](https://support.huaweicloud.com/bestpractice-functiongraph/functiongraph_05_0401.html)。
+因为函数需要访问OBS服务，所以需要给予函数访问OBS的权限，为函数设置OBS的委托。同样，在函数中需要获取IAM提供的用户AK、SK，所以也需要设置IAM的委托，配置的委托名称需填入后续配置模板参数中。请参见[如何创建委托](http://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046613147.html)。
 
 ## 导入AOS模板<a name="section33649418811"></a>
 
-建议通过导入现有的AOS模板来编排函数工作流服务资源。我们将提供一些典型应用场景的AOS公共模板来帮助您快速创建堆栈，您可将AOS模板直接导入AOS设计器，然后根据业务情况修改AOS模板的具体配置。如您需要自行通过AOS设计器设计AOS模板，可参考AOS服务[帮助文档](https://support.huaweicloud.com/usermanual-aos/aos_01_0000.html)。
+通过导入现有的AOS模板来编排函数工作流服务资源，您可将AOS模板直接导入AOS设计器，然后根据业务情况修改AOS模板的具体配置。如您需要自行通过AOS设计器设计AOS模板，可参考AOS服务[帮助文档](https://support.huaweicloud.com/usermanual-aos/aos_01_0000.html)。
 
 本例的完整AOS模板可[点此下载](https://functionstage-examples.obs.cn-north-1.myhwclouds.com/blueprint-function-watermark.yaml)，在AOS设计器中点击页面顶部的“打开”按钮，将下载的AOS模板导入AOS设计器，然后单击设计器页面顶部的“保存”按钮，输入以下参数，单击“保存”。
 
@@ -104,7 +104,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
         </tr>
         <tr id="row1418033163717"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p918013315373"><a name="p918013315373"></a><a name="p918013315373"></a>memorySize</p>
         </td>
-        <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p2180031371"><a name="p2180031371"></a><a name="p2180031371"></a>函数消耗的内存，默认128MB</p>
+        <td class="cellrowborder" valign="top" width="76%" headers="mcps1.2.3.1.2 "><p id="p2180031371"><a name="p2180031371"></a><a name="p2180031371"></a>函数消耗的内存，单位M，取值范围为：128、256、512、768、1024、1280、1536、1792、2048、2560、3072、3584、4096。默认128MB</p>
         </td>
         </tr>
         <tr id="row19180834373"><td class="cellrowborder" valign="top" width="24%" headers="mcps1.2.3.1.1 "><p id="p4180203103712"><a name="p4180203103712"></a><a name="p4180203103712"></a>name</p>
@@ -133,7 +133,6 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
         **图 5**  堆栈参数配置<a name="fig141831735372"></a>  
         ![](figures/堆栈参数配置.png "堆栈参数配置")
 
-
 5.  单击“下一步”，查看堆栈信息，确认无误后，单击“创建堆栈”。
 
     系统自动跳转到堆栈详情页面，可查看到当前堆栈为创建中。此处创建了函数、OBS触发器和两个OBS桶。
@@ -144,7 +143,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
     ![](figures/堆栈已创建成功.png "堆栈已创建成功")
 
 7.  查看已创建的云服务。
-    1.  登录华为云控制台。
+    1.  登录公有云控制台。
     2.  选择“计算 \> 函数工作流FunctionGraph”，可查看到已创建成功一个带OBS触发器的函数。
     3.  选择“存储 \> 对象存储服务OBS”，可查看到自动创建的两个OBS桶。
 

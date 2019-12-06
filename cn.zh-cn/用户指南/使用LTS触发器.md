@@ -1,4 +1,4 @@
-# 使用LTS触发器<a name="functiongraph_01_0208"></a>
+# 使用LTS触发器<a name="ZH-CN_TOPIC_0149027432"></a>
 
 本节介绍创建LTS触发器，供用户了解LTS触发器的使用方法。
 
@@ -8,14 +8,14 @@
 
 进行操作之前，需要做好以下准备。
 
--   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建HelloWorld函数](代码上传方式创建HelloWorld函数.md)。
+-   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
 -   已经创建日志组，此处以LogGroup1为例，创建过程请参考[创建日志组](https://support.huaweicloud.com/usermanual-lts/zh-cn_topic_0071259182.html)。
 -   已经创建日志主题，此处以LogTopic1为例，创建过程请参考[创建日志主题](https://support.huaweicloud.com/usermanual-lts/zh-cn_topic_0076874392.html)。
 -   配置Agent，快速将ECS等服务器上日志采集到指定的日志组，详情请参考[Agent配置](https://support.huaweicloud.com/qs-lts/zh-cn_topic_0078543180.html)。
 
 ## 创建LTS触发器<a name="section198021231234"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情界面，单击“触发器”页签。
 4.  在“触发器”页签，单击“创建触发器”，如[图1](#fig1779716147018)所示，弹出“创建触发器”界面。
@@ -57,7 +57,7 @@
 
 ## 配置LTS事件触发函数<a name="section15586193653118"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图3](#fig12868111714416)所示，弹出“配置测试事件”页。
 

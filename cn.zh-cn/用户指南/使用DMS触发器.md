@@ -1,4 +1,4 @@
-# 使用DMS触发器<a name="functiongraph_01_0203"></a>
+# 使用DMS触发器<a name="ZH-CN_TOPIC_0149027343"></a>
 
 本节介绍创建DMS触发器，创建消息，触发函数运行。供用户了解DMS触发器的使用方法。
 
@@ -9,7 +9,7 @@
 进行操作之前，需要做好以下准备。
 
 -   已经创建消息队列和消费组，此处以队列queue-test、消费组group-dms为例，创建过程请参考[创建队列](https://support.huaweicloud.com/usermanual-dms/zh-cn_topic_0034678324.html)、[创建消费组](https://support.huaweicloud.com/usermanual-dms/zh-cn_topic_0034678327.html)。
--   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建HelloWorld函数](代码上传方式创建HelloWorld函数.md)。
+-   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
 
 ## 设置函数委托<a name="section82781591521"></a>
 
@@ -17,14 +17,14 @@
 
 由于创建HelloWorld函数的时候没有设置委托，所以需要先修改函数委托。
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情页，单击“配置”，进入“配置”页签。
 4.  在“配置”页签，修改函数委托，将委托修改为[创建委托](创建委托.md)中创建的serverless-trust委托。单击“保存”，完成委托修改。
 
 ## 创建DMS触发器<a name="section165781325165412"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情界面，单击“触发器”页签。
 4.  在“触发器”页签，单击“创建触发器”，如[图1](#fig1259474291314)所示，弹出“创建触发器”界面。
@@ -117,7 +117,7 @@
 
 ## 查看函数运行结果<a name="section118763164575"></a>
 
-1.  登录FunctionGraph，进入“函数”界面。
+1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
 3.  在HelloWorld函数详情界面，单击“日志”页签，查询函数运行日志。
 4.  单击操作栏的“查看上下文”，查看日志详细信息。
