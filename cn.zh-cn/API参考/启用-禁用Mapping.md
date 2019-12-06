@@ -1,4 +1,4 @@
-# 启用、禁用Mapping<a name="functiongraph_06_0730"></a>
+# 启用、禁用Mapping<a name="ZH-CN_TOPIC_0115410468"></a>
 
 ## 功能介绍<a name="section51379511"></a>
 
@@ -38,7 +38,7 @@ PUT /v1.0/\{project\_id\}/trigger\_graph\_mappings/\{mapping\_id\}
 </tbody>
 </table>
 
-## 请求<a name="section990892"></a>
+## 请求消息<a name="section990892"></a>
 
 **请求参数**
 
@@ -69,7 +69,36 @@ PUT /v1.0/\{project\_id\}/trigger\_graph\_mappings/\{mapping\_id\}
 </tbody>
 </table>
 
-**请求样例**
+## 响应消息<a name="section8918034"></a>
+
+**响应参数**
+
+响应参数如[表3](#table4105182711362)所示。  
+
+**表 3**  响应参数
+
+<a name="table4105182711362"></a>
+<table><thead align="left"><tr id="row2176336011362"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.4.1.1"><p id="p1800170711362"><a name="p1800170711362"></a><a name="p1800170711362"></a>名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="31.313131313131308%" id="mcps1.2.4.1.2"><p id="p4885216711362"><a name="p4885216711362"></a><a name="p4885216711362"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.4.1.3"><p id="p6471145111362"><a name="p6471145111362"></a><a name="p6471145111362"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row713620811362"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.1 "><p id="p4116199811362"><a name="p4116199811362"></a><a name="p4116199811362"></a>response</p>
+</td>
+<td class="cellrowborder" valign="top" width="31.313131313131308%" headers="mcps1.2.4.1.2 "><p id="p4578751611362"><a name="p4578751611362"></a><a name="p4578751611362"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.4.1.3 "><p id="p1780128211362"><a name="p1780128211362"></a><a name="p1780128211362"></a>此次操作的返回信息</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 示例<a name="section2438183083217"></a>
+
+**请求示例**
 
 ```
 {
@@ -77,50 +106,15 @@ PUT /v1.0/\{project\_id\}/trigger\_graph\_mappings/\{mapping\_id\}
 }
 ```
 
-## 响应<a name="section8918034"></a>
+**响应示例**
 
--   正常响应
-
-    **响应参数**
-
-    响应参数如[表3](#table4105182711362)所示。  
-
-    **表 3**  响应参数
-
-    <a name="table4105182711362"></a>
-    <table><thead align="left"><tr id="row2176336011362"><th class="cellrowborder" valign="top" width="20.202020202020204%" id="mcps1.2.4.1.1"><p id="p1800170711362"><a name="p1800170711362"></a><a name="p1800170711362"></a>名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="31.313131313131308%" id="mcps1.2.4.1.2"><p id="p4885216711362"><a name="p4885216711362"></a><a name="p4885216711362"></a>参数类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="48.484848484848484%" id="mcps1.2.4.1.3"><p id="p6471145111362"><a name="p6471145111362"></a><a name="p6471145111362"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row713620811362"><td class="cellrowborder" valign="top" width="20.202020202020204%" headers="mcps1.2.4.1.1 "><p id="p4116199811362"><a name="p4116199811362"></a><a name="p4116199811362"></a>response</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="31.313131313131308%" headers="mcps1.2.4.1.2 "><p id="p4578751611362"><a name="p4578751611362"></a><a name="p4578751611362"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="48.484848484848484%" headers="mcps1.2.4.1.3 "><p id="p1780128211362"><a name="p1780128211362"></a><a name="p1780128211362"></a>此次操作的返回信息</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-    **响应示例**
-
-    ```
-    {
-        "response": "OK"
-    }
-    ```
-
-
--   异常响应
-
-    请参考[异常响应](请求结果.md#section88241732388)。
-
+```
+{
+    "response": "OK"
+}
+```
 
 ## 返回值<a name="section370272717123"></a>
 
-请参考[返回值](请求结果.md#section20306194210386)。
+状态码请参见[状态码](状态码.md)。
 

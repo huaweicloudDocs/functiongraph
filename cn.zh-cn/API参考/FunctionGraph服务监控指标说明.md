@@ -1,4 +1,4 @@
-# FunctionGraph服务监控指标说明<a name="functiongraph_06_1340"></a>
+# FunctionGraph服务监控指标说明<a name="ZH-CN_TOPIC_0134295092"></a>
 
 ## 功能说明<a name="section37797504358"></a>
 
@@ -49,7 +49,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p9609154311376"><a name="p9609154311376"></a><a name="p9609154311376"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p160916436373"><a name="p160916436373"></a><a name="p160916436373"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p160916436373"><a name="p160916436373"></a><a name="p160916436373"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p660974323719"><a name="p660974323719"></a><a name="p660974323719"></a>该指标用于统计函数调用次数</p>
 </td>
@@ -70,7 +70,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p367510411400"><a name="p367510411400"></a><a name="p367510411400"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p861064353711"><a name="p861064353711"></a><a name="p861064353711"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p861064353711"><a name="p861064353711"></a><a name="p861064353711"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p10610543193720"><a name="p10610543193720"></a><a name="p10610543193720"></a>该指标用于统计函数调用错误次数</p>
 </td>
@@ -91,7 +91,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p11563194412405"><a name="p11563194412405"></a><a name="p11563194412405"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p7610943183717"><a name="p7610943183717"></a><a name="p7610943183717"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p7610943183717"><a name="p7610943183717"></a><a name="p7610943183717"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p12610154315374"><a name="p12610154315374"></a><a name="p12610154315374"></a>该指标用于统计函数调用被拒绝次数</p>
 </td>
@@ -112,7 +112,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p616614664018"><a name="p616614664018"></a><a name="p616614664018"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p20611343133710"><a name="p20611343133710"></a><a name="p20611343133710"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p20611343133710"><a name="p20611343133710"></a><a name="p20611343133710"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p1461114433378"><a name="p1461114433378"></a><a name="p1461114433378"></a>该指标用于统计函数调用平均运行时间</p>
 </td>
@@ -133,7 +133,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p15576134744014"><a name="p15576134744014"></a><a name="p15576134744014"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p1361114318375"><a name="p1361114318375"></a><a name="p1361114318375"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p1361114318375"><a name="p1361114318375"></a><a name="p1361114318375"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p146111143173712"><a name="p146111143173712"></a><a name="p146111143173712"></a>该指标用于统计函数调用最大运行时间</p>
 </td>
@@ -154,7 +154,7 @@ SYS.FunctionGraph
 </td>
 <td class="cellrowborder" valign="top" width="8.080808080808081%" headers="mcps1.2.11.1.7 "><p id="p188814487404"><a name="p188814487404"></a><a name="p188814487404"></a>-</p>
 </td>
-<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p86121043163717"><a name="p86121043163717"></a><a name="p86121043163717"></a>int</p>
+<td class="cellrowborder" valign="top" width="7.070707070707072%" headers="mcps1.2.11.1.8 "><p id="p86121043163717"><a name="p86121043163717"></a><a name="p86121043163717"></a>Int</p>
 </td>
 <td class="cellrowborder" valign="top" width="16.161616161616163%" headers="mcps1.2.11.1.9 "><p id="p1361234312372"><a name="p1361234312372"></a><a name="p1361234312372"></a>该指标用于统计函数调用最小运行时间</p>
 </td>

@@ -1,4 +1,4 @@
-# Worker发送触发器消息<a name="functiongraph_06_1010"></a>
+# Worker发送触发器消息<a name="ZH-CN_TOPIC_0115410453"></a>
 
 ## 功能介绍<a name="section55493137"></a>
 
@@ -59,7 +59,7 @@ POST /v1.0/\{project\_id\}/worker\_messages
 >![](public_sys-resources/icon-note.gif) **说明：**   
 >支持的触发器类型为：\{workrequest,heartbeat,worksuccess,workfailure\}。  
 
-## 请求<a name="section28496157141456"></a>
+## 请求消息<a name="section28496157141456"></a>
 
 不同的事件源的发送触发器消息请求中携带的消息结构不同。
 
@@ -237,102 +237,95 @@ POST /v1.0/\{project\_id\}/worker\_messages
     </table>
 
 
--   Worker触发器消息样例
+## 响应消息<a name="section24885284"></a>
 
-    WorkRequest触发器消息
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>-   正常响应只存在于同步的触发器消息发送请求的返回值中，其他异步触发器消息发送请求的正常响应为空。  
+>-   目前，同步触发器消息请求为：WorkRequest  
 
-    ```
-    {
-        "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkRequest_event-28fcb8447a67-d48d-474a-632f-8fb6b67e9bbf_1505544100"
-    }
-    ```
+**响应参数**
 
-    Heartbeat触发器消息
+响应参数如[表6](#table1262276014348)所示
 
-    ```
-    {
-        "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_HeartBeat_event-88af46478e85-f47f-47e2-5f43-e8011baf2afd_1505544125",
-        "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4"
-    }
-    ```
+**表 6**  响应参数
 
-    WorkSuccess触发器消息
+<a name="table1262276014348"></a>
+<table><thead align="left"><tr id="row5026901014348"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.1"><p id="p4525802514348"><a name="p4525802514348"></a><a name="p4525802514348"></a>名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.2"><p id="p4202143714348"><a name="p4202143714348"></a><a name="p4202143714348"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="49.494949494949495%" id="mcps1.2.4.1.3"><p id="p4829323714348"><a name="p4829323714348"></a><a name="p4829323714348"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1943813814348"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.1 "><p id="p3098533114348"><a name="p3098533114348"></a><a name="p3098533114348"></a>task_token</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.2 "><p id="p2678388114348"><a name="p2678388114348"></a><a name="p2678388114348"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="49.494949494949495%" headers="mcps1.2.4.1.3 "><p id="p2201072314348"><a name="p2201072314348"></a><a name="p2201072314348"></a>任务token</p>
+</td>
+</tr>
+<tr id="row6387878114348"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.1 "><p id="p679877714348"><a name="p679877714348"></a><a name="p679877714348"></a>work_item</p>
+</td>
+<td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.2 "><p id="p1383006114348"><a name="p1383006114348"></a><a name="p1383006114348"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="49.494949494949495%" headers="mcps1.2.4.1.3 "><p id="p4649318614348"><a name="p4649318614348"></a><a name="p4649318614348"></a>任务相关信息</p>
+</td>
+</tr>
+</tbody>
+</table>
 
-    ```
-    {
-        "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkSuccess_event-c7ce9d4f603c-29fd-4295-7d68-796f19286920_1505544141",
-        "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
-        "result": "{\"abc\":\"123\"}" 
-    }
-    ```
+## 示例<a name="section620015511433"></a>
 
-    WorkFailure触发器消息
+**Worker触发器消息示例**
 
-    ```
-    {
-        "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkFailure_event-13d7affbbfe4-4f57-44a8-7507-2f4898a901ca_1505544157",
-        "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
-        "error": "{\"abc\":\"123\"}" 
-    }
-    ```
+WorkRequest触发器消息
 
+```
+{
+    "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkRequest_event-28fcb8447a67-d48d-474a-632f-8fb6b67e9bbf_1505544100"
+}
+```
 
-## 响应<a name="section24885284"></a>
+Heartbeat触发器消息
 
--   正常响应
+```
+{
+    "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_HeartBeat_event-88af46478e85-f47f-47e2-5f43-e8011baf2afd_1505544125",
+    "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4"
+}
+```
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >-   正常响应只存在于同步的触发器消息发送请求的返回值中，其他异步触发器消息发送请求的正常响应为空。  
-    >-   目前，同步触发器消息请求为：WorkRequest  
+WorkSuccess触发器消息
 
-    **响应参数**
+```
+{
+    "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkSuccess_event-c7ce9d4f603c-29fd-4295-7d68-796f19286920_1505544141",
+    "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
+    "result": "{\"abc\":\"123\"}" 
+}
+```
 
-    正常响应参数如[表6](#table1262276014348)所示
+WorkFailure触发器消息
 
-    **表 6**  正常响应参数
+```
+{
+    "trigger_urn": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:trigger:Worker_WorkFailure_event-13d7affbbfe4-4f57-44a8-7507-2f4898a901ca_1505544157",
+    "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
+    "error": "{\"abc\":\"123\"}" 
+}
+```
 
-    <a name="table1262276014348"></a>
-    <table><thead align="left"><tr id="row5026901014348"><th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.1"><p id="p4525802514348"><a name="p4525802514348"></a><a name="p4525802514348"></a>名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="25.252525252525253%" id="mcps1.2.4.1.2"><p id="p4202143714348"><a name="p4202143714348"></a><a name="p4202143714348"></a>参数类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="49.494949494949495%" id="mcps1.2.4.1.3"><p id="p4829323714348"><a name="p4829323714348"></a><a name="p4829323714348"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row1943813814348"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.1 "><p id="p3098533114348"><a name="p3098533114348"></a><a name="p3098533114348"></a>task_token</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.2 "><p id="p2678388114348"><a name="p2678388114348"></a><a name="p2678388114348"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="49.494949494949495%" headers="mcps1.2.4.1.3 "><p id="p2201072314348"><a name="p2201072314348"></a><a name="p2201072314348"></a>任务token</p>
-    </td>
-    </tr>
-    <tr id="row6387878114348"><td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.1 "><p id="p679877714348"><a name="p679877714348"></a><a name="p679877714348"></a>work_item</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="25.252525252525253%" headers="mcps1.2.4.1.2 "><p id="p1383006114348"><a name="p1383006114348"></a><a name="p1383006114348"></a>string</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="49.494949494949495%" headers="mcps1.2.4.1.3 "><p id="p4649318614348"><a name="p4649318614348"></a><a name="p4649318614348"></a>任务相关信息</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
+**响应示例**
 
--   正常响应样例
-
-    ```
-    {
-        "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
-        "work_item": "{\"question\":\"whats one plus one?\"}"
-    }
-    ```
-
-
--   异常响应
-
-    请参考[异常响应](请求结果.md#section88241732388)。
-
+```
+{
+    "task_token": "urn:fgs:cn-north-1:9800716a0c604a8690963103a85754f0:execution:workflow-8f84:e1:ae0d3e648af440af5828696f16f0d1b4",
+    "work_item": "{\"question\":\"whats one plus one?\"}"
+}
+```
 
 ## 返回值<a name="section44211207557"></a>
 
-请参考[返回值](请求结果.md#section20306194210386)。
+状态码请参见[状态码](状态码.md)。
 

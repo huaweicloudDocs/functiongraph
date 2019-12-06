@@ -1,4 +1,4 @@
-# FunctionGraph函数模型<a name="functiongraph_06_0102"></a>
+# FunctionGraph函数模型<a name="ZH-CN_TOPIC_0115410472"></a>
 
 ## 函数模型<a name="section26908673"></a>
 
@@ -8,11 +8,11 @@ FunctionGraph函数模型如下。
 { 
   "functions": [ 
    { 
-    "func_urn": "urn:fss:cn-north-1:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test", 
+    "func_urn": "urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test", 
     "func_name": "test", 
-    "user_domain": "cff01_hk", 
+    "domain_id": "cff01_hk", 
     "namespace": "7aad83af3e8d42e99ac194e8419e2c9b", 
-    "project_name": "cn-north-1", 
+    "project_name": "xxxxxxxxxx", 
     "package": "default", 
     "runtime": "Node.js6.10", 
     "timeout": 3, 
@@ -28,8 +28,7 @@ FunctionGraph函数模型如下。
     "version": "latest", 
     "image_name": "latest-5qe8e", 
     "xrole": "cff",
-"app_xrole": null 
-    "dependency_pkg": "", 
+    "app_xrole": null, 
     "description": "111", 
     "version_description": "", 
     "last_modified": "2018-03-28T11:30:32+08:00",
@@ -38,12 +37,13 @@ FunctionGraph函数模型如下。
   "link": ""
  },
  "func_vpc":null,
+ "mount_config":null,
  "depend_list": null,
  "strategy_config": {
      "concurrency": -1
  },
  "extend_config": "",
- "dependencies": null 
+ "dependencies": null,
 "initializer_handler": "index.initializer",
 "initializer_timeout": 3  
    } 
@@ -75,7 +75,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 <td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p974012024419"><a name="p974012024419"></a><a name="p974012024419"></a>函数名称。</p>
 </td>
 </tr>
-<tr id="row19450204274311"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p107401703448"><a name="p107401703448"></a><a name="p107401703448"></a>user_domain</p>
+<tr id="row19450204274311"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p107401703448"><a name="p107401703448"></a><a name="p107401703448"></a>domain_id</p>
 </td>
 <td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p974015010440"><a name="p974015010440"></a><a name="p974015010440"></a>租户名称。</p>
 </td>
@@ -97,7 +97,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row821715346434"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1741501443"><a name="p1741501443"></a><a name="p1741501443"></a>runtime</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274120064410"><a name="p1274120064410"></a><a name="p1274120064410"></a>FunctionGraph函数的执行环境，支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274120064410"><a name="p1274120064410"></a><a name="p1274120064410"></a>FunctionGraph函数的执行环境，支持Node.js6.10、Python2.7、Python3.6、Java8、Go1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1、PHP7.3。</p>
 </td>
 </tr>
 <tr id="row145081418204316"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p47413017444"><a name="p47413017444"></a><a name="p47413017444"></a>timeout</p>
@@ -174,11 +174,6 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 <td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p147431508447"><a name="p147431508447"></a><a name="p147431508447"></a>函数app使用的权限委托名称，需要IAM支持，并在IAM界面创建委托，当函数需要访问其他服务时，必须提供该字段。</p>
 </td>
 </tr>
-<tr id="row15303143431"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p27432024417"><a name="p27432024417"></a><a name="p27432024417"></a>dependency_pkg</p>
-</td>
-<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p97431003446"><a name="p97431003446"></a><a name="p97431003446"></a>函数依赖的第三方软件zip包在obs上的地址，多个第三方软件要打包到一个zip文件中，如果未使用第三方软件，此处不填。</p>
-</td>
-</tr>
 <tr id="row02151805439"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p157431703447"><a name="p157431703447"></a><a name="p157431703447"></a>description</p>
 </td>
 <td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p1274319064417"><a name="p1274319064417"></a><a name="p1274319064417"></a>函数描述。</p>
@@ -216,7 +211,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row4581320174210"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p07441602444"><a name="p07441602444"></a><a name="p07441602444"></a>dependencies</p>
 </td>
-<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p177449017441"><a name="p177449017441"></a><a name="p177449017441"></a>依赖代码包。</p>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p177449017441"><a name="p177449017441"></a><a name="p177449017441"></a>依赖代码包列表，<a href="#table3788232112820">表5</a>。</p>
 </td>
 </tr>
 <tr id="row1581820104216"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p1274416019446"><a name="p1274416019446"></a><a name="p1274416019446"></a>initializer_handler</p>
@@ -232,6 +227,11 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 <tr id="row658520154217"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p167441016444"><a name="p167441016444"></a><a name="p167441016444"></a>func_vpc</p>
 </td>
 <td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p874490104410"><a name="p874490104410"></a><a name="p874490104410"></a>vpc配置，请参考<a href="#table11522131317013">表4</a>。</p>
+</td>
+</tr>
+<tr id="row1246812310125"><td class="cellrowborder" valign="top" width="29.9%" headers="mcps1.2.3.1.1 "><p id="p17468183191219"><a name="p17468183191219"></a><a name="p17468183191219"></a>mount_config</p>
+</td>
+<td class="cellrowborder" valign="top" width="70.1%" headers="mcps1.2.3.1.2 "><p id="p046818311219"><a name="p046818311219"></a><a name="p046818311219"></a>文件系统配置，请参考表 <a href="#table2317745151313">表6 mount_config参数说明</a></p>
 </td>
 </tr>
 </tbody>
@@ -292,7 +292,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </thead>
 <tbody><tr id="row115231137012"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1754818422012"><a name="p1754818422012"></a><a name="p1754818422012"></a>vpc_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p155481421118"><a name="p155481421118"></a><a name="p155481421118"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1249815123165"><a name="p1249815123165"></a><a name="p1249815123165"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1254814218116"><a name="p1254814218116"></a><a name="p1254814218116"></a>-</p>
 </td>
@@ -301,16 +301,16 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row10523181319015"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1054814213111"><a name="p1054814213111"></a><a name="p1054814213111"></a>vpc_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p13548194214113"><a name="p13548194214113"></a><a name="p13548194214113"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p169617140160"><a name="p169617140160"></a><a name="p169617140160"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p11548104211113"><a name="p11548104211113"></a><a name="p11548104211113"></a>-</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p11548104211113"><a name="p11548104211113"></a><a name="p11548104211113"></a>当func_vpc非空时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p65482422118"><a name="p65482422118"></a><a name="p65482422118"></a>虚拟私有云唯一标识</p>
 </td>
 </tr>
 <tr id="row1852311320018"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p135483421012"><a name="p135483421012"></a><a name="p135483421012"></a>subnet_name</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p454811421615"><a name="p454811421615"></a><a name="p454811421615"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p174097168169"><a name="p174097168169"></a><a name="p174097168169"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p7548142516"><a name="p7548142516"></a><a name="p7548142516"></a>-</p>
 </td>
@@ -319,16 +319,16 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row18523613406"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p35484421318"><a name="p35484421318"></a><a name="p35484421318"></a>subnet_id</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p17548242813"><a name="p17548242813"></a><a name="p17548242813"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p17548242813"><a name="p17548242813"></a><a name="p17548242813"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p18548194211112"><a name="p18548194211112"></a><a name="p18548194211112"></a>-</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p68278307116"><a name="p68278307116"></a><a name="p68278307116"></a>当func_vpc非空时必选</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1654817421817"><a name="p1654817421817"></a><a name="p1654817421817"></a>子网编号</p>
 </td>
 </tr>
 <tr id="row452391317018"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p16548194217113"><a name="p16548194217113"></a><a name="p16548194217113"></a>cidr</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1854824210114"><a name="p1854824210114"></a><a name="p1854824210114"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p1854824210114"><a name="p1854824210114"></a><a name="p1854824210114"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p125491424111"><a name="p125491424111"></a><a name="p125491424111"></a>-</p>
 </td>
@@ -337,11 +337,219 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row175236131507"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p115492042813"><a name="p115492042813"></a><a name="p115492042813"></a>gateway</p>
 </td>
-<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p6549134214110"><a name="p6549134214110"></a><a name="p6549134214110"></a>string</p>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p16753722101611"><a name="p16753722101611"></a><a name="p16753722101611"></a>String</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p9549184215114"><a name="p9549184215114"></a><a name="p9549184215114"></a>-</p>
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p3549194218111"><a name="p3549194218111"></a><a name="p3549194218111"></a>网关</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 5**  dependency参数说明
+
+<a name="table3788232112820"></a>
+<table><thead align="left"><tr id="row117885323287"><th class="cellrowborder" valign="top" width="23.28%" id="mcps1.2.5.1.1"><p id="p117889326283"><a name="p117889326283"></a><a name="p117889326283"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.529999999999998%" id="mcps1.2.5.1.2"><p id="p6788103216282"><a name="p6788103216282"></a><a name="p6788103216282"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.19%" id="mcps1.2.5.1.3"><p id="p14788203282816"><a name="p14788203282816"></a><a name="p14788203282816"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p778820321285"><a name="p778820321285"></a><a name="p778820321285"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row16789193220285"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p37898326288"><a name="p37898326288"></a><a name="p37898326288"></a>owner</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p578916322288"><a name="p578916322288"></a><a name="p578916322288"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p478913211287"><a name="p478913211287"></a><a name="p478913211287"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p850405873011"><a name="p850405873011"></a><a name="p850405873011"></a>依赖包属主的domainId</p>
+</td>
+</tr>
+<tr id="row37893325281"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p1478913272815"><a name="p1478913272815"></a><a name="p1478913272815"></a>link</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p117891932132818"><a name="p117891932132818"></a><a name="p117891932132818"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p12789132132817"><a name="p12789132132817"></a><a name="p12789132132817"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p4789153252814"><a name="p4789153252814"></a><a name="p4789153252814"></a>依赖包在OBS上的链接</p>
+</td>
+</tr>
+<tr id="row47874148290"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p6788171432920"><a name="p6788171432920"></a><a name="p6788171432920"></a>runtime</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p87501514309"><a name="p87501514309"></a><a name="p87501514309"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p147881114162910"><a name="p147881114162910"></a><a name="p147881114162910"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p187885149295"><a name="p187885149295"></a><a name="p187885149295"></a>依赖包语言类型（仅作为分类条件）</p>
+</td>
+</tr>
+<tr id="row197121711297"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p1571117182911"><a name="p1571117182911"></a><a name="p1571117182911"></a>etag</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p27151752916"><a name="p27151752916"></a><a name="p27151752916"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p5712176293"><a name="p5712176293"></a><a name="p5712176293"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p197191712290"><a name="p197191712290"></a><a name="p197191712290"></a>依赖包md5值</p>
+</td>
+</tr>
+<tr id="row18364319122919"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p2036441917298"><a name="p2036441917298"></a><a name="p2036441917298"></a>size</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1836421922917"><a name="p1836421922917"></a><a name="p1836421922917"></a>Int</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p4364101916297"><a name="p4364101916297"></a><a name="p4364101916297"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p136410194294"><a name="p136410194294"></a><a name="p136410194294"></a>依赖包大小</p>
+</td>
+</tr>
+<tr id="row35521534152912"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p12552103420291"><a name="p12552103420291"></a><a name="p12552103420291"></a>name</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p455213482912"><a name="p455213482912"></a><a name="p455213482912"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p955363442915"><a name="p955363442915"></a><a name="p955363442915"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p5553143417296"><a name="p5553143417296"></a><a name="p5553143417296"></a>依赖包名称</p>
+</td>
+</tr>
+<tr id="row17984153672917"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p199844365296"><a name="p199844365296"></a><a name="p199844365296"></a>description</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p19841836132920"><a name="p19841836132920"></a><a name="p19841836132920"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p1984133682911"><a name="p1984133682911"></a><a name="p1984133682911"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p2984113613295"><a name="p2984113613295"></a><a name="p2984113613295"></a>依赖包描述</p>
+</td>
+</tr>
+<tr id="row96981850182917"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p166987503294"><a name="p166987503294"></a><a name="p166987503294"></a>file_name</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1769815042913"><a name="p1769815042913"></a><a name="p1769815042913"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p069875072920"><a name="p069875072920"></a><a name="p069875072920"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1069895017294"><a name="p1069895017294"></a><a name="p1069895017294"></a>依赖包文件名（如果创建方式为zip时）</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 6**  mount\_config参数说明
+
+<a name="table2317745151313"></a>
+<table><thead align="left"><tr id="row11317184561317"><th class="cellrowborder" valign="top" width="23.28%" id="mcps1.2.5.1.1"><p id="p173171445191314"><a name="p173171445191314"></a><a name="p173171445191314"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.529999999999998%" id="mcps1.2.5.1.2"><p id="p8317154531311"><a name="p8317154531311"></a><a name="p8317154531311"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.19%" id="mcps1.2.5.1.3"><p id="p2317114551314"><a name="p2317114551314"></a><a name="p2317114551314"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p1231774516132"><a name="p1231774516132"></a><a name="p1231774516132"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row8317194511138"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p19317194541316"><a name="p19317194541316"></a><a name="p19317194541316"></a>mount_user</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1031811451135"><a name="p1031811451135"></a><a name="p1031811451135"></a>mount_user(参考表 mount_user说明)</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p136301821614"><a name="p136301821614"></a><a name="p136301821614"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1231894512136"><a name="p1231894512136"></a><a name="p1231894512136"></a>文件系统用户配置</p>
+</td>
+</tr>
+<tr id="row19318154511310"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p20318104517137"><a name="p20318104517137"></a><a name="p20318104517137"></a>func_mounts</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p231814520130"><a name="p231814520130"></a><a name="p231814520130"></a>func_mount（参考表 func_mount说明）</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p16318145191311"><a name="p16318145191311"></a><a name="p16318145191311"></a>-</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p63181458137"><a name="p63181458137"></a><a name="p63181458137"></a>文件系统列表</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 7**  mount\_user说明
+
+<a name="table14797155061717"></a>
+<table><thead align="left"><tr id="row18797105015171"><th class="cellrowborder" valign="top" width="23.28%" id="mcps1.2.5.1.1"><p id="p117975502173"><a name="p117975502173"></a><a name="p117975502173"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.529999999999998%" id="mcps1.2.5.1.2"><p id="p11798185091712"><a name="p11798185091712"></a><a name="p11798185091712"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="24.19%" id="mcps1.2.5.1.3"><p id="p679816501174"><a name="p679816501174"></a><a name="p679816501174"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.4"><p id="p9798175014177"><a name="p9798175014177"></a><a name="p9798175014177"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1279885031713"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p1479815014174"><a name="p1479815014174"></a><a name="p1479815014174"></a>user_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p77981450131716"><a name="p77981450131716"></a><a name="p77981450131716"></a>Int</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p1179865041715"><a name="p1179865041715"></a><a name="p1179865041715"></a>mount_user非空时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p17798175015173"><a name="p17798175015173"></a><a name="p17798175015173"></a>用户ID(-1~65534的非0整数)</p>
+</td>
+</tr>
+<tr id="row2079885011715"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p079865019179"><a name="p079865019179"></a><a name="p079865019179"></a>user_group_id</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p17999500172"><a name="p17999500172"></a><a name="p17999500172"></a>Int</p>
+</td>
+<td class="cellrowborder" valign="top" width="24.19%" headers="mcps1.2.5.1.3 "><p id="p11799750101714"><a name="p11799750101714"></a><a name="p11799750101714"></a>mount_user非空时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p17755154919198"><a name="p17755154919198"></a><a name="p17755154919198"></a>用户组ID(-1~65534的非0整数)</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+**表 8**  func\_mount说明
+
+<a name="table1937492111205"></a>
+<table><thead align="left"><tr id="row6375142122013"><th class="cellrowborder" valign="top" width="23.28%" id="mcps1.2.5.1.1"><p id="p137518219203"><a name="p137518219203"></a><a name="p137518219203"></a>参数</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.529999999999998%" id="mcps1.2.5.1.2"><p id="p5375021172017"><a name="p5375021172017"></a><a name="p5375021172017"></a>类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="22.759999999999998%" id="mcps1.2.5.1.3"><p id="p1375121102012"><a name="p1375121102012"></a><a name="p1375121102012"></a>是否必选</p>
+</th>
+<th class="cellrowborder" valign="top" width="26.43%" id="mcps1.2.5.1.4"><p id="p33751521122014"><a name="p33751521122014"></a><a name="p33751521122014"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row437522115208"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p17375162118203"><a name="p17375162118203"></a><a name="p17375162118203"></a>mount_type</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p14375521122017"><a name="p14375521122017"></a><a name="p14375521122017"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.759999999999998%" headers="mcps1.2.5.1.3 "><p id="p1460462206"><a name="p1460462206"></a><a name="p1460462206"></a>func_mounts非空时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.43%" headers="mcps1.2.5.1.4 "><p id="p9509123292117"><a name="p9509123292117"></a><a name="p9509123292117"></a>挂载类型(sfs/sfsTurbo/ecs)</p>
+</td>
+</tr>
+<tr id="row1837510211209"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p037515213203"><a name="p037515213203"></a><a name="p037515213203"></a>mount_resource</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1837592113204"><a name="p1837592113204"></a><a name="p1837592113204"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.759999999999998%" headers="mcps1.2.5.1.3 "><p id="p1455077142112"><a name="p1455077142112"></a><a name="p1455077142112"></a>func_mounts非空时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.43%" headers="mcps1.2.5.1.4 "><p id="p1251531812234"><a name="p1251531812234"></a><a name="p1251531812234"></a>挂载资源ID（对应云服务ID）</p>
+</td>
+</tr>
+<tr id="row06073533239"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p1608185313233"><a name="p1608185313233"></a><a name="p1608185313233"></a>mount_share_path</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1460975311237"><a name="p1460975311237"></a><a name="p1460975311237"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.759999999999998%" headers="mcps1.2.5.1.3 "><p id="p172329172419"><a name="p172329172419"></a><a name="p172329172419"></a>如果mount_type为ecs，必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.43%" headers="mcps1.2.5.1.4 "><p id="p3609185372312"><a name="p3609185372312"></a><a name="p3609185372312"></a>远端挂载路径（例如192.168.0.12:/data）</p>
+</td>
+</tr>
+<tr id="row212845722318"><td class="cellrowborder" valign="top" width="23.28%" headers="mcps1.2.5.1.1 "><p id="p201298572237"><a name="p201298572237"></a><a name="p201298572237"></a>local_mount_path</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.529999999999998%" headers="mcps1.2.5.1.2 "><p id="p1612918578236"><a name="p1612918578236"></a><a name="p1612918578236"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="22.759999999999998%" headers="mcps1.2.5.1.3 "><p id="p16129195716239"><a name="p16129195716239"></a><a name="p16129195716239"></a>func_mounts非空时必选</p>
+</td>
+<td class="cellrowborder" valign="top" width="26.43%" headers="mcps1.2.5.1.4 "><p id="p5129757132313"><a name="p5129757132313"></a><a name="p5129757132313"></a>函数访问路径</p>
 </td>
 </tr>
 </tbody>

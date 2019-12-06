@@ -1,13 +1,14 @@
-# 函数Trigger Management触发器模型<a name="functiongraph_06_0103"></a>
+# 函数Trigger Management触发器模型<a name="ZH-CN_TOPIC_0115410470"></a>
 
 ## 触发器类型模型<a name="section29630533"></a>
 
 ```
-{
-	"trigger_type_code": "string",
-	"display_name": "string",
-	"status": "string",
-	"description": "string"
+{ 
+    "trigger_type_code":"string", 
+    "display_name":"string", 
+    "status":"string", 
+    "event_codes":"array of string", 
+    "description":"string" 
 }
 ```
 
@@ -51,14 +52,14 @@
 ## 触发器实例模型<a name="section50261965"></a>
 
 ```
-{
-	"trigger_id": "string"
-	"trigger_type_code": "string"
-	"event_type_code": "string"
-	"trigger_status": "string"
-	"event_data": "json struct"
-	"last_updated_time": "string"
-	"created_time": "string"
+{ 
+    "trigger_id":"string",
+    "trigger_type_code":"string",
+    "event_type_code":"string",
+    "status":"string",
+    "event_data":"json struct",
+    "last_updated_time":"string",
+    "created_time":"string" 
 }
 ```
 
@@ -88,7 +89,7 @@
 <td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p31630226"><a name="p31630226"></a><a name="p31630226"></a>事件类型代码，必填字段，可以填任意非空字符串（deprecated）。</p>
 </td>
 </tr>
-<tr id="row16236586"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p40095121"><a name="p40095121"></a><a name="p40095121"></a>trigger_status</p>
+<tr id="row16236586"><td class="cellrowborder" valign="top" width="24.240000000000002%" headers="mcps1.2.3.1.1 "><p id="p40095121"><a name="p40095121"></a><a name="p40095121"></a>status</p>
 </td>
 <td class="cellrowborder" valign="top" width="75.76%" headers="mcps1.2.3.1.2 "><p id="p26479331"><a name="p26479331"></a><a name="p26479331"></a>触发器状态：ACTIVE / DISABLED。</p>
 </td>
@@ -113,20 +114,66 @@
 
 ## 触发器实例数据<a name="section196721276373"></a>
 
+OBS触发器实例
+
+OBS触发器数据如下。
+
+```
+{ 
+   "bucket": "yourBucketName", 
+   "events": ["s3:ObjectCreated:Put"], 
+   "prefix": "yourPrefix", 
+   "suffix": "yourSuffix" 
+}
+```
+
+**表 3**  OBS触发器数据说明表
+
+<a name="table0330352133017"></a>
+<table><thead align="left"><tr id="row43304525304"><th class="cellrowborder" valign="top" width="19.59%" id="mcps1.2.3.1.1"><p id="p193301052173013"><a name="p193301052173013"></a><a name="p193301052173013"></a>字段名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="80.41%" id="mcps1.2.3.1.2"><p id="p8330452103017"><a name="p8330452103017"></a><a name="p8330452103017"></a>字段说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1633025210304"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p11330252133019"><a name="p11330252133019"></a><a name="p11330252133019"></a>bucket</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p13303527304"><a name="p13303527304"></a><a name="p13303527304"></a>OBS桶名，必填。</p>
+</td>
+</tr>
+<tr id="row2330125293014"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p43301952133017"><a name="p43301952133017"></a><a name="p43301952133017"></a>events</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p1533035283017"><a name="p1533035283017"></a><a name="p1533035283017"></a>OBS触发事件集合，取值有如下情况：["s3:ObjectCreated:*","s3:ObjectCreated:Put","s3:ObjectCreated:Post","s3:ObjectCreated:Copy","s3:ObjectCreated:CompleteMultipartUpload","s3:ObjectRemoved:*","s3:ObjectRemoved:DeleteMarkerCreated","s3:ObjectRemoved:Delete"]，必填。</p>
+<p id="p11330105263017"><a name="p11330105263017"></a><a name="p11330105263017"></a>其中"s3:objectcreated:*"包含所有其他以"s3:objectcreated"开头的所有事件，"s3:objectremoved:*"包含所有以"s3:objectremoved"开头的所有事件。</p>
+</td>
+</tr>
+<tr id="row15331125213020"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p033114529302"><a name="p033114529302"></a><a name="p033114529302"></a>prefix</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p633125293014"><a name="p633125293014"></a><a name="p633125293014"></a>OBS对象的前缀，选填。</p>
+</td>
+</tr>
+<tr id="row1033185219300"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p733185219308"><a name="p733185219308"></a><a name="p733185219308"></a>suffix</p>
+</td>
+<td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p033135214307"><a name="p033135214307"></a><a name="p033135214307"></a>OBS对象的后缀，选填。</p>
+</td>
+</tr>
+</tbody>
+</table>
+
 -   SMN触发器实例
 
     SMN触发器数据如下。
 
     ```
-    {
-    	"topic_urn": "string",
-    	"subscription_status": "string"
-    }
+    { 
+        "topic_urn":"string", 
+        "subscription_status":"string" 
+    } 
     ```
 
-    SMN触发器数据说明如[表3](#table46683704143627)所示。
+    SMN触发器数据说明如[表4](#table46683704143627)所示。
 
-    **表 3**  SMN触发器数据说明表
+    **表 4**  SMN触发器数据说明表
 
     <a name="table46683704143627"></a>
     <table><thead align="left"><tr id="row4308221"><th class="cellrowborder" valign="top" width="25.25%" id="mcps1.2.3.1.1"><p id="p13421600"><a name="p13421600"></a><a name="p13421600"></a>字段名称</p>
@@ -154,16 +201,16 @@
     DMS触发器数据如下。
 
     ```
-    {
-    	"queue_id": "string",
-    	"consumer_group_id": "string",
-    	"polling_interval": "int"
+    { 
+        "queue_id":"string", 
+        "consumer_group_id":"string", 
+        "polling_interval":"int" 
     }
     ```
 
-    DMS触发器数据说明如[表4](#table0558183404)所示。
+    DMS触发器数据说明如[表5](#table0558183404)所示。
 
-    **表 4**  DMS触发器数据说明表
+    **表 5**  DMS触发器数据说明表
 
     <a name="table0558183404"></a>
     <table><thead align="left"><tr id="row1762131834012"><th class="cellrowborder" valign="top" width="26.26%" id="mcps1.2.3.1.1"><p id="p864191824013"><a name="p864191824013"></a><a name="p864191824013"></a>字段名称</p>
@@ -195,42 +242,42 @@
     OBS触发器数据如下。
 
     ```
-    {
-       "bucket": "yourBucketName",
-       "events": ["s3:ObjectCreated:Put"],
-       "prefix": "yourPrefix",
-       "suffix": "yourSuffix"
+    { 
+       "bucket": "yourBucketName", 
+       "events": ["s3:ObjectCreated:Put"], 
+       "prefix": "yourPrefix", 
+       "suffix": "yourSuffix" 
     }
     ```
 
-    **表 5**  OBS触发器数据说明表
+    **表 6**  OBS触发器数据说明表
 
     <a name="table17999413154914"></a>
-    <table><thead align="left"><tr id="row9791414495"><th class="cellrowborder" valign="top" width="18%" id="mcps1.2.3.1.1"><p id="p1190615309493"><a name="p1190615309493"></a><a name="p1190615309493"></a>字段名称</p>
+    <table><thead align="left"><tr id="row9791414495"><th class="cellrowborder" valign="top" width="19.59%" id="mcps1.2.3.1.1"><p id="p1190615309493"><a name="p1190615309493"></a><a name="p1190615309493"></a>字段名称</p>
     </th>
-    <th class="cellrowborder" valign="top" width="82%" id="mcps1.2.3.1.2"><p id="p6906230194916"><a name="p6906230194916"></a><a name="p6906230194916"></a>字段说明</p>
+    <th class="cellrowborder" valign="top" width="80.41%" id="mcps1.2.3.1.2"><p id="p6906230194916"><a name="p6906230194916"></a><a name="p6906230194916"></a>字段说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row187181424918"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p14906133034914"><a name="p14906133034914"></a><a name="p14906133034914"></a>bucket</p>
+    <tbody><tr id="row187181424918"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p14906133034914"><a name="p14906133034914"></a><a name="p14906133034914"></a>bucket</p>
     </td>
-    <td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p1690623094916"><a name="p1690623094916"></a><a name="p1690623094916"></a>OBS桶名，必填。</p>
+    <td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p1690623094916"><a name="p1690623094916"></a><a name="p1690623094916"></a>OBS桶名，必填。</p>
     </td>
     </tr>
-    <tr id="row17714145497"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p1091413084918"><a name="p1091413084918"></a><a name="p1091413084918"></a>events</p>
+    <tr id="row17714145497"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p1091413084918"><a name="p1091413084918"></a><a name="p1091413084918"></a>events</p>
     </td>
-    <td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p9814510443"><a name="p9814510443"></a><a name="p9814510443"></a>OBS触发事件集合，取值有如下情况：["s3:ObjectCreated:*","s3:ObjectCreated:Put","s3:ObjectCreated:Post","s3:ObjectCreated:Copy","s3:ObjectCreated:CompleteMultipartUpload","s3:ObjectRemoved:*","s3:ObjectRemoved:DeleteMarkerCreated","s3:ObjectRemoved:Delete"]，必填。</p>
+    <td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p9814510443"><a name="p9814510443"></a><a name="p9814510443"></a>OBS触发事件集合，取值有如下情况：["s3:ObjectCreated:*","s3:ObjectCreated:Put","s3:ObjectCreated:Post","s3:ObjectCreated:Copy","s3:ObjectCreated:CompleteMultipartUpload","s3:ObjectRemoved:*","s3:ObjectRemoved:DeleteMarkerCreated","s3:ObjectRemoved:Delete"]，必填。</p>
     <p id="p1738125614214"><a name="p1738125614214"></a><a name="p1738125614214"></a>其中"s3:objectcreated:*"包含所有其他以"s3:objectcreated"开头的所有事件，"s3:objectremoved:*"包含所有以"s3:objectremoved"开头的所有事件。</p>
     </td>
     </tr>
-    <tr id="row5731419493"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p4914830114910"><a name="p4914830114910"></a><a name="p4914830114910"></a>prefix</p>
+    <tr id="row5731419493"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p4914830114910"><a name="p4914830114910"></a><a name="p4914830114910"></a>prefix</p>
     </td>
-    <td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p1992153064918"><a name="p1992153064918"></a><a name="p1992153064918"></a>OBS对象的前缀，选填。</p>
+    <td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p1992153064918"><a name="p1992153064918"></a><a name="p1992153064918"></a>OBS对象的前缀，选填。</p>
     </td>
     </tr>
-    <tr id="row15701484910"><td class="cellrowborder" valign="top" width="18%" headers="mcps1.2.3.1.1 "><p id="p10921203034914"><a name="p10921203034914"></a><a name="p10921203034914"></a>suffix</p>
+    <tr id="row15701484910"><td class="cellrowborder" valign="top" width="19.59%" headers="mcps1.2.3.1.1 "><p id="p10921203034914"><a name="p10921203034914"></a><a name="p10921203034914"></a>suffix</p>
     </td>
-    <td class="cellrowborder" valign="top" width="82%" headers="mcps1.2.3.1.2 "><p id="p19921153010497"><a name="p19921153010497"></a><a name="p19921153010497"></a>OBS对象的后缀，选填。</p>
+    <td class="cellrowborder" valign="top" width="80.41%" headers="mcps1.2.3.1.2 "><p id="p19921153010497"><a name="p19921153010497"></a><a name="p19921153010497"></a>OBS对象的后缀，选填。</p>
     </td>
     </tr>
     </tbody>
@@ -242,16 +289,16 @@
 
     ```
     {
-         "stream_name": "dis-qYPJ",
-         "polling_interval": 30,
-         "batch_size": 100,
-         "sharditerator_type": "TRIM_HORIZON"
+    "stream_name": "dis-qYPJ",
+    "polling_interval": 30,
+    "batch_size": 100,
+    "sharditerator_type": "TRIM_HORIZON"
     }
     ```
 
-    DIS触发器数据说明如[表6](#table797218531255)所示。
+    DIS触发器数据说明如[表7](#table797218531255)所示。
 
-    **表 6**  DIS触发器数据说明表
+    **表 7**  DIS触发器数据说明表
 
     <a name="table797218531255"></a>
     <table><thead align="left"><tr id="row19754535259"><th class="cellrowborder" valign="top" width="21.21%" id="mcps1.2.3.1.1"><p id="p297719537257"><a name="p297719537257"></a><a name="p297719537257"></a>字段名称</p>
@@ -288,24 +335,24 @@
     APIG触发器数据如下。
 
     ```
-    {
-    	"group_id": "string",
-    	"env_id": "string",
-    	"auth": "bool",
-    	"protocol": "string",
-    	"name": "string",
-    	"path": "string",
-    	"match_mode": "string",
-    	"req_method": "string",
-    	"backend_type": "string",
-    	"type": int,
-    	"sl_domain": "string"
+    { 
+        "group_id":"string", 
+        "env_id":"string", 
+        "auth":"string", 
+        "protocol":"string", 
+        "name":"string", 
+        "path":"string", 
+        "match_mode":"string",  
+        "req_method":"string" , 
+        "backend_type":"string" , 
+        "type": int , 
+        "sl_domain":"string" 
     }
     ```
 
-    APIG触发器数据说明如<u>[表7](#table18282101120468)</u>所示。
+    APIG触发器数据说明如<u>[表8](#table18282101120468)</u>所示。
 
-    **表 7**  APIG触发器数据说明表
+    **表 8**  APIG触发器数据说明表
 
     <a name="table18282101120468"></a>
     <table><thead align="left"><tr id="row1329061113469"><th class="cellrowborder" valign="top" width="21.21%" id="mcps1.2.3.1.1"><p id="p2029110111467"><a name="p2029110111467"></a><a name="p2029110111467"></a>字段名称</p>
@@ -366,7 +413,7 @@
     </tr>
     <tr id="row1350103175112"><td class="cellrowborder" valign="top" width="21.21%" headers="mcps1.2.3.1.1 "><p id="p45043155116"><a name="p45043155116"></a><a name="p45043155116"></a>sl_domain</p>
     </td>
-    <td class="cellrowborder" valign="top" width="78.79%" headers="mcps1.2.3.1.2 "><p id="p2050836519"><a name="p2050836519"></a><a name="p2050836519"></a>API的分组子域名，必填，示例：xxxx-xxx-xxxx.apigw.cn-north-1.huaweicloud.com，可以在API网关服务“开放API&gt;分组管理”获得。</p>
+    <td class="cellrowborder" valign="top" width="78.79%" headers="mcps1.2.3.1.2 "><p id="p2050836519"><a name="p2050836519"></a><a name="p2050836519"></a>子域名，必填.</p>
     </td>
     </tr>
     </tbody>
@@ -385,9 +432,9 @@
     }
     ```
 
-    TIMER触发器数据说明如<u>[表8](#table169831625017)</u>所示。
+    TIMER触发器数据说明如<u>[表9](#table169831625017)</u>所示。
 
-    **表 8**  TIMER触发器数据说明表
+    **表 9**  TIMER触发器数据说明表
 
     <a name="table169831625017"></a>
     <table><thead align="left"><tr id="row1598213251719"><th class="cellrowborder" valign="top" width="21.21%" id="mcps1.2.3.1.1"><p id="p89827251818"><a name="p89827251818"></a><a name="p89827251818"></a>字段名称</p>
@@ -426,14 +473,21 @@
 
     ```
     {
-        "log_group_id": "string"
-    	"log_topic_id": "string"
+    	"trigger_type_code": "LTS",
+    	"event_type_code": "MessageCreated",
+    	"trigger_status": "ACTIVE",
+    	"event_data": {
+    		"log_group_id": "3e4d3bf7-7bad-11e9-92c5-fa163e6216be",
+    		"log_topic_id": "41d90375-7bad-11e9-8bcf-fa163ea23ac3",
+    		"log_group_name": "lts-group-5b42",
+    		"log_topic_name": "lts-topic-5f3e"
+    	}
     }
     ```
 
-    LTS数据说明如所[表9](#table866014421545)示。
+    LTS数据说明如所[表10](#table866014421545)示。
 
-    **表 9**  LTS触发器数据说明表
+    **表 10**  LTS触发器数据说明表
 
     <a name="table866014421545"></a>
     <table><thead align="left"><tr id="row156603421411"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.3.1.1"><p id="p86601842542"><a name="p86601842542"></a><a name="p86601842542"></a>字段名称</p>
@@ -466,9 +520,9 @@
     }
     ```
 
-    CTS触发器数据说明如[表10](#table15406140191011)所示。
+    CTS触发器数据说明如[表11](#table15406140191011)所示。
 
-    **表 10**  CTS触发器数据说明表
+    **表 11**  CTS触发器数据说明表
 
     <a name="table15406140191011"></a>
     <table><thead align="left"><tr id="row9408840151010"><th class="cellrowborder" valign="top" width="24%" id="mcps1.2.3.1.1"><p id="p19408144012100"><a name="p19408144012100"></a><a name="p19408144012100"></a>字段名称</p>

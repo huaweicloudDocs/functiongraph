@@ -1,4 +1,4 @@
-# 创建Mapping<a name="functiongraph_06_0710"></a>
+# 创建Mapping<a name="ZH-CN_TOPIC_0115410427"></a>
 
 ## 功能介绍<a name="section51379511"></a>
 
@@ -36,7 +36,7 @@ POST /v1.0/\{project\_id\}/trigger\_graph\_mappings
 </tbody>
 </table>
 
-## 请求<a name="section990892"></a>
+## 请求消息<a name="section990892"></a>
 
 **请求参数**
 
@@ -93,7 +93,39 @@ POST /v1.0/\{project\_id\}/trigger\_graph\_mappings
 </tbody>
 </table>
 
-**请求样例**
+## 响应消息<a name="section8918034"></a>
+
+**响应参数**
+
+响应参数如[表3](#table77026151513)所示。  
+
+**表 3**  响应参数
+
+<a name="table77026151513"></a>
+<table><thead align="left"><tr id="row1970213119159"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p117023121517"><a name="p117023121517"></a><a name="p117023121517"></a>名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p970211161518"><a name="p970211161518"></a><a name="p970211161518"></a><em id="i157021515159"><a name="i157021515159"></a><a name="i157021515159"></a>参数类型</em></p>
+</th>
+<th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p970231141517"><a name="p970231141517"></a><a name="p970231141517"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row1770212116155"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p6653042416343"><a name="p6653042416343"></a><a name="p6653042416343"></a>response</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p2025527216343"><a name="p2025527216343"></a><a name="p2025527216343"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p214339116343"><a name="p214339116343"></a><a name="p214339116343"></a>触发器Mapping的ID</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+>![](public_sys-resources/icon-note.gif) **说明：**   
+>触发器Mapping的ID由工作流URN的最后一段以及触发器URN的最后一段以冒号连接组成。  
+
+## 示例<a name="section793794610303"></a>
+
+**请求示例**
 
 ```
 {
@@ -103,54 +135,16 @@ POST /v1.0/\{project\_id\}/trigger\_graph\_mappings
 }
 ```
 
-## 响应<a name="section8918034"></a>
+**响应示例**：
 
--   正常响应
+```
+{
+    "response": "extTriggerTestGraph:SMN_HelloWorldTopic_xxx5c8bfe0e-104a-4ebf-4a3a-e12bfbf11e60_1506757403"
+}
 
-    **响应参数**
-
-    响应参数如[表3](#table77026151513)所示。  
-
-    **表 3**  响应参数
-
-    <a name="table77026151513"></a>
-    <table><thead align="left"><tr id="row1970213119159"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p117023121517"><a name="p117023121517"></a><a name="p117023121517"></a>名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p970211161518"><a name="p970211161518"></a><a name="p970211161518"></a><em id="i157021515159"><a name="i157021515159"></a><a name="i157021515159"></a>参数类型</em></p>
-    </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p970231141517"><a name="p970231141517"></a><a name="p970231141517"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row1770212116155"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p6653042416343"><a name="p6653042416343"></a><a name="p6653042416343"></a>response</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p2025527216343"><a name="p2025527216343"></a><a name="p2025527216343"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p214339116343"><a name="p214339116343"></a><a name="p214339116343"></a>触发器Mapping的ID</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >触发器Mapping的ID由工作流URN的最后一段以及触发器URN的最后一段以冒号连接组成。  
-
-    **响应样例**：
-
-    ```
-    {
-        "response": "extTriggerTestGraph:SMN_HelloWorldTopic_xxx5c8bfe0e-104a-4ebf-4a3a-e12bfbf11e60_1506757403"
-    }
-    
-    ```
-
-
--   异常响应
-
-    请参考[异常响应](请求结果.md#section88241732388)。
-
+```
 
 ## 返回值<a name="section370272717123"></a>
 
-请参考[返回值](请求结果.md#section20306194210386)。
+状态码请参见[状态码](状态码.md)。
 

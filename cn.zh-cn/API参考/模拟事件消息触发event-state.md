@@ -1,4 +1,4 @@
-# 模拟事件消息触发event state<a name="functiongraph_06_0920"></a>
+# 模拟事件消息触发event state<a name="ZH-CN_TOPIC_0115410464"></a>
 
 ## 功能介绍<a name="section5238527"></a>
 
@@ -45,7 +45,7 @@ POST /v1.0/\{project\_id\}/cloud\_graphs/\{graph\_urn\}/executions/\{execution\_
 </tbody>
 </table>
 
-## 请求<a name="section21667523"></a>
+## 请求消息<a name="section21667523"></a>
 
 **请求参数**
 
@@ -102,7 +102,36 @@ POST /v1.0/\{project\_id\}/cloud\_graphs/\{graph\_urn\}/executions/\{execution\_
 </tbody>
 </table>
 
-**请求样例**
+## 响应消息<a name="section60789982"></a>
+
+**响应参数**
+
+响应参数如[表3](#table60801917)所示。  
+
+**表 3**  响应参数
+
+<a name="table60801917"></a>
+<table><thead align="left"><tr id="row49159881"><th class="cellrowborder" valign="top" width="21.43%" id="mcps1.2.4.1.1"><p id="p22527411"><a name="p22527411"></a><a name="p22527411"></a>名称</p>
+</th>
+<th class="cellrowborder" valign="top" width="27.55%" id="mcps1.2.4.1.2"><p id="p12781022"><a name="p12781022"></a><a name="p12781022"></a>参数类型</p>
+</th>
+<th class="cellrowborder" valign="top" width="51.019999999999996%" id="mcps1.2.4.1.3"><p id="p28629874"><a name="p28629874"></a><a name="p28629874"></a>说明</p>
+</th>
+</tr>
+</thead>
+<tbody><tr id="row37318421"><td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.4.1.1 "><p id="p306190049371"><a name="p306190049371"></a><a name="p306190049371"></a>response</p>
+</td>
+<td class="cellrowborder" valign="top" width="27.55%" headers="mcps1.2.4.1.2 "><p id="p146852545217"><a name="p146852545217"></a><a name="p146852545217"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="51.019999999999996%" headers="mcps1.2.4.1.3 "><p id="p1368112515212"><a name="p1368112515212"></a><a name="p1368112515212"></a>触发器触发后返回的结果</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+## 示例<a name="section1625911216433"></a>
+
+**请求示例**
 
 ```
 {
@@ -112,50 +141,15 @@ POST /v1.0/\{project\_id\}/cloud\_graphs/\{graph\_urn\}/executions/\{execution\_
 }
 ```
 
-## 响应<a name="section60789982"></a>
+**响应示例**
 
--   正常响应
-
-    **响应参数**
-
-    正常响应参数如[表3](#table60801917)所示。  
-
-    **表 3**  正常响应参数
-
-    <a name="table60801917"></a>
-    <table><thead align="left"><tr id="row49159881"><th class="cellrowborder" valign="top" width="21.43%" id="mcps1.2.4.1.1"><p id="p22527411"><a name="p22527411"></a><a name="p22527411"></a>名称</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="27.55%" id="mcps1.2.4.1.2"><p id="p12781022"><a name="p12781022"></a><a name="p12781022"></a>参数类型</p>
-    </th>
-    <th class="cellrowborder" valign="top" width="51.019999999999996%" id="mcps1.2.4.1.3"><p id="p28629874"><a name="p28629874"></a><a name="p28629874"></a>说明</p>
-    </th>
-    </tr>
-    </thead>
-    <tbody><tr id="row37318421"><td class="cellrowborder" valign="top" width="21.43%" headers="mcps1.2.4.1.1 "><p id="p306190049371"><a name="p306190049371"></a><a name="p306190049371"></a>response</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="27.55%" headers="mcps1.2.4.1.2 "><p id="p146852545217"><a name="p146852545217"></a><a name="p146852545217"></a>String</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="51.019999999999996%" headers="mcps1.2.4.1.3 "><p id="p1368112515212"><a name="p1368112515212"></a><a name="p1368112515212"></a>触发器触发后返回的结果</p>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-
-    **正常响应样例**
-
-    ```
-    {
-        "response": "{\"in\":\"0123\",\"workItem\":\"{\\\"workItem\\\":\\\"123456789\\\"}\"}"
-    }
-    ```
-
-
--   异常响应
-
-    请参考[异常响应](请求结果.md#section88241732388)
-
+```
+{
+    "response": "{\"in\":\"0123\",\"workItem\":\"{\\\"workItem\\\":\\\"123456789\\\"}\"}"
+}
+```
 
 ## 返回值<a name="section10238932"></a>
 
-请参考[返回值](请求结果.md#section20306194210386)。
+状态码请参见[状态码](状态码.md)。
 
