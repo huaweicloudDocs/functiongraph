@@ -107,9 +107,10 @@
     -   如果是winnfsd，可参考：[https://github.com/winnfsd/winnfsd](https://github.com/winnfsd/winnfsd)。
     -   如果是hanewin nfs server，可以参考如下步骤。
         1.  以管理员身份运行nfsctl.exe
-        2.  在空白处右键，然后insert，完成设置
+        2.  在空白处右键，然后Insert，完成设置
 
-            ![](figures/zh-cn_image_0183840856.png)
+            **图 1**  Insert<a name="fig2013045445112"></a>  
+            ![](figures/Insert.png "Insert")
 
 
 
