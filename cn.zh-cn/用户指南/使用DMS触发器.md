@@ -8,7 +8,7 @@
 
 进行操作之前，需要做好以下准备。
 
--   已经创建消息队列和消费组，此处以队列queue-test、消费组group-dms为例，创建过程请参考[创建队列](https://support.huaweicloud.com/usermanual-dms/zh-cn_topic_0034678324.html)、[创建消费组](https://support.huaweicloud.com/usermanual-dms/zh-cn_topic_0034678327.html)。
+-   已经创建消息队列和消费组，此处以队列queue-test、消费组group-dms为例，创建过程请参考[创建队列](https://support.huaweicloud.com/usermanual-dms/dms-ug-0312102.html)、[创建消费组](https://support.huaweicloud.com/usermanual-dms/dms-ug-0312103.html)。
 -   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
 
 ## 设置函数委托<a name="section82781591521"></a>
@@ -103,7 +103,7 @@
     </table>
 
     >![](public_sys-resources/icon-note.gif) **说明：**   
-    >生产消息具体参数介绍请参见[生产消息](http://support.huaweicloud.com/usermanual-dms/zh-cn_topic_0080185214.html)。  
+    >生产消息具体参数介绍请参见[生产消息](http://support.huaweicloud.com/usermanual-dms/dms-ug-0312104.html)。  
 
 5.  单击“确定”，完成消息创建。
 6.  在“消费组”栏的group-dms消费组可以查看“可消费消息数”，如[图3](#fig175032315194)所示。

@@ -10,7 +10,7 @@
 
 -   已经创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
 -   创建DDS触发器，必须开启函数工作流VPC访问，请参考[函数配置VPC](函数配置VPC.md)。
--   已经创建DDS文档数据库实例，创建过程请参考[购买文档数据库实例](https://support.huaweicloud.com/usermanual-lts/zh-cn_topic_0071259182.html)。
+-   已经创建DDS文档数据库实例，创建过程请参考[购买文档数据库实例](https://support.huaweicloud.com/qs-dds/zh-cn_topic_0044018333.html)。
 -   已经创建DDS文档数据库，请参考[新建数据库](https://support.huaweicloud.com/usermanual-das/das_07_0004.html)。
 
 ## 创建DDS触发器<a name="section3956183013126"></a>
@@ -98,7 +98,7 @@
     </tr>
     <tr id="row019845151817"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p1619715519182"><a name="p1619715519182"></a><a name="p1619715519182"></a>事件模板</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p519812511182"><a name="p519812511182"></a><a name="p519812511182"></a>选择"dds-event-template"模板，使用系统内置LTS事件模板。</p>
+    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p519812511182"><a name="p519812511182"></a><a name="p519812511182"></a>选择"dds-event-template"模板，使用系统内置dds事件模板。</p>
     </td>
     </tr>
     <tr id="row01981653188"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p619865201814"><a name="p619865201814"></a><a name="p619865201814"></a>*事件名称</p>

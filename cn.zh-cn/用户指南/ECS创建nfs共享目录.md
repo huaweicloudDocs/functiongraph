@@ -43,7 +43,7 @@
         exportfs -rv
         ```
 
-    5.  **设置rpcbind开机启动（可选）**
+    5.  设置rpcbind开机启动（可选）
 
         如果需要设置rpcbind服务开机启动，可执行如下命令。
 
@@ -60,7 +60,7 @@
         sudo apt install nfs-kernel-server
         ```
 
-    2.  **设置共享文件夹**
+    2.  设置共享文件夹
 
         打开/etc/exports，比如要把/sharedata目录设置为共享目录，可以填入如下内容。
 
@@ -69,13 +69,13 @@
         >![](public_sys-resources/icon-note.gif) **说明：**   
         >上述内容的含义是：把/sharedata这个目录共享给192.168.0.0/24这个子网段的其他服务器。  
 
-    3.  **启动nfs服务**
+    3.  启动nfs服务
 
         ```
         service nfs-kernel-server restart
         ```
 
-    4.  **修改共享目录**
+    4.  修改共享目录
 
         比如需要新增/home/myself/download到共享目录，可以在/etc/exports中新增如下内容：
 

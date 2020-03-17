@@ -115,15 +115,15 @@ SYS.FunctionGraph
 ## 维度<a name="section17346143012499"></a>
 
 <a name="table076413085020"></a>
-<table><thead align="left"><tr id="row876480165020"><th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.1"><p id="p167644010504"><a name="p167644010504"></a><a name="p167644010504"></a>key</p>
+<table><thead align="left"><tr id="row876480165020"><th class="cellrowborder" valign="top" width="35.27%" id="mcps1.1.3.1.1"><p id="p167644010504"><a name="p167644010504"></a><a name="p167644010504"></a>key</p>
 </th>
-<th class="cellrowborder" valign="top" width="50%" id="mcps1.1.3.1.2"><p id="p176412020502"><a name="p176412020502"></a><a name="p176412020502"></a>value</p>
+<th class="cellrowborder" valign="top" width="64.73%" id="mcps1.1.3.1.2"><p id="p176412020502"><a name="p176412020502"></a><a name="p176412020502"></a>value</p>
 </th>
 </tr>
 </thead>
-<tbody><tr id="row10764130185013"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.1 "><p id="p376490115011"><a name="p376490115011"></a><a name="p376490115011"></a>package-functionname</p>
+<tbody><tr id="row10764130185013"><td class="cellrowborder" valign="top" width="35.27%" headers="mcps1.1.3.1.1 "><p id="p376490115011"><a name="p376490115011"></a><a name="p376490115011"></a>package-functionname</p>
 </td>
-<td class="cellrowborder" valign="top" width="50%" headers="mcps1.1.3.1.2 "><p id="p111198624315"><a name="p111198624315"></a><a name="p111198624315"></a>应用名-函数名。</p>
+<td class="cellrowborder" valign="top" width="64.73%" headers="mcps1.1.3.1.2 "><p id="p111198624315"><a name="p111198624315"></a><a name="p111198624315"></a>应用名-函数名。</p>
 <p id="p37641203506"><a name="p37641203506"></a><a name="p37641203506"></a>示例：default-myfunction_Python。</p>
 </td>
 </tr>

@@ -57,7 +57,7 @@ AOS编排函数资源，函数的代码上传支持在线编辑和OBS上传文�
 
 3、配置函数委托
 
-因为函数需要访问OBS服务，所以需要给予函数访问OBS的权限，为函数设置OBS的委托。同样，在函数中需要获取IAM提供的用户AK、SK，所以也需要设置IAM的委托，配置的委托名称需填入后续配置模板参数中。请参见[如何创建委托](http://support.huaweicloud.com/usermanual-iam/zh-cn_topic_0046613147.html)。
+因为函数需要访问OBS服务，所以需要给予函数访问OBS的权限，为函数设置OBS的委托。同样，在函数中需要获取IAM提供的用户AK、SK，所以也需要设置IAM的委托，配置的委托名称需填入后续配置模板参数中。请参见[如何创建委托](http://support.huaweicloud.com/usermanual-iam/iam_06_0002.html)。
 
 ## 导入AOS模板<a name="section33649418811"></a>
 

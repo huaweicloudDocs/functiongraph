@@ -35,7 +35,7 @@
 
 -   标准cron表达式
 
-    cron表达式格式要求” 秒 分 时 日 月 周\(可选\)”，每个字段间以空格隔开，其中各字段说明如[表2](#table5859105445813)所示。
+    cron表达式格式要求“秒 分 时 日 月 周\(可选\)”，每个字段间以空格隔开，其中各字段说明如[表2](#table5859105445813)所示。
 
     **表 2**  cron表达式字段说明
 
@@ -273,47 +273,47 @@
     **表 5**  特殊字符说明
 
     <a name="table161351329175920"></a>
-    <table><thead align="left"><tr id="row101351229105918"><th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.1"><p id="p1302479599"><a name="p1302479599"></a><a name="p1302479599"></a><strong id="b40154716595"><a name="b40154716595"></a><a name="b40154716595"></a>特殊字符</strong></p>
+    <table><thead align="left"><tr id="row101351229105918"><th class="cellrowborder" valign="top" width="15.201520152015203%" id="mcps1.2.4.1.1"><p id="p1302479599"><a name="p1302479599"></a><a name="p1302479599"></a><strong id="b40154716595"><a name="b40154716595"></a><a name="b40154716595"></a>特殊字符</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.2"><p id="p6004710595"><a name="p6004710595"></a><a name="p6004710595"></a><strong id="b50144775919"><a name="b50144775919"></a><a name="b50144775919"></a>含义</strong></p>
+    <th class="cellrowborder" valign="top" width="28.012801280128013%" id="mcps1.2.4.1.2"><p id="p6004710595"><a name="p6004710595"></a><a name="p6004710595"></a><strong id="b50144775919"><a name="b50144775919"></a><a name="b50144775919"></a>含义</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="33.33333333333333%" id="mcps1.2.4.1.3"><p id="p140154720597"><a name="p140154720597"></a><a name="p140154720597"></a><strong id="b120154710591"><a name="b120154710591"></a><a name="b120154710591"></a>说明</strong></p>
+    <th class="cellrowborder" valign="top" width="56.78567856785678%" id="mcps1.2.4.1.3"><p id="p140154720597"><a name="p140154720597"></a><a name="p140154720597"></a><strong id="b120154710591"><a name="b120154710591"></a><a name="b120154710591"></a>说明</strong></p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row141351829195912"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1502477598"><a name="p1502477598"></a><a name="p1502477598"></a>*</p>
+    <tbody><tr id="row141351829195912"><td class="cellrowborder" valign="top" width="15.201520152015203%" headers="mcps1.2.4.1.1 "><p id="p1502477598"><a name="p1502477598"></a><a name="p1502477598"></a>*</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p15014476592"><a name="p15014476592"></a><a name="p15014476592"></a>表示该字段中的所有值</p>
+    <td class="cellrowborder" valign="top" width="28.012801280128013%" headers="mcps1.2.4.1.2 "><p id="p15014476592"><a name="p15014476592"></a><a name="p15014476592"></a>表示该字段中的所有值</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p1501247155917"><a name="p1501247155917"></a><a name="p1501247155917"></a>在“分钟”字段中表示每一分钟都执行。</p>
-    </td>
-    </tr>
-    <tr id="row19135429125913"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p18024745915"><a name="p18024745915"></a><a name="p18024745915"></a>,</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p110154717595"><a name="p110154717595"></a><a name="p110154717595"></a>指定多个值（可以不连续）</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p150134716595"><a name="p150134716595"></a><a name="p150134716595"></a>在“月”字段中指定“Jan,Apr,Jul,Oct”或者“1,4,7,10”，表示1月，4月，7月和10月，在“星期几”字段中指定“Sat,Sun”或者“6,0”表示周六，周日。</p>
+    <td class="cellrowborder" valign="top" width="56.78567856785678%" headers="mcps1.2.4.1.3 "><p id="p1501247155917"><a name="p1501247155917"></a><a name="p1501247155917"></a>在“分钟”字段中表示每一分钟都执行。</p>
     </td>
     </tr>
-    <tr id="row161351029205914"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p601147205911"><a name="p601147205911"></a><a name="p601147205911"></a>-</p>
+    <tr id="row19135429125913"><td class="cellrowborder" valign="top" width="15.201520152015203%" headers="mcps1.2.4.1.1 "><p id="p18024745915"><a name="p18024745915"></a><a name="p18024745915"></a>,</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p18054719591"><a name="p18054719591"></a><a name="p18054719591"></a>指定一个范围</p>
+    <td class="cellrowborder" valign="top" width="28.012801280128013%" headers="mcps1.2.4.1.2 "><p id="p110154717595"><a name="p110154717595"></a><a name="p110154717595"></a>指定多个值（可以不连续）</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p140447145917"><a name="p140447145917"></a><a name="p140447145917"></a>在“分钟”字段中使用0-3，表示从0分到3分</p>
-    </td>
-    </tr>
-    <tr id="row12135152955914"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p1921747175912"><a name="p1921747175912"></a><a name="p1921747175912"></a>?</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p329479599"><a name="p329479599"></a><a name="p329479599"></a>指定一个或另一个</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p192847205920"><a name="p192847205920"></a><a name="p192847205920"></a>仅“日”和“星期几”字段可以指定。例如，如果指定了一个特定的日期，但你不关心该日期对应星期几，那么“星期几”字段就可以使用该特殊字符。</p>
+    <td class="cellrowborder" valign="top" width="56.78567856785678%" headers="mcps1.2.4.1.3 "><p id="p150134716595"><a name="p150134716595"></a><a name="p150134716595"></a>在“月”字段中指定“Jan,Apr,Jul,Oct”或者“1,4,7,10”，表示1月，4月，7月和10月，在“星期几”字段中指定“Sat,Sun”或者“6,0”表示周六，周日。</p>
     </td>
     </tr>
-    <tr id="row113592913591"><td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.1 "><p id="p62647115920"><a name="p62647115920"></a><a name="p62647115920"></a>/</p>
+    <tr id="row161351029205914"><td class="cellrowborder" valign="top" width="15.201520152015203%" headers="mcps1.2.4.1.1 "><p id="p601147205911"><a name="p601147205911"></a><a name="p601147205911"></a>-</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.2 "><p id="p921047145915"><a name="p921047145915"></a><a name="p921047145915"></a>表示起步和步幅，n/m表示从n开始，每次增加m</p>
+    <td class="cellrowborder" valign="top" width="28.012801280128013%" headers="mcps1.2.4.1.2 "><p id="p18054719591"><a name="p18054719591"></a><a name="p18054719591"></a>指定一个范围</p>
     </td>
-    <td class="cellrowborder" valign="top" width="33.33333333333333%" headers="mcps1.2.4.1.3 "><p id="p19294713598"><a name="p19294713598"></a><a name="p19294713598"></a>在“分钟”字段1/3表示在满足其它字段情况下的绝对时间1分（例如00:01:00）开始，每隔3分钟触发一次。</p>
+    <td class="cellrowborder" valign="top" width="56.78567856785678%" headers="mcps1.2.4.1.3 "><p id="p140447145917"><a name="p140447145917"></a><a name="p140447145917"></a>在“分钟”字段中使用0-3，表示从0分到3分</p>
+    </td>
+    </tr>
+    <tr id="row12135152955914"><td class="cellrowborder" valign="top" width="15.201520152015203%" headers="mcps1.2.4.1.1 "><p id="p1921747175912"><a name="p1921747175912"></a><a name="p1921747175912"></a>?</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="28.012801280128013%" headers="mcps1.2.4.1.2 "><p id="p329479599"><a name="p329479599"></a><a name="p329479599"></a>指定一个或另一个</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="56.78567856785678%" headers="mcps1.2.4.1.3 "><p id="p192847205920"><a name="p192847205920"></a><a name="p192847205920"></a>仅“日”和“星期几”字段可以指定。例如，如果指定了一个特定的日期，但你不关心该日期对应星期几，那么“星期几”字段就可以使用该特殊字符。</p>
+    </td>
+    </tr>
+    <tr id="row113592913591"><td class="cellrowborder" valign="top" width="15.201520152015203%" headers="mcps1.2.4.1.1 "><p id="p62647115920"><a name="p62647115920"></a><a name="p62647115920"></a>/</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="28.012801280128013%" headers="mcps1.2.4.1.2 "><p id="p921047145915"><a name="p921047145915"></a><a name="p921047145915"></a>表示起步和步幅，n/m表示从n开始，每次增加m</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="56.78567856785678%" headers="mcps1.2.4.1.3 "><p id="p19294713598"><a name="p19294713598"></a><a name="p19294713598"></a>在“分钟”字段1/3表示在满足其它字段情况下的绝对时间1分（例如00:01:00）开始，每隔3分钟触发一次。</p>
     </td>
     </tr>
     </tbody>
@@ -324,40 +324,40 @@
     **表 6**  cron表达式配置示例
 
     <a name="table20546153220011"></a>
-    <table><thead align="left"><tr id="row115474321503"><th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.1"><p id="p454716329015"><a name="p454716329015"></a><a name="p454716329015"></a>配置示例</p>
+    <table><thead align="left"><tr id="row115474321503"><th class="cellrowborder" valign="top" width="42.24%" id="mcps1.2.3.1.1"><p id="p454716329015"><a name="p454716329015"></a><a name="p454716329015"></a>配置示例</p>
     </th>
-    <th class="cellrowborder" valign="top" width="50%" id="mcps1.2.3.1.2"><p id="p154703218019"><a name="p154703218019"></a><a name="p154703218019"></a>示例说明</p>
+    <th class="cellrowborder" valign="top" width="57.76%" id="mcps1.2.3.1.2"><p id="p154703218019"><a name="p154703218019"></a><a name="p154703218019"></a>示例说明</p>
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row145471329013"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p9117113513019"><a name="p9117113513019"></a><a name="p9117113513019"></a>0 15 2 * * ?</p>
+    <tbody><tr id="row145471329013"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p9117113513019"><a name="p9117113513019"></a><a name="p9117113513019"></a>0 15 2 * * ?</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p161170357019"><a name="p161170357019"></a><a name="p161170357019"></a>每天凌晨02:15:00执行</p>
-    </td>
-    </tr>
-    <tr id="row754710321802"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1711713352017"><a name="p1711713352017"></a><a name="p1711713352017"></a>0 30 8 ? * Mon-Fri</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p1211793517013"><a name="p1211793517013"></a><a name="p1211793517013"></a>周一到周五上午08:30:00执行</p>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p161170357019"><a name="p161170357019"></a><a name="p161170357019"></a>每天凌晨02:15:00执行</p>
     </td>
     </tr>
-    <tr id="row45473326018"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p1611714357012"><a name="p1611714357012"></a><a name="p1611714357012"></a>0 45 7 1-3 * ?</p>
+    <tr id="row754710321802"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p1711713352017"><a name="p1711713352017"></a><a name="p1711713352017"></a>0 30 8 ? * Mon-Fri</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p711718351010"><a name="p711718351010"></a><a name="p711718351010"></a>每月1, 2, 3号上午07:45:00执行</p>
-    </td>
-    </tr>
-    <tr id="row2054712321205"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p111171635907"><a name="p111171635907"></a><a name="p111171635907"></a>0 0/3 * ? * Mon,Wed,Fri,Sun</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p4117163518015"><a name="p4117163518015"></a><a name="p4117163518015"></a>周一、三、五、日，每隔三分钟执行一次</p>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p1211793517013"><a name="p1211793517013"></a><a name="p1211793517013"></a>周一到周五上午08:30:00执行</p>
     </td>
     </tr>
-    <tr id="row9547153215010"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p121171835305"><a name="p121171835305"></a><a name="p121171835305"></a>0 0/3 9-18 ? * Mon-Fri</p>
+    <tr id="row45473326018"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p1611714357012"><a name="p1611714357012"></a><a name="p1611714357012"></a>0 45 7 1-3 * ?</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p51175351409"><a name="p51175351409"></a><a name="p51175351409"></a>周一到周五09:00-18:00之间每隔三分钟执行一次</p>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p711718351010"><a name="p711718351010"></a><a name="p711718351010"></a>每月1, 2, 3号上午07:45:00执行</p>
     </td>
     </tr>
-    <tr id="row14547632502"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p111178351012"><a name="p111178351012"></a><a name="p111178351012"></a>0 0/30 * * * ?</p>
+    <tr id="row2054712321205"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p111171635907"><a name="p111171635907"></a><a name="p111171635907"></a>0 0/3 * ? * Mon,Wed,Fri,Sun</p>
     </td>
-    <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p3117535606"><a name="p3117535606"></a><a name="p3117535606"></a>每30分钟执行一次</p>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p4117163518015"><a name="p4117163518015"></a><a name="p4117163518015"></a>周一、三、五、日，每隔三分钟执行一次</p>
+    </td>
+    </tr>
+    <tr id="row9547153215010"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p121171835305"><a name="p121171835305"></a><a name="p121171835305"></a>0 0/3 9-18 ? * Mon-Fri</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p51175351409"><a name="p51175351409"></a><a name="p51175351409"></a>周一到周五09:00-18:00之间每隔三分钟执行一次</p>
+    </td>
+    </tr>
+    <tr id="row14547632502"><td class="cellrowborder" valign="top" width="42.24%" headers="mcps1.2.3.1.1 "><p id="p111178351012"><a name="p111178351012"></a><a name="p111178351012"></a>0 0/30 * * * ?</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="57.76%" headers="mcps1.2.3.1.2 "><p id="p3117535606"><a name="p3117535606"></a><a name="p3117535606"></a>每30分钟执行一次</p>
     </td>
     </tr>
     </tbody>

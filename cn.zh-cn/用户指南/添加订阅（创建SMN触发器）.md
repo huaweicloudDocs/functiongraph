@@ -26,7 +26,7 @@
     <tr id="row1040996411123"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p4604418102450"><a name="p4604418102450"></a><a name="p4604418102450"></a>*订阅终端</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p23438155104255"><a name="p23438155104255"></a><a name="p23438155104255"></a>操作步骤如下。</p>
-    <a name="ol63784051104119"></a><a name="ol63784051104119"></a><ol id="ol63784051104119"><li>单击“<a name="image12851510163510"></a><a name="image12851510163510"></a><span><img id="image12851510163510" src="figures/icon-add.png"></span>”，弹出“选择订阅终端”界面。</li><li>在“选择订阅终端”界面，选择<a href="代码上传方式创建运行和初始化函数.md">代码上传方式创建运行和初始化函数</a>中创建的HelloWorld函数。</li><li>单击“确定”。</li></ol>
+    <a name="ol63784051104119"></a><a name="ol63784051104119"></a><ol id="ol63784051104119"><li>单击<a name="image12851510163510"></a><a name="image12851510163510"></a><span><img id="image12851510163510" src="figures/icon-add.png"></span>，弹出“选择订阅终端”界面。</li><li>在“选择订阅终端”界面，选择<a href="代码上传方式创建运行和初始化函数.md">代码上传方式创建运行和初始化函数</a>中创建的HelloWorld函数。</li><li>单击“确定”。</li></ol>
     </td>
     </tr>
     <tr id="row38401286103746"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p10067254103746"><a name="p10067254103746"></a><a name="p10067254103746"></a>*版本</p>

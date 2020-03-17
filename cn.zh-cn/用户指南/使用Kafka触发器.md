@@ -41,7 +41,7 @@
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p12518347279"><a name="p12518347279"></a><a name="p12518347279"></a>选择已创建专享版Kafka实例。</p>
     </td>
     </tr>
-    <tr id="row55133414278"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p25114345272"><a name="p25114345272"></a><a name="p25114345272"></a>*主体</p>
+    <tr id="row55133414278"><td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.1 "><p id="p25114345272"><a name="p25114345272"></a><a name="p25114345272"></a>*主题</p>
     </td>
     <td class="cellrowborder" valign="top" width="50%" headers="mcps1.2.3.1.2 "><p id="p16511734152715"><a name="p16511734152715"></a><a name="p16511734152715"></a>选择专享版Kafka实例的Topic。</p>
     </td>
@@ -67,19 +67,15 @@
     </tbody>
     </table>
 
-6.  单击“确定“，完成触发器创建，如[图2](#fig0459175817301)所示。
-
-    **图 2**  Kafka触发器<a name="fig0459175817301"></a>  
-    ![](figures/Kafka触发器.png "Kafka触发器")
-
+6.  单击“确定“，完成触发器创建。
 
 ## 配置Kafka事件触发函数<a name="section8958730121211"></a>
 
 1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入HelloWorld函数详情界面。
-3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图3](#fig12868111714416)所示，弹出“配置测试事件”页。
+3.  在HelloWorld函数详情页，选择函数版本，单击“请选择测试事件\>配置测试事件”，如[图2](#fig12868111714416)所示，弹出“配置测试事件”页。
 
-    **图 3**  配置Kafka测试事件<a name="fig12868111714416"></a>  
+    **图 2**  配置Kafka测试事件<a name="fig12868111714416"></a>  
     ![](figures/配置Kafka测试事件.png "配置Kafka测试事件")
 
 4.  在“配置测试事件”界面填写如[表2](#table15199135171812)所示测试信息后单击“保存”，带\*参数为必填项。
@@ -138,9 +134,5 @@
     >}  
     >```  
 
-5.  单击“测试”，可以得到函数运行结果，函数会返回输入kafka消息数据。如[图4](#fig883116231346)所示。
-
-    **图 4**  专享版Kafka触发器测试结果<a name="fig883116231346"></a>  
-    ![](figures/专享版Kafka触发器测试结果.png "专享版Kafka触发器测试结果")
-
+5.  单击“测试”，可以得到函数运行结果，函数会返回输入kafka消息数据。
 
