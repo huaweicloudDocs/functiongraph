@@ -9,7 +9,7 @@
 进行操作之前，需要做好以下准备。
 
 -   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
--   已经创建接入通道，此处以dis-function为例，创建过程请参考[创建DIS通道](https://support.huaweicloud.com/usermanual-dis/zh-cn_topic_0034903799.html)。
+-   已经创建接入通道，此处以dis-function为例，创建过程请参考[创建DIS通道](https://support.huaweicloud.com/usermanual-dis/dis_01_0601.html)。
 
 ## 设置函数委托<a name="section04468211232"></a>
 

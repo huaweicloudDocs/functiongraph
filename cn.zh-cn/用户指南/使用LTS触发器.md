@@ -9,9 +9,9 @@
 进行操作之前，需要做好以下准备。
 
 -   已经在函数工作流服务创建函数，创建过程请参考[代码上传方式创建运行和初始化函数](代码上传方式创建运行和初始化函数.md)。
--   已经创建日志组，此处以LogGroup1为例，创建过程请参考[创建日志组](https://support.huaweicloud.com/usermanual-lts/zh-cn_topic_0071259182.html)。
--   已经创建日志主题，此处以LogTopic1为例，创建过程请参考[创建日志主题](https://support.huaweicloud.com/usermanual-lts/zh-cn_topic_0076874392.html)。
--   配置Agent，快速将ECS等服务器上日志采集到指定的日志组，详情请参考[Agent配置](https://support.huaweicloud.com/qs-lts/zh-cn_topic_0078543180.html)。
+-   已经创建日志组，此处以LogGroup1为例，创建过程请参考[创建日志组](https://support.huaweicloud.com/usermanual-lts/lts_04_0003.html)。
+-   已经创建日志流，此处以LogTopic1为例，创建过程请参考[创建日志流](https://support.huaweicloud.com/usermanual-lts/lts_04_0004.html)。
+-   配置Agent，快速将ECS等服务器上日志采集到指定的日志组，详情请参考[安装Agent](https://support.huaweicloud.com/qs-lts/lts_0829.html)。
 
 ## 创建LTS触发器<a name="section198021231234"></a>
 

@@ -66,7 +66,7 @@
         </table>
 
         >![](public_sys-resources/icon-note.gif) **说明：**   
-        >CTS触发器最多支持添加10个服务，每个服务10个操作，总共可添加100个操作，服务及操作详情可参考[支持审计的服务及详细操作列表](https://support.huaweicloud.com/usermanual-cts/zh-cn_topic_0100236046.html)。  
+        >CTS触发器最多支持添加10个服务，每个服务10个操作，总共可添加100个操作，服务及操作详情可参考[支持审计的服务及详细操作列表](https://support.huaweicloud.com/usermanual-cts/cts_03_0030.html)。  
 
 
 4.  单击“创建函数“，创建函数和触发器。
