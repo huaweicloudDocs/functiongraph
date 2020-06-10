@@ -67,7 +67,7 @@ URI参数说明如[表1](#table14489155144411)所示。
 </td>
 <td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p13741175512449"><a name="p13741175512449"></a><a name="p13741175512449"></a>可选</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.5.1.4 "><p id="p1494811074514"><a name="p1494811074514"></a><a name="p1494811074514"></a>FunctionGraph函数的执行环境，取值：Node.js 6.10、Node.js 8.10、Python 2.7、Python 3.6、Java 8、Go 1.8、C#.NET Core 2.0、C#.NET Core 2.1和PHP 7.3。</p>
+<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.5.1.4 "><p id="p1494811074514"><a name="p1494811074514"></a><a name="p1494811074514"></a>FunctionGraph函数的执行环境，支持Node.js 6.10、Node.js 8.10、Node.js 10.16、Node.js 12.13、Python 2.7、Python 3.6、Java 8、Go 1.8、C#.NET Core 2.0、C#.NET Core 2.1、C#.NET Core 3.1和PHP 7.3。</p>
 </td>
 </tr>
 <tr id="row133668354389"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p833044815384"><a name="p833044815384"></a><a name="p833044815384"></a>code_type</p>
@@ -188,6 +188,15 @@ URI参数说明如[表1](#table14489155144411)所示。
 <td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.5.1.4 "><p id="p10961155153719"><a name="p10961155153719"></a><a name="p10961155153719"></a>虚拟私有云唯一标识。</p>
 </td>
 </tr>
+<tr id="row86042222399"><td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.5.1.1 "><p id="p10605522103919"><a name="p10605522103919"></a><a name="p10605522103919"></a>mount_config</p>
+</td>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.2 "><p id="p17605922203918"><a name="p17605922203918"></a><a name="p17605922203918"></a>mount_config</p>
+</td>
+<td class="cellrowborder" valign="top" width="10%" headers="mcps1.2.5.1.3 "><p id="p136051722143912"><a name="p136051722143912"></a><a name="p136051722143912"></a>可选</p>
+</td>
+<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.5.1.4 "><p id="p1605112215399"><a name="p1605112215399"></a><a name="p1605112215399"></a>文件系统配置，请参考<a href="FunctionGraph函数模型.md#table2317745151313">表6</a></p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -252,7 +261,7 @@ URI参数说明如[表1](#table14489155144411)所示。
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.2 "><p id="p143291358595"><a name="p143291358595"></a><a name="p143291358595"></a>String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p652094462816"><a name="p652094462816"></a><a name="p652094462816"></a>FunctionGraph函数的执行环境，支持Node.js 6.10、Python 2.7、Python 3.6、Java 8、Go 1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1和PHP 7.3。</p>
+<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p652094462816"><a name="p652094462816"></a><a name="p652094462816"></a>FunctionGraph函数的执行环境，支持Node.js 6.10、Node.js 8.10、Node.js 10.16、Node.js 12.13、Python 2.7、Python 3.6、Java 8、Go 1.8、C#.NET Core 2.0、C#.NET Core 2.1、C#.NET Core 3.1和PHP 7.3。</p>
 </td>
 </tr>
 <tr id="row16165192105318"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p39009036"><a name="p39009036"></a><a name="p39009036"></a>timeout</p>

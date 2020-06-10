@@ -97,7 +97,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row821715346434"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1741501443"><a name="p1741501443"></a><a name="p1741501443"></a>runtime</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1274120064410"><a name="p1274120064410"></a><a name="p1274120064410"></a>FunctionGraph函数的执行环境，支持Node.js 6.10、Python 2.7、Python 3.6、Java 8、Go 1.8、Node.js 8.10、C#.NET Core 2.0、C#.NET Core 2.1和PHP 7.3。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1274120064410"><a name="p1274120064410"></a><a name="p1274120064410"></a>FunctionGraph函数的执行环境，支持Node.js 6.10、Node.js 8.10、Node.js 10.16、Node.js 12.13、Python 2.7、Python 3.6、Java 8、Go 1.8、C#.NET Core 2.0、C#.NET Core 2.1、C#.NET Core 3.1和PHP 7.3。</p>
 </td>
 </tr>
 <tr id="row145081418204316"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p47413017444"><a name="p47413017444"></a><a name="p47413017444"></a>timeout</p>
@@ -213,7 +213,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row4581320174210"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p07441602444"><a name="p07441602444"></a><a name="p07441602444"></a>dependencies</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p177449017441"><a name="p177449017441"></a><a name="p177449017441"></a>依赖代码包列表，<a href="#table3788232112820">表5</a>。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p177449017441"><a name="p177449017441"></a><a name="p177449017441"></a>依赖代码包列表，请参考<a href="#table3788232112820">表5</a>。</p>
 </td>
 </tr>
 <tr id="row1581820104216"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1274416019446"><a name="p1274416019446"></a><a name="p1274416019446"></a>initializer_handler</p>
@@ -234,7 +234,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row1246812310125"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p17468183191219"><a name="p17468183191219"></a><a name="p17468183191219"></a>mount_config</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p046818311219"><a name="p046818311219"></a><a name="p046818311219"></a>文件系统配置，请参考表 <a href="#table2317745151313">表6 mount_config参数说明</a>。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p046818311219"><a name="p046818311219"></a><a name="p046818311219"></a>文件系统配置，请参考<a href="#table2317745151313">表6 mount_config参数说明</a>。</p>
 </td>
 </tr>
 </tbody>
