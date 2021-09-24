@@ -277,7 +277,7 @@ URI参数说明如[表1](#d0e2233)所示。
 </td>
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.2 "><p id="p1564919465910"><a name="p1564919465910"></a><a name="p1564919465910"></a>*String</p>
 </td>
-<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p11649846890"><a name="p11649846890"></a><a name="p11649846890"></a>VPC配置，请参考<a href="获取函数列表.md#table11522131317013">表6 func_vpc参数说明</a>。</p>
+<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p11649846890"><a name="p11649846890"></a><a name="p11649846890"></a>VPC配置，请参考<a href="获取函数列表.md#table11522131317013">表6</a>。</p>
 </td>
 </tr>
 <tr id="row3101117131016"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p71033173107"><a name="p71033173107"></a><a name="p71033173107"></a>mount_config</p>
@@ -285,6 +285,13 @@ URI参数说明如[表1](#d0e2233)所示。
 <td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.2 "><p id="p16103161711105"><a name="p16103161711105"></a><a name="p16103161711105"></a>*String</p>
 </td>
 <td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p1810341717104"><a name="p1810341717104"></a><a name="p1810341717104"></a>磁盘挂载配置，请参考<a href="获取函数列表.md#table4760111014199">表7</a>。</p>
+</td>
+</tr>
+<tr id="row9745162419207"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.4.1.1 "><p id="p84907518207"><a name="p84907518207"></a><a name="p84907518207"></a>encrypted_user_data</p>
+</td>
+<td class="cellrowborder" valign="top" width="15%" headers="mcps1.2.4.1.2 "><p id="p3745102492019"><a name="p3745102492019"></a><a name="p3745102492019"></a>String</p>
+</td>
+<td class="cellrowborder" valign="top" width="65%" headers="mcps1.2.4.1.3 "><p id="p1074572452014"><a name="p1074572452014"></a><a name="p1074572452014"></a>函数加密配置。</p>
 </td>
 </tr>
 </tbody>

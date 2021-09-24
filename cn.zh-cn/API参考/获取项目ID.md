@@ -25,7 +25,7 @@
             "domain_id": "65382450e8f64ac0870cd180d14e684b",
             "is_domain": false, 
             "parent_id": "65382450e8f64ac0870cd180d14e684b",
-            "name": "cn-north-4",
+            "name": "xxx",
             "description": "",
             "links": {
                 "next": null,

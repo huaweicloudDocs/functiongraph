@@ -234,7 +234,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </tr>
 <tr id="row1246812310125"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p17468183191219"><a name="p17468183191219"></a><a name="p17468183191219"></a>mount_config</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p046818311219"><a name="p046818311219"></a><a name="p046818311219"></a>文件系统配置，请参考<a href="#table2317745151313">表6 mount_config参数说明</a>。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p046818311219"><a name="p046818311219"></a><a name="p046818311219"></a>文件系统配置，请参考<a href="#table2317745151313">表6</a>。</p>
 </td>
 </tr>
 </tbody>
@@ -490,7 +490,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1179865041715"><a name="p1179865041715"></a><a name="p1179865041715"></a>mount_user非空时必选</p>
 </td>
-<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p17798175015173"><a name="p17798175015173"></a><a name="p17798175015173"></a>用户ID（-1 ~ +65534的非0整数）</p>
+<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p17798175015173"><a name="p17798175015173"></a><a name="p17798175015173"></a>用户ID，-1 ~ +65534的整数(0、1000、1002除外)</p>
 </td>
 </tr>
 <tr id="row2079885011715"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p079865019179"><a name="p079865019179"></a><a name="p079865019179"></a>user_group_id</p>
@@ -499,7 +499,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p11799750101714"><a name="p11799750101714"></a><a name="p11799750101714"></a>mount_user非空时必选</p>
 </td>
-<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p17755154919198"><a name="p17755154919198"></a><a name="p17755154919198"></a>用户组ID（-1 ~ +65534的非0整数）</p>
+<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p17755154919198"><a name="p17755154919198"></a><a name="p17755154919198"></a>用户组ID，-1 ~ +65534的整数(0、1000、1002除外)</p>
 </td>
 </tr>
 </tbody>
@@ -524,7 +524,7 @@ FunctionGraph函数字段说明如[表1](#table357132064218)所示。
 </td>
 <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1460462206"><a name="p1460462206"></a><a name="p1460462206"></a>func_mounts非空时必选</p>
 </td>
-<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p9509123292117"><a name="p9509123292117"></a><a name="p9509123292117"></a>挂载类型（sfs/sfsTurbo/ecs）</p>
+<td class="cellrowborder" valign="top" width="35%" headers="mcps1.2.5.1.4 "><p id="p9509123292117"><a name="p9509123292117"></a><a name="p9509123292117"></a>挂载类型(sfs/sfsTurbo/ecs)</p>
 </td>
 </tr>
 <tr id="row1837510211209"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.5.1.1 "><p id="p037515213203"><a name="p037515213203"></a><a name="p037515213203"></a>mount_resource</p>
@@ -563,8 +563,8 @@ funcurn格式如下。
 urn:fss:<region_id>:<project_id>:function:<package>:<function_name>[:<version>|:!<alias>]
 ```
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->Funcurn使用冒号分隔为8个域，region\_id为系统配置的值（测试时可以填成与后台相同的值），最后一个中括号的内容表示可以为函数的版本号，也可以为该版本指向的别名，如果为别名时需要在名称前加上感叹号！以示区分。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>Funcurn使用冒号分隔为8个域，region\_id为系统配置的值（测试时可以填成与后台相同的值），最后一个中括号的内容表示可以为函数的版本号，也可以为该版本指向的别名，如果为别名时需要在名称前加上感叹号！以示区分。
 
 当作为API参数时，可以提供简化格式的Funcurn，具体如下。
 

@@ -25,7 +25,7 @@
 </thead>
 <tbody><tr id="row30782874"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p10384848"><a name="p10384848"></a><a name="p10384848"></a>trigger_type_code</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p35866396"><a name="p35866396"></a><a name="p35866396"></a>触发器类型代码，取值：SMN、DMS、OBS、DIS、APIG、TIMER、CTS、LTS。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p35866396"><a name="p35866396"></a><a name="p35866396"></a>触发器类型代码，取值：SMN、APIG、OBS、TIMER、DMS、DIS、LTS、DDS、CTS、kafka。</p>
 </td>
 </tr>
 <tr id="row54362108"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p41254657"><a name="p41254657"></a><a name="p41254657"></a>display_name</p>
@@ -79,7 +79,7 @@
 </tr>
 <tr id="row17114191"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p44072239"><a name="p44072239"></a><a name="p44072239"></a>trigger_type_code</p>
 </td>
-<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p13081587"><a name="p13081587"></a><a name="p13081587"></a>触发器类型代码，取值：SMN、DMS、OBS、DIS、APIG、TIMER、CTS、LTS。</p>
+<td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p959853731813"><a name="p959853731813"></a><a name="p959853731813"></a>触发器类型代码，取值：SMN、APIG、OBS、TIMER、DMS、DIS、LTS、DDS、CTS、kafka。</p>
 </td>
 </tr>
 <tr id="row50625422"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p7018532"><a name="p7018532"></a><a name="p7018532"></a>event_type_code</p>
@@ -332,24 +332,24 @@
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p59913371628"><a name="p59913371628"></a><a name="p59913371628"></a>API访问地址，需要服从URL规范，如/a/b，必填。</p>
     </td>
     </tr>
-    <tr id="row14316111154616"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1831711116467"><a name="p1831711116467"></a><a name="p1831711116467"></a>match_mode</p>
+    <tr id="row14316111154616"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p13484175218577"><a name="p13484175218577"></a><a name="p13484175218577"></a>match_mode</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p21651512414"><a name="p21651512414"></a><a name="p21651512414"></a>匹配模式，SWA（前缀匹配）或NORMAL（普通匹配），必填。</p>
-    </td>
-    </tr>
-    <tr id="row456035604913"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p175611356184915"><a name="p175611356184915"></a><a name="p175611356184915"></a>req_method</p>
-    </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p1856117563497"><a name="p1856117563497"></a><a name="p1856117563497"></a>API请求方式，枚举如：GET、POST、PUT，必填。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p15484152115718"><a name="p15484152115718"></a><a name="p15484152115718"></a>匹配模式，当前只支持前缀匹配模式（SWA），必填。</p>
     </td>
     </tr>
-    <tr id="row11626645145012"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p10626134575015"><a name="p10626134575015"></a><a name="p10626134575015"></a>backend_type</p>
+    <tr id="row456035604913"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p44848522572"><a name="p44848522572"></a><a name="p44848522572"></a>req_method</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p14627104515509"><a name="p14627104515509"></a><a name="p14627104515509"></a>后端类型：FUNCTION，必填。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p648485225714"><a name="p648485225714"></a><a name="p648485225714"></a>API请求方式，枚举如：GET、POST、PUT，必填。</p>
     </td>
     </tr>
-    <tr id="row175011402512"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p9501180205111"><a name="p9501180205111"></a><a name="p9501180205111"></a>type</p>
+    <tr id="row11626645145012"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p13484105211573"><a name="p13484105211573"></a><a name="p13484105211573"></a>backend_type</p>
     </td>
-    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p2501140175118"><a name="p2501140175118"></a><a name="p2501140175118"></a>API类型：开放API为1，私有API为2，必填。</p>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p7484105255711"><a name="p7484105255711"></a><a name="p7484105255711"></a>后端类型：FUNCTION，必填。</p>
+    </td>
+    </tr>
+    <tr id="row175011402512"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p1948515275719"><a name="p1948515275719"></a><a name="p1948515275719"></a>type</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p24851252155716"><a name="p24851252155716"></a><a name="p24851252155716"></a>API类型，当前只支持开放API类型（1），必填。</p>
     </td>
     </tr>
     <tr id="row1350103175112"><td class="cellrowborder" valign="top" width="20%" headers="mcps1.2.3.1.1 "><p id="p45043155116"><a name="p45043155116"></a><a name="p45043155116"></a>sl_domain</p>
@@ -475,6 +475,110 @@
     </td>
     <td class="cellrowborder" valign="top" width="80%" headers="mcps1.2.3.1.2 "><p id="p9246172432618"><a name="p9246172432618"></a><a name="p9246172432618"></a>操作列表。</p>
     <p id="p17408134051018"><a name="p17408134051018"></a><a name="p17408134051018"></a>格式为：服务类型:资源类型A;资源类型B:操作名称1;操作名称2，例如：["ECS:ecs;server:restartServer;deleteServer",...]。</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+-   DDS触发器数据如下。
+
+    ```
+    {
+    	"instance_id": "string",
+            "collection_name": "string",
+            "db_name": "string",
+    	"db_password": string，
+            "batch_size": int,
+    }
+    ```
+
+    **表 11**  DDS触发器数据说明
+
+    <a name="table15884524171014"></a>
+    <table><thead align="left"><tr id="row2088419244108"><th class="cellrowborder" valign="top" width="20.54%" id="mcps1.2.3.1.1"><p id="p4978184791015"><a name="p4978184791015"></a><a name="p4978184791015"></a>字段名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="79.46%" id="mcps1.2.3.1.2"><p id="p088419246109"><a name="p088419246109"></a><a name="p088419246109"></a>字段说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row7884202412106"><td class="cellrowborder" valign="top" width="20.54%" headers="mcps1.2.3.1.1 "><p id="p6884142481011"><a name="p6884142481011"></a><a name="p6884142481011"></a>instance_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.2 "><p id="p791415124226"><a name="p791415124226"></a><a name="p791415124226"></a>文档数据库实例ID</p>
+    </td>
+    </tr>
+    <tr id="row198841524181012"><td class="cellrowborder" valign="top" width="20.54%" headers="mcps1.2.3.1.1 "><p id="p888411243104"><a name="p888411243104"></a><a name="p888411243104"></a>collection_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.2 "><p id="p7884122451019"><a name="p7884122451019"></a><a name="p7884122451019"></a>集合名称</p>
+    </td>
+    </tr>
+    <tr id="row8884162411108"><td class="cellrowborder" valign="top" width="20.54%" headers="mcps1.2.3.1.1 "><p id="p1716285342112"><a name="p1716285342112"></a><a name="p1716285342112"></a>db_name</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.2 "><p id="p11381415246"><a name="p11381415246"></a><a name="p11381415246"></a>文档数据库名称</p>
+    </td>
+    </tr>
+    <tr id="row1388415243106"><td class="cellrowborder" valign="top" width="20.54%" headers="mcps1.2.3.1.1 "><p id="p18884102414101"><a name="p18884102414101"></a><a name="p18884102414101"></a>db_password</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.2 "><p id="p2088417240105"><a name="p2088417240105"></a><a name="p2088417240105"></a>文档数据库用户密码</p>
+    </td>
+    </tr>
+    <tr id="row0884024141014"><td class="cellrowborder" valign="top" width="20.54%" headers="mcps1.2.3.1.1 "><p id="p1188482411014"><a name="p1188482411014"></a><a name="p1188482411014"></a>batch_size</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.46%" headers="mcps1.2.3.1.2 "><p id="p208841024121013"><a name="p208841024121013"></a><a name="p208841024121013"></a>批次大小</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+-   Kafka触发器数据如下。
+
+    ```
+    {
+            "instance_id": "string",
+    	"db_name": "string",
+            "collection_name": "string",
+            "db_user": "string",
+    	"db_password": string，
+            "batch_size": int,
+    }
+    ```
+
+    **表 12**  Kafka触发器数据说明
+
+    <a name="table1314382311219"></a>
+    <table><thead align="left"><tr id="row131431231123"><th class="cellrowborder" valign="top" width="20.75%" id="mcps1.2.3.1.1"><p id="p1879583361213"><a name="p1879583361213"></a><a name="p1879583361213"></a>字段名称</p>
+    </th>
+    <th class="cellrowborder" valign="top" width="79.25%" id="mcps1.2.3.1.2"><p id="p37951733151212"><a name="p37951733151212"></a><a name="p37951733151212"></a>字段说明</p>
+    </th>
+    </tr>
+    </thead>
+    <tbody><tr id="row183761729122918"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p6376102992912"><a name="p6376102992912"></a><a name="p6376102992912"></a>instance_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p113761029162910"><a name="p113761029162910"></a><a name="p113761029162910"></a>Kafka实例ID</p>
+    </td>
+    </tr>
+    <tr id="row314392320129"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p5143132310125"><a name="p5143132310125"></a><a name="p5143132310125"></a>topic_id</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p714317232122"><a name="p714317232122"></a><a name="p714317232122"></a>主题ID</p>
+    </td>
+    </tr>
+    <tr id="row14143152314125"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p1814317232127"><a name="p1814317232127"></a><a name="p1814317232127"></a>kafka_user</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p0143162341214"><a name="p0143162341214"></a><a name="p0143162341214"></a>用户名</p>
+    </td>
+    </tr>
+    <tr id="row1914311231122"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p61431423191210"><a name="p61431423191210"></a><a name="p61431423191210"></a>kafka_password</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p814302321218"><a name="p814302321218"></a><a name="p814302321218"></a>用户密码</p>
+    </td>
+    </tr>
+    <tr id="row71431223141218"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p1614392311211"><a name="p1614392311211"></a><a name="p1614392311211"></a>kafka_ssl_enable</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p19143202311126"><a name="p19143202311126"></a><a name="p19143202311126"></a>是否开启SSL验证（若开启则用户名和密码字段是为必选）</p>
+    </td>
+    </tr>
+    <tr id="row514302311214"><td class="cellrowborder" valign="top" width="20.75%" headers="mcps1.2.3.1.1 "><p id="p41435232121"><a name="p41435232121"></a><a name="p41435232121"></a>batch_size</p>
+    </td>
+    <td class="cellrowborder" valign="top" width="79.25%" headers="mcps1.2.3.1.2 "><p id="p91431723191217"><a name="p91431723191217"></a><a name="p91431723191217"></a>批次大小</p>
     </td>
     </tr>
     </tbody>
