@@ -2,11 +2,11 @@
 
 如果您需要对您所拥有的FunctionGraph进行精细的权限管理，您可以使用[统一身份认证服务](https://support.huaweicloud.com/usermanual-iam/iam_01_0001.html)（Identity and Access Management，简称IAM），通过IAM，您可以：
 
--   根据企业的业务组织，在您的华为云账号中，给企业中不同职能部门的员工创建IAM用户，让员工拥有唯一安全凭证，并使用FunctionGraph资源。
+-   根据企业的业务组织，在您的华为云帐号中，给企业中不同职能部门的员工创建IAM用户，让员工拥有唯一安全凭证，并使用FunctionGraph资源。
 -   根据企业用户的职能，设置不同的访问权限，以达到用户之间的权限隔离。
--   将FunctionGraph资源委托给更专业、高效的其他华为云账号或者云服务，这些账号或者云服务可以根据权限进行代运维。
+-   将FunctionGraph资源委托给更专业、高效的其他华为云帐号或者云服务，这些帐号或者云服务可以根据权限进行代运维。
 
-如果华为云账号已经能满足您的要求，不需要创建独立的IAM用户，您可以跳过本章节，不影响您使用FunctionGraph服务的其它功能。
+如果华为云帐号已经能满足您的要求，不需要创建独立的IAM用户，您可以跳过本章节，不影响您使用FunctionGraph服务的其它功能。
 
 本章节为您介绍对用户授权的方法，操作流程如[图1](#fig484754213103)所示。
 
@@ -29,9 +29,9 @@
 
 3.  [用户登录](https://support.huaweicloud.com/usermanual-iam/iam_01_0552.html)并验证权限
 
-    新创建的用户登录控制台，验证FunctionGraph的函数查询权限。
+    新创建的用户登录管理控制台，验证FunctionGraph的函数查询权限。
 
-    -   在“服务列表”中选择“函数工作流 FunctionGraph”，进入“函数列表”，单击“创建函数”进入到创建函数界面，发现无法创建函数，表示“FunctionGraph Invoker”已生效。
+    -   在“服务列表”中选择“函数工作流 FunctionGraph”，进入“函数 \> 函数列表”，单击“创建函数”进入到创建函数界面，发现无法创建函数，表示“FunctionGraph Invoker”已生效。
     -   在“服务列表”中选择除FunctionGraph外的任一服务，若提示权限不足，表示“FunctionGraph Invoker”已生效。
 
 

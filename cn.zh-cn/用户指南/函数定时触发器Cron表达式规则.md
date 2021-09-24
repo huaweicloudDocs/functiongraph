@@ -4,7 +4,7 @@
 
 -   @every格式
 
-    @every  _**N**_Unit，其中N表示一个正整数，Unit可以为ns, us\(或µ s\), ms, s, m, h，表示每隔N个Unit时间触发一次函数如[表1](#table7363243105610)所示。
+    @every  _**N**_Unit，其中N表示一个正整数，Unit可以为ns, µs, ms, s, m, h，表示每隔N个Unit时间触发一次函数如[表1](#table7363243105610)所示。
 
     **表 1**  表达式示例
 
@@ -40,9 +40,9 @@
     **表 2**  cron表达式字段说明
 
     <a name="table5859105445813"></a>
-    <table><thead align="left"><tr id="row108590549589"><th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.1"><p id="p46291113595"><a name="p46291113595"></a><a name="p46291113595"></a><strong id="b15627115595"><a name="b15627115595"></a><a name="b15627115595"></a>字段</strong></p>
+    <table><thead align="left"><tr id="row108590549589"><th class="cellrowborder" valign="top" width="25.05%" id="mcps1.2.5.1.1"><p id="p46291113595"><a name="p46291113595"></a><a name="p46291113595"></a><strong id="b15627115595"><a name="b15627115595"></a><a name="b15627115595"></a>字段</strong></p>
     </th>
-    <th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.2"><p id="p1962141155919"><a name="p1962141155919"></a><a name="p1962141155919"></a><strong id="b1362211135912"><a name="b1362211135912"></a><a name="b1362211135912"></a>说明</strong></p>
+    <th class="cellrowborder" valign="top" width="24.95%" id="mcps1.2.5.1.2"><p id="p1962141155919"><a name="p1962141155919"></a><a name="p1962141155919"></a><strong id="b1362211135912"><a name="b1362211135912"></a><a name="b1362211135912"></a>说明</strong></p>
     </th>
     <th class="cellrowborder" valign="top" width="25%" id="mcps1.2.5.1.3"><p id="p562201185912"><a name="p562201185912"></a><a name="p562201185912"></a><strong id="b1262191113591"><a name="b1262191113591"></a><a name="b1262191113591"></a>取值范围</strong></p>
     </th>
@@ -50,54 +50,54 @@
     </th>
     </tr>
     </thead>
-    <tbody><tr id="row2859554165811"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p962811145915"><a name="p962811145915"></a><a name="p962811145915"></a>秒</p>
+    <tbody><tr id="row2859554165811"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p962811145915"><a name="p962811145915"></a><a name="p962811145915"></a>秒</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p136213114591"><a name="p136213114591"></a><a name="p136213114591"></a>必选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p136213114591"><a name="p136213114591"></a><a name="p136213114591"></a>必选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1762311205910"><a name="p1762311205910"></a><a name="p1762311205910"></a>0-59</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p26215114599"><a name="p26215114599"></a><a name="p26215114599"></a>, - * /</p>
     </td>
     </tr>
-    <tr id="row185915413583"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p196216111592"><a name="p196216111592"></a><a name="p196216111592"></a>分钟</p>
+    <tr id="row185915413583"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p196216111592"><a name="p196216111592"></a><a name="p196216111592"></a>分钟</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p7626117591"><a name="p7626117591"></a><a name="p7626117591"></a>必选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p7626117591"><a name="p7626117591"></a><a name="p7626117591"></a>必选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p10635116598"><a name="p10635116598"></a><a name="p10635116598"></a>0-59</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p76341113591"><a name="p76341113591"></a><a name="p76341113591"></a>, - * /</p>
     </td>
     </tr>
-    <tr id="row1785945405810"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p863161112592"><a name="p863161112592"></a><a name="p863161112592"></a>时</p>
+    <tr id="row1785945405810"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p863161112592"><a name="p863161112592"></a><a name="p863161112592"></a>时</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p96321165915"><a name="p96321165915"></a><a name="p96321165915"></a>必选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p96321165915"><a name="p96321165915"></a><a name="p96321165915"></a>必选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p56381112599"><a name="p56381112599"></a><a name="p56381112599"></a>0-23</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p16321116591"><a name="p16321116591"></a><a name="p16321116591"></a>, - * /</p>
     </td>
     </tr>
-    <tr id="row18593548586"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p1963511185917"><a name="p1963511185917"></a><a name="p1963511185917"></a>日(Day of month)</p>
+    <tr id="row18593548586"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p1963511185917"><a name="p1963511185917"></a><a name="p1963511185917"></a>日(Day of month)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p263101119598"><a name="p263101119598"></a><a name="p263101119598"></a>必选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p263101119598"><a name="p263101119598"></a><a name="p263101119598"></a>必选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p06351118592"><a name="p06351118592"></a><a name="p06351118592"></a>1-31</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p1063011135911"><a name="p1063011135911"></a><a name="p1063011135911"></a>, - * ? /</p>
     </td>
     </tr>
-    <tr id="row1085913547581"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p563121116599"><a name="p563121116599"></a><a name="p563121116599"></a>月</p>
+    <tr id="row1085913547581"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p563121116599"><a name="p563121116599"></a><a name="p563121116599"></a>月</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p663191135910"><a name="p663191135910"></a><a name="p663191135910"></a>必选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p663191135910"><a name="p663191135910"></a><a name="p663191135910"></a>必选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p1063101195917"><a name="p1063101195917"></a><a name="p1063101195917"></a>1-12或者Jan-Dec（英文不区分大小写）如<a href="#table19718122644217">表3</a>所示。</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.4 "><p id="p126331125920"><a name="p126331125920"></a><a name="p126331125920"></a>, - * /</p>
     </td>
     </tr>
-    <tr id="row1985955405817"><td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.1 "><p id="p136371155920"><a name="p136371155920"></a><a name="p136371155920"></a>星期几(Day of week)</p>
+    <tr id="row1985955405817"><td class="cellrowborder" valign="top" width="25.05%" headers="mcps1.2.5.1.1 "><p id="p136371155920"><a name="p136371155920"></a><a name="p136371155920"></a>星期几(Day of week)</p>
     </td>
-    <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.2 "><p id="p176381112595"><a name="p176381112595"></a><a name="p176381112595"></a>可选</p>
+    <td class="cellrowborder" valign="top" width="24.95%" headers="mcps1.2.5.1.2 "><p id="p176381112595"><a name="p176381112595"></a><a name="p176381112595"></a>可选</p>
     </td>
     <td class="cellrowborder" valign="top" width="25%" headers="mcps1.2.5.1.3 "><p id="p13638119593"><a name="p13638119593"></a><a name="p13638119593"></a>0-6或者Sun-Sat（0表示星期天，英文不区分大小写），如<a href="#table1559918575415">表4</a>所示。</p>
     </td>

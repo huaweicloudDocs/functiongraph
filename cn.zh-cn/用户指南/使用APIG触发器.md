@@ -6,7 +6,7 @@
 
 ## 前提条件<a name="section76949209512"></a>
 
-已经创建API分组，此处以APIGroup\_test分组为例，创建过程请参考[创建API分组](https://support.huaweicloud.com/usermanual-apig/apig-zh-ug-180307015.html)。
+已经创建API分组，此处以APIGroup\_test分组为例，创建过程请参考[创建API分组](https://support.huaweicloud.com/usermanual-apig/apig-ug-180307015.html)。
 
 ## 创建APIG触发器<a name="section0341823105810"></a>
 
@@ -76,7 +76,7 @@
     <tr id="row5573104815454"><td class="cellrowborder" valign="top" width="24.54%" headers="mcps1.2.3.1.1 "><p id="p6573164824514"><a name="p6573164824514"></a><a name="p6573164824514"></a>安全认证</p>
     </td>
     <td class="cellrowborder" valign="top" width="75.46000000000001%" headers="mcps1.2.3.1.2 "><p id="p4573174816457"><a name="p4573174816457"></a><a name="p4573174816457"></a>API认证方式：</p>
-    <a name="ul29539535471"></a><a name="ul29539535471"></a><ul id="ul29539535471"><li>App： 采用Appkey&amp;Appsecret认证，安全级别高，推荐使用，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307002.html" target="_blank" rel="noopener noreferrer">APP认证</a>。</li><li>IAM： IAM认证，只允许公有云用户能访问，安全级别中等，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-zh-dev-180307020.html" target="_blank" rel="noopener noreferrer">IAM认证</a>。</li><li>None： 无认证模式，所有用户均可访问。</li></ul>
+    <a name="ul29539535471"></a><a name="ul29539535471"></a><ul id="ul29539535471"><li>App： 采用Appkey&amp;Appsecret认证，安全级别高，推荐使用，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-dev-180307002.html" target="_blank" rel="noopener noreferrer">APP认证</a>。</li><li>IAM： IAM认证，只允许公有云用户能访问，安全级别中等，详情请参考<a href="https://support.huaweicloud.com/devg-apig/apig-dev-180307020.html" target="_blank" rel="noopener noreferrer">IAM认证</a>。</li><li>None： 无认证模式，所有用户均可访问。</li></ul>
     <p id="p657314810455"><a name="p657314810455"></a><a name="p657314810455"></a>选择“None”。</p>
     </td>
     </tr>
@@ -100,9 +100,9 @@
     **图 1**  APIG触发器<a name="fig99182432558"></a>  
     ![](figures/APIG触发器.png "APIG触发器")
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >1.  APIG触发器调用地址：https://0ed9f61512d34982917a4f3cfe8ddd5d.apig.xxx.xxx.com/apig。  
-    >2.  API触发器创建完成后，会在API网关生成名为API\_apig的API，单击API名称，跳转至API网关服务。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >1.  APIG触发器调用地址：https://0ed9f61512d34982917a4f3cfe8ddd5d.apig.xxx.xxx.com/apig。
+    >2.  API触发器创建完成后，会在API网关生成名为API\_apig的API，单击API名称，跳转至API网关服务。
 
 
 ## 调用函数<a name="section5526738175817"></a>

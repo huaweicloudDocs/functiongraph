@@ -70,14 +70,14 @@
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >生产消息具体参数介绍请参见[生产消息](https://support.huaweicloud.com/usermanual-dms/dms-ug-0312104.html)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >生产消息具体参数介绍请参见[生产消息](https://support.huaweicloud.com/usermanual-dms/dms-ug-0312104.html)。
 
 5.  单击“确定”，完成消息创建。
 6.  在“消费组”栏的group-dms消费组可以查看“可消费消息数”。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >DMS触发器会按照[创建DMS触发器](#section165781325165412)中设置的拉取周期轮询消息，如果轮询到可消费消息，会消费消息，触发函数运行，具体示例事件请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >DMS触发器会按照[创建DMS触发器](#section165781325165412)中设置的拉取周期轮询消息，如果轮询到可消费消息，会消费消息，触发函数运行，具体示例事件请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。
 
 
 ## 查看函数运行结果<a name="section118763164575"></a>

@@ -31,8 +31,8 @@
 
 在“对象存储服务”控制台，将需要处理的图片ZIP包上传至“obs-cff”存储桶，具体上传步骤请参考[上传文件](https://support.huaweicloud.com/usermanual-obs/zh-cn_topic_0045829661.html)。
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->上传ZIP文件至“obs-cff”存储桶，会触发HelloWorld函数运行。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>上传ZIP文件至“obs-cff”存储桶，会触发HelloWorld函数运行。
 
 ## 查看函数运行结果<a name="section192251225017"></a>
 

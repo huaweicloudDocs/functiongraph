@@ -21,8 +21,8 @@
 
 6.  单击“确定”，完成SMN触发器的创建。
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >SMN触发器创建完成后，会在SMN消息主题生成消息订阅。  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >SMN触发器创建完成后，会在SMN消息主题生成消息订阅。
 
 
 ## 触发函数运行<a name="section720713914918"></a>
@@ -58,8 +58,8 @@
 </tbody>
 </table>
 
->![](public_sys-resources/icon-note.gif) **说明：**   
->消息发布以后，会自动触发函数运行，具体示例事件请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。  
+>![](public_sys-resources/icon-note.gif) **说明：** 
+>消息发布以后，会自动触发函数运行，具体示例事件请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。
 
 ## 查看函数运行结果<a name="section21041145184920"></a>
 

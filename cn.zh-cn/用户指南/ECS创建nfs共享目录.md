@@ -15,8 +15,8 @@
 
         /sharedata  192.168.0.0/24\(rw,sync,no\_root\_squash\)
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >上述内容的含义是：把/sharedata这个目录共享给192.168.0.0/24这个子网段的其他服务器。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >上述内容的含义是：把/sharedata这个目录共享给192.168.0.0/24这个子网段的其他服务器。
 
     3.  使用如下命令启动nfs server
 
@@ -66,8 +66,8 @@
 
         /sharedata  192.168.0.0/24\(rw,sync,no\_root\_squash\)
 
-        >![](public_sys-resources/icon-note.gif) **说明：**   
-        >上述内容的含义是：把/sharedata这个目录共享给192.168.0.0/24这个子网段的其他服务器。  
+        >![](public_sys-resources/icon-note.gif) **说明：** 
+        >上述内容的含义是：把/sharedata这个目录共享给192.168.0.0/24这个子网段的其他服务器。
 
     3.  启动nfs服务
 

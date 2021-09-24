@@ -58,8 +58,7 @@
     </tr>
     <tr id="row01981653188"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p619865201814"><a name="p619865201814"></a><a name="p619865201814"></a>事件名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p2019825121816"><a name="p2019825121816"></a><a name="p2019825121816"></a>事件名称必须仅包含字母和数字，且最大长度为 25 个字符。</p>
-    <p id="p171981253182"><a name="p171981253182"></a><a name="p171981253182"></a>输入“dds-test”。</p>
+    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p171981253182"><a name="p171981253182"></a><a name="p171981253182"></a>事件名称必须以大写或小写字母开头，支持字母（大写或小写），数字和下划线“_”（或中划线“-”），并以字母或数字结尾，长度为1-25个字符，例如dds-123test。</p>
     </td>
     </tr>
     <tr id="row71991752189"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p81983518186"><a name="p81983518186"></a><a name="p81983518186"></a>测试事件</p>
@@ -70,40 +69,40 @@
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >测试事件模板示例如下：  
-    >```  
-    >{  
-    >	"records": [  
-    >		{  
-    >			"event_source": "dds",  
-    >			"event_name": "insert",  
-    >			"region": "xx-xxxxx-1",  
-    >			"event_version": "1.0",  
-    >			"dds": {  
-    >				"size_bytes": "100",  
-    >				"token": {  
-    >                    "_data": "825D8C2F4D0000001529295A100474039A3412A64BA89041DC952357FB4446645F696400645D8C2F8E5BECCB6CF5370D6A0004"  
-    >                },  
-    >				"full_document": {  
-    >					"_id": {  
-    >						"$oid": "5d8c2f8e5beccb6cf5370d6a"  
-    >					},  
-    >					"name": "dds",  
-    >					"age": {  
-    >						"$numberDouble": "52.0"  
-    >					}  
-    >				},  
-    >				"ns": {  
-    >				   "db": "functiongraph",  
-    >				   "coll": "person"  
-    >				}  
-    >			},  
-    >			"event_source_id": "e6065860-f7b8-4cca-80bd-24ef2a3bb748"  
-    >		}  
-    >	]  
-    >}  
-    >```  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >测试事件模板示例如下：
+    >```
+    >{
+    >	"records": [
+    >		{
+    >			"event_source": "dds",
+    >			"event_name": "insert",
+    >			"region": "xx-xxxxx-1",
+    >			"event_version": "1.0",
+    >			"dds": {
+    >				"size_bytes": "100",
+    >				"token": {
+    >                    "_data": "825D8C2F4D0000001529295A100474039A3412A64BA89041DC952357FB4446645F696400645D8C2F8E5BECCB6CF5370D6A0004"
+    >                },
+    >				"full_document": {
+    >					"_id": {
+    >						"$oid": "5d8c2f8e5beccb6cf5370d6a"
+    >					},
+    >					"name": "dds",
+    >					"age": {
+    >						"$numberDouble": "52.0"
+    >					}
+    >				},
+    >				"ns": {
+    >				   "db": "functiongraph",
+    >				   "coll": "person"
+    >				}
+    >			},
+    >			"event_source_id": "e6065860-f7b8-4cca-80bd-24ef2a3bb748"
+    >		}
+    >	]
+    >}
+    >```
 
 5.  单击“测试”，可以得到函数运行结果，函数会返回输入DDS数据。如[图1](#fig89541826201)所示。
 

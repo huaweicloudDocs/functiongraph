@@ -2,4 +2,6 @@
 
 -   **[创建用户并授权使用FunctionGraph](创建用户并授权使用FunctionGraph.md)**  
 
+-   **[FunctionGraph自定义策略](FunctionGraph自定义策略.md)**  
+
 

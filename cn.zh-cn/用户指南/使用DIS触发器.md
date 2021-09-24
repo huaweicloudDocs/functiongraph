@@ -32,16 +32,17 @@
 5.  设置以下信息。
     -   触发器类型：数据接入服务 \(DIS\)。
     -   通道名称：选择已创建的DIS通道，例如：dis-function。
+    -   最大字节数：每次触发时获取记录的最大字节数。只有当分区中单条记录小于该值，才能被获取。设置范围：1KB-4MB。
     -   起始位置：选择流中开始读取数据的位置。
         -   TRIM\_HORIZON：从最早被存储至分区的有效记录开始读取。
-        -   LATEST：从分区中的最新记录开始读取，此设置可以保证你总是读到分区中最新记录。
+        -   latest：从分区中的最新记录开始读取，此设置可以保证你总是读到分区中最新记录。
 
     -   拉取周期：设置拉取流数据的周期。
     -   串行处理数据：如果开启该选项，取一次数据处理完之后才会取下一次数据；否则只要拉取周期到了就会取数据进行处理。
 
 6.  单击“确定”，完成DIS触发器的创建。
 
-## 配置dis事件触发函数<a name="section15396107171918"></a>
+## 配置DIS事件触发函数<a name="section15396107171918"></a>
 
 1.  登录FunctionGraph控制台，进入“函数”界面。
 2.  在“函数”界面，选择“函数列表”，单击HelloWorld函数名称，进入函数详情页。
@@ -70,8 +71,7 @@
     </tr>
     <tr id="row37861105408"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p13786405402"><a name="p13786405402"></a><a name="p13786405402"></a>事件名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p18786140204010"><a name="p18786140204010"></a><a name="p18786140204010"></a>事件名称必须仅包含字母和数字，且最大长度为 25 个字符。</p>
-    <p id="p15503151114381"><a name="p15503151114381"></a><a name="p15503151114381"></a>输入“dis-test”。</p>
+    <td class="cellrowborder" valign="top" width="66%" headers="mcps1.2.3.1.2 "><p id="p117983243365"><a name="p117983243365"></a><a name="p117983243365"></a>事件名称必须以大写或小写字母开头，支持字母（大写或小写），数字和下划线“_”（或中划线“-”），并以字母或数字结尾，长度为1-25个字符。例如输入dis-123test。</p>
     </td>
     </tr>
     <tr id="row1773914911554"><td class="cellrowborder" valign="top" width="34%" headers="mcps1.2.3.1.1 "><p id="p157391497558"><a name="p157391497558"></a><a name="p157391497558"></a>测试事件</p>
@@ -82,41 +82,41 @@
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >测试事件模板示例如下：  
-    >```  
-    >{  
-    >    "ShardID": "shardId-0000000000",  
-    >    "Message": {  
-    >        "next_partition_cursor": "eyJnZXRJdGVyYXRvclBhcmFtIjp7InN0cmVhbS1uYW1lIjoiZGlzLXN3dGVzdCIsInBhcnRpdGlvbi1pZCI6InNoYXJkSWQtMDAwMDAwMDAwMCIsImN1cnNvci10eXBlIjoiVFJJTV9IT1JJWk9OIiwic3RhcnRpbmctc2VxdWVuY2UtbnVtYmVyIjoiNCJ9LCJnZW5lcmF0ZVRpbWVzdGFtcCI6MTUwOTYwNjM5MjE5MX0",  
-    >        "records": [  
-    >            {  
-    >                "partition_key": "shardId_0000000000",  
-    >                "data": "d2VsY29tZQ==",  
-    >                "sequence_number": "0"  
-    >            },  
-    >            {  
-    >                "partition_key": "shardId_0000000000",  
-    >                "data": "dXNpbmc=",  
-    >                "sequence_number": "1"  
-    >            },  
-    >            {  
-    >                "partition_key": "shardId_0000000000",  
-    >                "data": "RnVuY3Rpb25TdGFnZQ==",  
-    >                "sequence_number": "2"  
-    >            },  
-    >            {  
-    >                "partition_key": "shardId_0000000000",  
-    >                "data": "c2VydmljZQ==",  
-    >                "sequence_number": "3"  
-    >            }  
-    >        ],  
-    >        "millis_behind_latest": ""  
-    >    },  
-    >    "Tag": "latest",  
-    >    "StreamName": "dis-swtest"  
-    >}  
-    >```  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >测试事件模板示例如下：
+    >```
+    >{
+    >    "ShardID": "shardId-0000000000",
+    >    "Message": {
+    >        "next_partition_cursor": "eyJnZXRJdGVyYXRvclBhcmFtIjp7InN0cmVhbS1uYW1lIjoiZGlzLXN3dGVzdCIsInBhcnRpdGlvbi1pZCI6InNoYXJkSWQtMDAwMDAwMDAwMCIsImN1cnNvci10eXBlIjoiVFJJTV9IT1JJWk9OIiwic3RhcnRpbmctc2VxdWVuY2UtbnVtYmVyIjoiNCJ9LCJnZW5lcmF0ZVRpbWVzdGFtcCI6MTUwOTYwNjM5MjE5MX0",
+    >        "records": [
+    >            {
+    >                "partition_key": "shardId_0000000000",
+    >                "data": "d2VsY29tZQ==",
+    >                "sequence_number": "0"
+    >            },
+    >            {
+    >                "partition_key": "shardId_0000000000",
+    >                "data": "dXNpbmc=",
+    >                "sequence_number": "1"
+    >            },
+    >            {
+    >                "partition_key": "shardId_0000000000",
+    >                "data": "RnVuY3Rpb25TdGFnZQ==",
+    >                "sequence_number": "2"
+    >            },
+    >            {
+    >                "partition_key": "shardId_0000000000",
+    >                "data": "c2VydmljZQ==",
+    >                "sequence_number": "3"
+    >            }
+    >        ],
+    >        "millis_behind_latest": ""
+    >    },
+    >    "Tag": "latest",
+    >    "StreamName": "dis-swtest"
+    >}
+    >```
 
 5.  单击“测试”，可以得到函数运行结果，函数会返回输入DIS数据。如[图1](#fig17467116568)所示。
 

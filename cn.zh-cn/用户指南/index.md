@@ -1,11 +1,13 @@
 # 函数工作流用户指南
 
--   FunctionGraph使用说明
+-   [FunctionGraph2.0申请公测](FunctionGraph2-0申请公测.md)
+-   [FunctionGraph使用说明](FunctionGraph使用说明.md)
     -   [如何使用FunctionGraph？](如何使用FunctionGraph.md)
-    -   FunctionGraph权限说明
+    -   [FunctionGraph权限说明](FunctionGraph权限说明.md)
         -   [创建用户并授权使用FunctionGraph](创建用户并授权使用FunctionGraph.md)
+        -   [FunctionGraph自定义策略](FunctionGraph自定义策略.md)
 
-    -   构建函数
+    -   [构建函数](构建函数.md)
         -   [函数编程模型](函数编程模型.md)
         -   [创建程序包](创建程序包.md)
         -   [创建函数](创建函数.md)
@@ -13,7 +15,7 @@
 
     -   [触发函数](触发函数.md)
     -   [日志](日志.md)
-    -   监控
+    -   [监控](监控.md)
         -   [监控信息说明](监控信息说明.md)
         -   [FunctionGraph服务的监控指标参考](FunctionGraph服务的监控指标参考.md)
 
@@ -21,9 +23,10 @@
     -   [命令行工具](命令行工具.md)
     -   [与其他云服务的关系](与其他云服务的关系.md)
 
--   入门指南
+-   [入门指南](入门指南.md)
     -   [入门指南说明](入门指南说明.md)
     -   [创建并初始化函数](创建并初始化函数.md)
+    -   [函数异步配置](函数异步配置.md)
     -   [函数配置VPC](函数配置VPC.md)
     -   [使用SMN触发器](使用SMN触发器.md)
     -   [使用DMS触发器](使用DMS触发器.md)
@@ -35,29 +38,39 @@
     -   [使用CTS触发器](使用CTS触发器.md)
     -   [使用DDS触发器](使用DDS触发器.md)
     -   [使用Kafka触发器](使用Kafka触发器.md)
+    -   [使用GaussDB\(for Mongo\)触发器](使用GaussDB(for-Mongo)触发器.md)
     -   [创建工作流触发器](创建工作流触发器.md)
 
--   操作指南
+-   [操作指南](操作指南.md)
     -   [总览](总览.md)
     -   [函数管理](函数管理.md)
-    -   [函数在线IDE](函数在线IDE.md)
+    -   [使用CloudIDE管理函数](使用CloudIDE管理函数.md)
+        -   [CloudIDE在线使用方法](CloudIDE在线使用方法.md)
+        -   [CloudIDE在线管理函数](CloudIDE在线管理函数.md)
+        -   [CloudIDE本地管理函数](CloudIDE本地管理函数.md)
+
     -   [依赖包管理](依赖包管理.md)
     -   [触发器管理](触发器管理.md)
     -   [测试管理](测试管理.md)
     -   [版本管理](版本管理.md)
     -   [函数监控](函数监控.md)
     -   [预留实例管理](预留实例管理.md)
+    -   [函数流管理](函数流管理.md)
+        -   [创建函数流任务](创建函数流任务.md)
+        -   [查看函数流任务](查看函数流任务.md)
+        -   [表达式运算符说明](表达式运算符说明.md)
 
--   进阶教程
+    -   [关于配额](关于配额.md)
+
+-   [进阶教程](进阶教程.md)
     -   [使用函数模板](使用函数模板.md)
     -   [挂载文件系统](挂载文件系统.md)
     -   [自定义运行时](自定义运行时.md)
     -   [使用环境变量](使用环境变量.md)
     -   [使用体验馆](使用体验馆.md)
 
--   附录
+-   [附录](附录.md)
     -   [创建委托](创建委托.md)
     -   [ECS创建nfs共享目录](ECS创建nfs共享目录.md)
     -   [函数定时触发器Cron表达式规则](函数定时触发器Cron表达式规则.md)
-
 

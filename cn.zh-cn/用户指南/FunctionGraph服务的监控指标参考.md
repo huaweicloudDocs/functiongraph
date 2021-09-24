@@ -44,6 +44,8 @@ SYS.FunctionGraph
 <td class="cellrowborder" valign="top" width="15.486902619476107%" headers="mcps1.1.7.1.2 "><p id="p15105192310112"><a name="p15105192310112"></a><a name="p15105192310112"></a>错误次数</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.86482703459308%" headers="mcps1.1.7.1.3 "><p id="p17105142315118"><a name="p17105142315118"></a><a name="p17105142315118"></a>该指标用于统计函数调用错误次数。</p>
+<p id="p564717151895"><a name="p564717151895"></a><a name="p564717151895"></a>以下两种情况都会记入错误次数：</p>
+<a name="ul645810174920"></a><a name="ul645810174920"></a><ul id="ul645810174920"><li>函数请求异常，导致无法执行完成且返回200。</li><li>函数自身语法错误或者自身执行错误。</li></ul>
 <p id="p1410518233118"><a name="p1410518233118"></a><a name="p1410518233118"></a>单位：次</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.057188562287543%" headers="mcps1.1.7.1.4 "><p id="p191057232015"><a name="p191057232015"></a><a name="p191057232015"></a>≥ 0 counts</p>
@@ -58,6 +60,7 @@ SYS.FunctionGraph
 <td class="cellrowborder" valign="top" width="15.486902619476107%" headers="mcps1.1.7.1.2 "><p id="p1105823513"><a name="p1105823513"></a><a name="p1105823513"></a>被拒绝次数</p>
 </td>
 <td class="cellrowborder" valign="top" width="25.86482703459308%" headers="mcps1.1.7.1.3 "><p id="p161054231911"><a name="p161054231911"></a><a name="p161054231911"></a>该指标用于统计函数调用被拒绝次数。</p>
+<p id="p6304153484817"><a name="p6304153484817"></a><a name="p6304153484817"></a>被拒绝次数是指并发请求太多，系统流控而被拒绝的请求次数。</p>
 <p id="p18105223318"><a name="p18105223318"></a><a name="p18105223318"></a>单位：次</p>
 </td>
 <td class="cellrowborder" valign="top" width="14.057188562287543%" headers="mcps1.1.7.1.4 "><p id="p101051123217"><a name="p101051123217"></a><a name="p101051123217"></a>≥ 0 counts</p>

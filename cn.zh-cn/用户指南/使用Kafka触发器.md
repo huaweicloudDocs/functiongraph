@@ -2,7 +2,7 @@
 
 本节介绍创建Kafka触发器，供用户了解Kafka触发器的使用方法。
 
-使用Kafka触发器，当向Kafka实例的Topic生产消息时，FunctionGraph会消费消息，触发函数以执行额外的工作，关于Kafka触发器的事件源介绍请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。
+使用Kafka触发器后，FunctionGraph会定期轮询Kafka实例指定Topic下的新消息，FunctionGraph将轮询得到的消息作为参数传递来调用函数，关于Kafka触发器的事件源介绍请参见[支持的事件源](https://support.huaweicloud.com/devg-functiongraph/functiongraph_02_0102.html)。
 
 ## 前提条件<a name="section134592267445"></a>
 
@@ -10,8 +10,8 @@
 
 -   已经创建函数，创建过程请参考[创建并初始化函数](创建并初始化函数.md)。
 -   创建Kafka触发器，必须开启函数工作流VPC访问，请参考[函数配置VPC](函数配置VPC.md)。
--   已经Kafka触发器实例，请参考[购买Kafka专享版实例](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180604013.html)。
--   在Kafka触发器下创建主题，请参考[Kafka实例创建Topic](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180604018.html)。
+-   已经创建Kafka实例，创建操作请参考[购买Kafka专享版实例](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180604013.html)。
+-   在Kafka实例下创建主题，创建操作请参考[Kafka实例创建Topic](https://support.huaweicloud.com/usermanual-kafka/kafka-ug-180604018.html)。
 
 ## 创建Kafka触发器<a name="section3956183013126"></a>
 
@@ -28,6 +28,12 @@
     -   密码：Kafka实例开启SSL时需要填写。连接Kafka专享版实例的密码。
 
 6.  单击“确定“，完成kafka触发器的创建。
+
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >开启函数流VPC访问后，需要在Kafka服务安全组配置对应子网的权限。如何开启VPC访问请参见[函数配置VPC](函数配置VPC.md)。
+    >**图 1**  配置子网<a name="fig1669042818349"></a>  
+    >![](figures/配置子网.png "配置子网")
+
 
 ## 配置Kafka事件触发函数<a name="section8958730121211"></a>
 
@@ -58,8 +64,7 @@
     </tr>
     <tr id="row01981653188"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p619865201814"><a name="p619865201814"></a><a name="p619865201814"></a>事件名称</p>
     </td>
-    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p2019825121816"><a name="p2019825121816"></a><a name="p2019825121816"></a>事件名称必须仅包含字母和数字，且最大长度为 25 个字符。</p>
-    <p id="p171981253182"><a name="p171981253182"></a><a name="p171981253182"></a>输入“kafka-test”。</p>
+    <td class="cellrowborder" valign="top" width="72%" headers="mcps1.2.3.1.2 "><p id="p1843184212400"><a name="p1843184212400"></a><a name="p1843184212400"></a>事件名称必须以大写或小写字母开头，支持字母（大写或小写），数字和下划线“_”（或中划线“-”），并以字母或数字结尾，长度为1-25个字符，例如kafka-123test。</p>
     </td>
     </tr>
     <tr id="row71991752189"><td class="cellrowborder" valign="top" width="28.000000000000004%" headers="mcps1.2.3.1.1 "><p id="p81983518186"><a name="p81983518186"></a><a name="p81983518186"></a>测试事件</p>
@@ -70,25 +75,27 @@
     </tbody>
     </table>
 
-    >![](public_sys-resources/icon-note.gif) **说明：**   
-    >测试事件模板示例如下：  
-    >```  
-    >{  
-    >    "event_version": "v1.0",  
-    >    "event_time": 1576737962,  
-    >    "trigger_type": "KAFKA",  
-    >    "region": "xx-xxxx-1",  
-    >    "messages": [  
-    >        "kafka message1",  
-    >        "kafka message2",  
-    >        "kafka message3",  
-    >        "kafka message4",  
-    >        "kafka message5"  
-    >    ],  
-    >    "instance_id": "81335d56-b9fe-4679-ba95-7030949cc76b",  
-    >    "topic_id": "topic-test"  
-    >}  
-    >```  
+    >![](public_sys-resources/icon-note.gif) **说明：** 
+    >测试事件模板示例如下：
+    >```
+    >{
+    >	"event_version": "v1.0",
+    >	"event_time": 1576737962,
+    >	"trigger_type": "KAFKA",
+    >	"region": "xx-xxxx-1",
+    >	"records": [{
+    >		"messages": [
+    >			"kafka message1",
+    >			"kafka message2",
+    >			"kafka message3",
+    >			"kafka message4",
+    >			"kafka message5"
+    >		],
+    >	"instance_id": "81335d56-b9fe-4679-ba95-7030949cc76b",
+    >	"topic_id": "topic-test"
+    >	}]
+    >}
+    >```
 
 5.  单击“测试”，可以得到函数运行结果，函数会返回输入kafka消息数据。
 
